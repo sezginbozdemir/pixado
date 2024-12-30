@@ -1,42 +1,66 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+}
+.button {
+  background-color: transparent;
+  border: 2px solid #6bfbce;
+  border-radius: 2rem;
+  color: #fcfff9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 13rem;
+  height: 3rem;
+  padding: 0.1rem 2rem;
+}
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 6%;
+  padding-right: 6%;
+  min-height: 5.5rem;
+  background-color: rgba(9, 17, 0, 0.1);
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.menu-items {
+  display: flex;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.menu-item {
+  margin-right: 8%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-container {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.menu-button {
+  display: block;
+}
+.burger-menu {
+  display: none;
+  margin-left: 8%;
+}
+
+@media (max-width: 1028px) {
+  .menu-items {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .burger-menu {
+    display: block;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .menu-button {
+    display: none;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .burger-menu {
+    display: block;
+  }
 }
