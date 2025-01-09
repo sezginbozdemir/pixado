@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "../components/common/Header";
+import BannerSection from "../components/home/banner-section/BannerSection";
+import ScrollAnimation from "../components/home/scroll-animation/ScrollAnimation";
 const Home = () => {
   return (
-    <>
-      <Header />
-    </>
+    <div className="home">
+      <BannerSection />
+      <ScrollAnimation />
+      <BannerSection />
+      <BannerSection />
+    </div>
   );
 };
 

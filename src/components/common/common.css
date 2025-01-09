@@ -1,0 +1,66 @@
+/* Rotating Label */
+
+.rotating-label-container {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rotating-label {
+  animation: rotate-infinite 9s linear infinite;
+  position: absolute;
+}
+.vector {
+  position: absolute;
+}
+
+@keyframes rotate-infinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Large Screens (1028px and above) */
+@media (min-width: 1028px) {
+  .rotating-label {
+    max-width: 7.5vw;
+  }
+  .vector {
+    max-width: 2vw;
+  }
+}
+
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .rotating-label {
+    max-width: 9vw;
+  }
+  .vector {
+    max-width: 2vw;
+  }
+}
+
+/* Tablets and Medium Screens (768px - 1028px) */
+@media (max-width: 1028px) and (min-width: 768px) {
+  .rotating-label {
+    max-width: 15vw;
+  }
+  .vector {
+    max-width: 3vw;
+  }
+}
+
+/* Mobile Screens (Below 768px) */
+@media (max-width: 768px) {
+  .rotating-label {
+    max-width: 14vw;
+  }
+  .vector {
+    max-width: 3vw;
+  }
+}

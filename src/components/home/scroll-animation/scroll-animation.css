@@ -1,0 +1,41 @@
+.scroll-mask-container {
+  height: 110vh;
+
+  background: url("../../../assets/pixado-background.png") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mask-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-mask {
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+@media (min-width: 1028px) {
+}
+
+/* Extra Large Screens (1440px and above) */
+@media (max-width: 1440px) {
+  .scroll-mask-container {
+    height: 100vh;
+  }
+}
+
+/* Mobile Screens (Below 768px) */
+@media (max-width: 1028px) {
+  .scroll-mask-container {
+    height: 80vh;
+  }
+}
+@media (max-width: 768px) {
+  .scroll-mask-container {
+    height: 50vh;
+  }
+}
