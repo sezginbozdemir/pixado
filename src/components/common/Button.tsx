@@ -1,4 +1,5 @@
 import React from "react";
+import "./common.css";
 
 type ButtonProps = {
   text: string | React.ReactNode;

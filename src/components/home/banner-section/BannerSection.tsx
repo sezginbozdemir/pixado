@@ -36,7 +36,9 @@ const BannerSection = () => {
 
         <div className="banner-image">
           <img className="substract" src={substract} alt="substract" />
-          <RotatingLabel />
+          <div className="rotating-label-container">
+            <RotatingLabel />
+          </div>
           <div className="projects-count-container">
             <div className="projects-count">
               <Title variant="menu-body-bold">50+</Title>
@@ -46,9 +48,9 @@ const BannerSection = () => {
             </div>
           </div>
         </div>
-        <img className="line-group-1" src={lineGroup1}></img>
-        <img className="line-group-2" src={lineGroup2}></img>
-        <img className="line-group-multi" src={lineGroupMulti}></img>
+        <img className="line-group-1" src={lineGroup1} />
+        <img className="line-group-2" src={lineGroup2} />
+        <img className="line-group-multi" src={lineGroupMulti} />
       </div>
     </div>
   );

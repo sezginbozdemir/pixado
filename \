@@ -7,30 +7,31 @@ const ScrollMask = () => {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [90, 5]); // Adjusted range for scale
-  const opacity = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]); // Adjusted range for opacity
+  const scale = useTransform(scrollYProgress, [0, 0.5], [10, 1]); // Adjusted range
+  const yText = useTransform(scrollYProgress, [0.5, 1], [0, -100]); // Adjusted range
+  const opacity = useTransform(scrollYProgress, [0, 0.25], [0, 1]); // Adjusted range
 
   return (
     <div ref={ref} className="scroll-mask-container">
       <div className="scroll-content">
-        <motion.div style={{ scale }} className="mask-container">
-          <svg className="text-mask" width="100%" height="100%">
+        <motion.div style={{ opacity }} className="mask-container">
+          <svg
+            className="text-mask"
+            width="100%"
+            height="100%"
+            viewBox="0 0 180 100"
+          >
             <defs>
               <mask id="textMask">
-                <motion.rect
-                  style={{ opacity }}
-                  width="100%"
-                  height="100%"
-                  fill="white"
-                />
+                <rect width="100%" height="100%" fill="white" />
                 <motion.text
-                  style={{ opacity }}
+                  style={{ scale: scale }}
                   x="50%"
                   y="50%"
                   dominantBaseline="middle"
                   textAnchor="middle"
                   fill="#091100"
-                  fontSize="35"
+                  fontSize="20"
                 >
                   PIXADO
                 </motion.text>

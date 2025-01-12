@@ -96,6 +96,14 @@
   max-width: 32vh;
   position: absolute;
 }
+.rotating-label-container {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Large Screens (1028px and above) */
 @media (min-width: 1028px) {

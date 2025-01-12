@@ -5,7 +5,7 @@ import "./common.css";
 const RotatingLabel = () => {
   return (
     <>
-      <div className="rotating-label-container">
+      <div className="rotating-label-element">
         <img className="rotating-label" src={rotatingLabel}></img>
         <img className="vector" src={vector}></img>
       </div>

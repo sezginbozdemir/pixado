@@ -1,15 +1,17 @@
 .scroll-mask-container {
-  height: 110vh;
-
-  background: url("../../../assets/pixado-background.png") no-repeat top center;
-  background-size: cover;
-  overflow: hidden;
+  height: 250vh;
+  position: relative;
+  background-color: #091100;
 }
 
-.mask-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.scroll-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: url("../../../assets/pixado-background.png") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
 }
 
 .text-mask {
@@ -17,25 +19,29 @@
   font-family: sans-serif;
   font-weight: 900;
 }
+.mask-container {
+  height: 100%;
+  width: 100%;
+}
 
 @media (min-width: 1028px) {
 }
 
 /* Extra Large Screens (1440px and above) */
 @media (max-width: 1440px) {
-  .scroll-mask-container {
-    height: 100vh;
-  }
 }
 
 /* Mobile Screens (Below 768px) */
 @media (max-width: 1028px) {
   .scroll-mask-container {
-    height: 80vh;
+    height: 180vh;
   }
 }
 @media (max-width: 768px) {
+  .scroll-content {
+    height: 60vh;
+  }
   .scroll-mask-container {
-    height: 50vh;
+    height: 100vh;
   }
 }

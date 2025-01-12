@@ -1,9 +1,6 @@
 /* Rotating Label */
 
-.rotating-label-container {
-  position: absolute;
-  bottom: 20%;
-  right: 10%;
+.rotating-label-element {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +11,15 @@
 }
 .vector {
   position: absolute;
+}
+.button {
+  background-color: transparent;
+  border: 2px solid #6bfbce;
+  border-radius: 2rem;
+  color: #fcfff9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.1rem 2rem;
 }
 
 @keyframes rotate-infinite {
