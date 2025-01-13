@@ -1,3 +1,9 @@
+.service-conatiner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .services-carousel {
   display: flex;
   width: 100%;
@@ -7,7 +13,7 @@
 }
 .info {
   margin-left: 5rem;
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,14 +21,10 @@
 }
 
 .visual {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 3rem;
+  width: 40%;
   position: relative;
   margin-bottom: 10rem;
+  justify-content: center;
 }
 
 .info-details {
@@ -38,6 +40,12 @@
   margin-bottom: 1.4rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  margin-left: 3.2rem;
+}
+.service-option.active {
+  margin-left: 0;
+  color: #6bfbce;
 }
 
 .green-line {
@@ -49,7 +57,8 @@
   overflow: hidden;
 }
 .visual-img {
-  width: 100%;
+  width: 80%;
+  height: 100%;
   margin-left: 2rem;
 }
 .visual-label-container {
@@ -59,6 +68,32 @@
   z-index: 1000;
 }
 .info-progress {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  min-height: 55vh;
+}
+.info-progress-mobil {
+  position: relative;
+  display: none;
+  width: 100%;
+  align-self: center;
+  min-height: 65vh;
+}
+
+.progress-slider {
+  height: 100%;
+  width: 95%;
+  position: absolute;
+}
+.image-slider {
+  height: 100%;
+
+  position: absolute;
+}
+
+.image-slider-container {
+  height: 100%;
   position: relative;
 }
 .progress-base {
@@ -81,6 +116,7 @@
   margin-left: 2rem;
   z-index: 1000;
 }
+
 .progress-container {
   width: 100%;
   height: 29%;
@@ -127,15 +163,9 @@
 
 .progress-percentage {
   font-weight: bold;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
-.info-progress-mobil {
-  position: relative;
-  display: none;
-  width: 80%;
-  height: 80%;
-  align-self: center;
-}
+
 .line-service-1 {
   left: 13%;
   bottom: -10%;
@@ -151,7 +181,7 @@
 
 .line-service-multi {
   right: 0%;
-  bottom: 13%;
+  bottom: 10%;
   max-width: 17%;
   position: absolute;
 }
@@ -163,7 +193,15 @@
   width: 28%;
   height: 13%;
 }
+@media (min-width: 1440px) {
+  .info-progress {
+    width: 90%;
+  }
+}
 @media (max-width: 1028px) {
+  .services-carousel {
+    margin-bottom: 0rem;
+  }
   .info-details {
     flex-direction: column;
   }
@@ -172,13 +210,18 @@
   }
   .info-progress-mobil {
     display: flex;
+    width: 100%;
+    min-height: 50vh;
+    justify-content: center;
   }
   .info {
     width: 50%;
   }
   .visual {
     width: 50%;
+    display: flex;
   }
+
   .service-text {
     width: 100%;
   }
@@ -190,6 +233,9 @@
   }
   .line-service-2 {
     display: none;
+  }
+  .progress-slider {
+    background-color: rgb(9, 17, 0);
   }
 }
 
@@ -204,13 +250,13 @@
   .visual {
     align-self: center;
     width: 80%;
+    height: 80vh;
     margin-bottom: 4rem;
   }
   .services-carousel {
     flex-direction: column;
   }
   .info-progress-mobil {
-    width: 100%;
-    height: 100%;
+    min-height: 37vh;
   }
 }

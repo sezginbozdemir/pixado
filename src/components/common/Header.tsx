@@ -4,6 +4,7 @@ import burger from "../../assets/burger.png";
 import Title from "./Title";
 import Text from "./Text";
 import Button from "./Button";
+import "./common.css";
 const Header = () => {
   return (
     <>

@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Web Design",
+    "imgUrl": "/service-images/services-visual-1.png",
+    "stats": [
+      { "label": "Responsive și accesibilitate", "value": 100 },
+      { "label": "Viteză și performanță", "value": 51 },
+      { "label": "Implementare rapidă și flexibilă", "value": 80 }
+    ]
+  },
+  {
+    "title": "Reclame Video",
+    "imgUrl": "/service-images/service-image-2.png",
+    "stats": [
+      { "label": "Responsive și accesibilitate", "value": 90 },
+      { "label": "Viteză și performanță", "value": 75 },
+      { "label": "Implementare rapidă și flexibilă", "value": 85 }
+    ]
+  },
+  {
+    "title": "VFX",
+    "imgUrl": "/service-images/service-image-3.png",
+    "stats": [
+      { "label": "Responsive și accesibilitate", "value": 80 },
+      { "label": "Viteză și performanță", "value": 60 },
+      { "label": "Implementare rapidă și flexibilă", "value": 95 }
+    ]
+  }
+]

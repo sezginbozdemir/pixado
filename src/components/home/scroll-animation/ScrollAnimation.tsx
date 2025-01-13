@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "./scroll-animation.css";
 
@@ -7,30 +7,56 @@ const ScrollMask = () => {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [90, 5]); // Adjusted range for scale
-  const opacity = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]); // Adjusted range for opacity
+
+  // Default transformations
+  const scale = useTransform(scrollYProgress, [0, 1], [90, 5]);
+  const opacity = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]);
+
+  const scaleSmallScreen = useTransform(scrollYProgress, [0, 1], [5, 90]);
+  const opacitySmallScreen = useTransform(scrollYProgress, [0.2, 0.45], [1, 0]);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div ref={ref} className="scroll-mask-container">
       <div className="scroll-content">
-        <motion.div style={{ scale }} className="mask-container">
+        <motion.div
+          style={{ scale: isSmallScreen ? scaleSmallScreen : scale }}
+          className="mask-container"
+        >
           <svg className="text-mask" width="100%" height="100%">
             <defs>
               <mask id="textMask">
                 <motion.rect
-                  style={{ opacity }}
+                  style={{
+                    opacity: isSmallScreen ? opacitySmallScreen : opacity,
+                  }}
                   width="100%"
                   height="100%"
                   fill="white"
                 />
                 <motion.text
-                  style={{ opacity }}
+                  style={{
+                    opacity: isSmallScreen ? opacitySmallScreen : opacity,
+                  }}
                   x="50%"
                   y="50%"
                   dominantBaseline="middle"
                   textAnchor="middle"
                   fill="#091100"
-                  fontSize="35"
                 >
                   PIXADO
                 </motion.text>

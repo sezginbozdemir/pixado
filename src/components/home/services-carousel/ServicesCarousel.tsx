@@ -1,61 +1,49 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./services-carousel.css";
 import Title from "../../common/Title";
 import Text from "../../common/Text";
-import Button from "../../common/Button";
-import ProgressBase from "../../../assets/progress-base.png";
-import RotatingLabel from "../../common/RotatingLabel";
-import ServicesVisual from "../../../assets/services-visual-1.png";
 import GreenLine from "../../../assets/green-line.png";
 import lineGroup1 from "../../../assets/line-group-1.png";
 import lineGroup2 from "../../../assets/line-group-2.png";
 import lineGroupMulti from "../../../assets/line-group-multi.png";
+import ProgressSlider from "./ProgressSlider";
+import ImageSlider from "./ImageSlider";
+import data from "./data.json";
+import { ServiceData } from "./type";
 
 const ServicesCarousel = () => {
-  useEffect(() => {
-    const bars = document.querySelectorAll<HTMLDivElement>(".progress-bar");
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState(1); //
 
-    bars.forEach((bar) => {
-      const value = bar.getAttribute("data-value");
-      const fill = bar.querySelector<HTMLDivElement>(".progress-fill");
-      if (fill && value) {
-        fill.style.width = value + "%";
-      }
-    });
-  }, []);
+  const handleClick = (index: number) => {
+    setDirection(index > currentIndex ? 1 : -1);
+    setCurrentIndex(index);
+  };
   return (
-    <>
+    <div className="services-container">
       <div className="services-carousel">
         <div className="info">
           <div className="info-details">
             <div className="service-options">
-              <div className="service-option">
-                <img
-                  width={35}
-                  height={5}
-                  className="green-line"
-                  src={GreenLine}
-                />
-                <Title variant="h2">Web Design</Title>
-              </div>
-              <div className="service-option">
-                <img
-                  width={35}
-                  height={5}
-                  className="green-line"
-                  src={GreenLine}
-                />
-                <Title variant="h2">Reclame Video</Title>
-              </div>
-              <div className="service-option">
-                <img
-                  width={35}
-                  height={5}
-                  className="green-line"
-                  src={GreenLine}
-                />
-                <Title variant="h2">VFX</Title>
-              </div>
+              {data.map((data: ServiceData, index: number) => (
+                <div
+                  key={index}
+                  className={`service-option ${
+                    currentIndex === index ? "active" : ""
+                  }`}
+                  onClick={() => handleClick(index)}
+                >
+                  {currentIndex === index && (
+                    <img
+                      width={35}
+                      height={5}
+                      className="green-line"
+                      src={GreenLine}
+                    />
+                  )}
+                  <Title variant="h2">{data.title}</Title>
+                </div>
+              ))}
             </div>
             <div className="service-text">
               <p>
@@ -78,114 +66,22 @@ const ServicesCarousel = () => {
               </p>
             </div>
           </div>
+
           <div className="info-progress">
-            <img className="progress-base" src={ProgressBase}></img>
-            <Button
-              className="progress-button"
-              text=<Text variant="button-body">Afla mai multe</Text>
-            ></Button>
-            <div className="progress-element">
-              <div className="progress-container">
-                <span className="progress-label">
-                  <Title variant="h3">Responsive și accesibilitate</Title>
-                </span>
-                <div className="progress-row">
-                  <div className="progress-bar" data-value="100">
-                    <div className="progress-fill"></div>
-                  </div>
-                  <span className="progress-percentage">
-                    <Title variant="h3">100%</Title>
-                  </span>
-                </div>
-              </div>
-              <div className="progress-container">
-                <span className="progress-label">
-                  <Title variant="h3">Viteză și performanță</Title>
-                </span>
-                <div className="progress-row">
-                  <div className="progress-bar" data-value="51">
-                    <div className="progress-fill"></div>
-                  </div>
-                  <span className="progress-percentage">
-                    <Title variant="h3">51%</Title>
-                  </span>
-                </div>
-              </div>
-              <div className="progress-container">
-                <span className="progress-label">
-                  <Title variant="h3">Implementare rapidă și flexibilă</Title>
-                </span>
-                <div className="progress-row">
-                  <div className="progress-bar" data-value="80">
-                    <div className="progress-fill"></div>
-                  </div>
-                  <span className="progress-percentage">
-                    <Title variant="h3">80%</Title>
-                  </span>
-                </div>
-              </div>
-            </div>
+            <ProgressSlider currentIndex={currentIndex} direction={direction} />
           </div>
         </div>
         <div className="visual">
-          <img className="visual-img" src={ServicesVisual}></img>
-          <div className="visual-label-container">
-            <RotatingLabel />
-          </div>
+          <ImageSlider currentIndex={currentIndex} direction={direction} />
         </div>
         <img className="line-service-1" src={lineGroup1} />
         <img className="line-service-2" src={lineGroup2} />
         <img className="line-service-multi" src={lineGroupMulti} />
       </div>
       <div className="info-progress-mobil">
-        <img className="progress-base" src={ProgressBase}></img>
-        <Button
-          className="progress-button"
-          text=<Text variant="button-body">Afla mai multe</Text>
-        ></Button>
-        <div className="progress-element">
-          <div className="progress-container">
-            <span className="progress-label">
-              <Title variant="h3">Responsive și accesibilitate</Title>
-            </span>
-            <div className="progress-row">
-              <div className="progress-bar" data-value="100">
-                <div className="progress-fill"></div>
-              </div>
-              <span className="progress-percentage">
-                <Title variant="h3">100%</Title>
-              </span>
-            </div>
-          </div>
-          <div className="progress-container">
-            <span className="progress-label">
-              <Title variant="h3">Viteză și performanță</Title>
-            </span>
-            <div className="progress-row">
-              <div className="progress-bar" data-value="51">
-                <div className="progress-fill"></div>
-              </div>
-              <span className="progress-percentage">
-                <Title variant="h3">51%</Title>
-              </span>
-            </div>
-          </div>
-          <div className="progress-container">
-            <span className="progress-label">
-              <Title variant="h3">Implementare rapidă și flexibilă</Title>
-            </span>
-            <div className="progress-row">
-              <div className="progress-bar" data-value="80">
-                <div className="progress-fill"></div>
-              </div>
-              <span className="progress-percentage">
-                <Title variant="h3">80%</Title>
-              </span>
-            </div>
-          </div>
-        </div>
+        <ProgressSlider currentIndex={currentIndex} direction={direction} />
       </div>
-    </>
+    </div>
   );
 };
 

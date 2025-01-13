@@ -4,7 +4,7 @@
 /* Typography */
 .h1 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 70px;
+  font-size: 77px;
   font-weight: bold;
   line-height: 130%;
 }
@@ -74,7 +74,7 @@
 
 .button-body {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: regular;
   line-height: 120%;
 }
@@ -82,16 +82,25 @@
 @media (min-width: 1440px) {
   .h1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 100px;
+    font-size: 110px;
     font-weight: bold;
     line-height: 130%;
+  }
+  .h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 29px;
+    font-weight: medium;
+    line-height: 120%;
+  }
+  .body {
+    font-size: 20px;
   }
 }
 /* Tablet Styles */
 @media (max-width: 1028px) {
   .h1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 70px;
+    font-size: 85px;
     font-weight: bold;
     line-height: 130%;
   }
@@ -105,7 +114,7 @@
 
   .h3 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: medium;
     line-height: 120%;
   }
@@ -168,21 +177,21 @@
 @media (max-width: 768px) {
   .h1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 55px;
+    font-size: 65px;
     font-weight: bold;
     line-height: 130%;
   }
 
   .h2 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: medium;
     line-height: 120%;
   }
 
   .h3 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: medium;
     line-height: 120%;
   }
@@ -237,7 +246,7 @@
 
   .button-body {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: regular;
     line-height: 120%;
   }
