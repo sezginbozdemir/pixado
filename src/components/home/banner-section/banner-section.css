@@ -37,6 +37,11 @@
   height: auto;
   max-width: 100%;
   display: block;
+  object-fit: cover;
+  -webkit-mask-image: url("/banners/subtract-copy.png");
+  mask-image: url("/banners/subtract-copy.png");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
 
 .projects-count-container {

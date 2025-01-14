@@ -5,7 +5,12 @@ import Text from "../../common/Text";
 import Title from "../../common/Title";
 import ProgressBase from "../../../assets/progress-base.png";
 import data from "./data.json";
-import { ServiceData } from "./type";
+
+interface ServiceData {
+  title: string;
+  imgUrl: string;
+  stats: { label: string; value: number }[];
+}
 
 interface ProgressSliderProps {
   currentIndex: number;

@@ -9,7 +9,12 @@ import lineGroupMulti from "../../../assets/line-group-multi.png";
 import ProgressSlider from "./ProgressSlider";
 import ImageSlider from "./ImageSlider";
 import data from "./data.json";
-import { ServiceData } from "./type";
+
+interface ServiceData {
+  title: string;
+  imgUrl: string;
+  stats: { label: string; value: number }[];
+}
 
 const ServicesCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

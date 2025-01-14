@@ -1,0 +1,42 @@
+.who::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+.who {
+  margin-left: 0.5rem;
+}
+
+.first-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+}
+
+.first-col-contact {
+  width: 40%;
+}
+.second-col-contact {
+  display: flex;
+  width: 50%;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.links-container span {
+  align-items: center;
+  display: flex;
+}
+.contact-button {
+  width: 13rem;
+  height: 3rem;
+}

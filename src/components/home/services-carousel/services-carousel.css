@@ -195,7 +195,7 @@
 }
 @media (min-width: 1440px) {
   .info-progress {
-    width: 90%;
+    width: 100%;
   }
 }
 @media (max-width: 1028px) {

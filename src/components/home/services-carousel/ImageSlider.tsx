@@ -14,7 +14,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
 }) => {
   const slideVariants = {
     enter: (direction: number) => ({
-      y: direction > 0 ? "100%" : "-100%",
+      y: direction > 0 ? "-100%" : "100%",
       opacity: 0,
     }),
     center: {
@@ -22,7 +22,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
       opacity: 1,
     },
     exit: (direction: number) => ({
-      y: direction > 0 ? "-100%" : "100%",
+      y: direction > 0 ? "100%" : "-100%",
       opacity: 0,
     }),
   };
