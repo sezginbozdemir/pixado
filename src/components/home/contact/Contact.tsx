@@ -1,40 +1,33 @@
 import React from "react";
 import "./contact.css";
-import Title from "../../common/Title";
-import Text from "../../common/Text";
 import Button from "../../common/Button";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <div className="first-container">
-        <div className="first-col-contact">
-          <div className="who">
-            <Text variant="body">Cine suntem noi</Text>
+    <Container className="contact">
+      <Row className="first-container">
+        <Col xs={12} lg={6} className="first-col-contact">
+          <div className="body who">Cine suntem noi</div>
+          <div className="title-2 partner">
+            PARTENERUL TĂU ÎN <br /> DEZVOLTARE DIGITALĂ
           </div>
-          <div className="partner">
-            <Title variant="h2">
-              PARTENERUL TĂU ÎN <br /> DEZVOLTARE DIGITALĂ
-            </Title>
+        </Col>
+        <Col xs={12} lg={5} className="second-col-contact">
+          <div className="contact-text body">
+            Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat
+            consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris
+            graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet
+            feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet
+            mauris graseda ut.
           </div>
-        </div>
-        <div className="second-col-contact">
-          <div className="contact-text">
-            <Text variant="body">
-              Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat
-              consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris
-              graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet
-              feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet
-              mauris graseda ut.
-            </Text>
-          </div>
-          <div className="links-container">
+          <div className="body links-container">
             <Button className="contact-button" text="Contacteaza-ne"></Button>
-            <Text variant="body">Află mai multe</Text>
+            Află mai multe
           </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

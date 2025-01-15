@@ -1,42 +1,21 @@
-.banner-section {
-  display: flex;
-  flex-direction: column;
-  height: max-content;
-  width: 100%;
+.banner-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
 .banner-content {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  margin-right: 3rem;
-  margin-bottom: 12rem;
-  margin-top: 3rem;
 }
-
 .banner-services {
-  width: 50%;
-  margin-left: 2rem;
-  margin-right: 5rem;
-  flex: 1;
+  align-self: center;
 }
 
 .banner-image {
   z-index: 1000;
   position: relative;
-  width: 50%;
-  flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .substract {
-  width: 100%;
-  height: auto;
   max-width: 100%;
-  display: block;
   object-fit: cover;
   -webkit-mask-image: url("/banners/subtract-copy.png");
   mask-image: url("/banners/subtract-copy.png");
@@ -67,7 +46,7 @@
 
 .projects-text {
   color: rgba(252, 255, 249, 1);
-  font-size: 11px;
+
   opacity: 0.7;
 }
 
@@ -105,106 +84,14 @@
 .rotating-label-container {
   position: absolute;
   bottom: 20%;
-  right: 10%;
+  right: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Large Screens (1028px and above) */
-@media (min-width: 1028px) {
-  .banner-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-  }
-
+@media (max-width: 992px) {
   .banner-services {
-    padding-left: 2rem;
-  }
-}
-
-/* Extra Large Screens (1440px and above) */
-@media (min-width: 1440px) {
-  .projects-text {
-    font-size: 16px;
-  }
-}
-
-/* Tablets and Medium Screens (768px - 1028px) */
-@media (max-width: 1028px) and (min-width: 768px) {
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    padding: 5rem;
-    align-items: baseline;
-  }
-
-  .banner-services {
-    width: 100%;
-    margin-bottom: 4rem;
-  }
-
-  .banner-image {
-    width: 100%;
-  }
-  .projects-text {
-    font-size: 13px;
-  }
-
-  .line-group-1 {
-    right: 15%;
-    bottom: 0%;
-  }
-
-  .line-group-2 {
-    left: 8%;
-    bottom: 25%;
-  }
-
-  .line-group-multi {
-    left: 15%;
-    bottom: 0%;
-  }
-}
-
-/* Mobile Screens (Below 768px) */
-@media (max-width: 768px) {
-  .banner-content {
-    flex-direction: column;
-    padding: 1rem;
-    align-items: baseline;
-  }
-
-  .banner-services {
-    margin-right: 0;
-    margin-bottom: 4rem;
-    width: 100%;
-  }
-
-  .banner-image {
-    width: 100%;
-  }
-  .projects-text {
-    font-size: 9px;
-  }
-
-  .line-group-1 {
-    right: 15%;
-    bottom: -5%;
-    max-width: 7vh;
-  }
-
-  .line-group-2 {
-    left: 8%;
-    bottom: 25%;
-    max-width: 7vh;
-  }
-
-  .line-group-multi {
-    left: 18%;
-    bottom: -5%;
-    max-width: 20vh;
+    margin-bottom: 5rem;
   }
 }

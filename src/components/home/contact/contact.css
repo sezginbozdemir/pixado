@@ -1,3 +1,7 @@
+.contact {
+  margin-bottom: 10rem;
+}
+
 .who::before {
   content: "•";
   color: white;
@@ -8,19 +12,11 @@
   margin-left: 0.5rem;
 }
 
-.first-container {
-  width: 100%;
-  display: flex;
-  margin-bottom: 5rem;
-  justify-content: space-around;
-}
-
 .first-col-contact {
-  width: 40%;
+  margin-bottom: 2rem;
 }
 .second-col-contact {
   display: flex;
-  width: 50%;
   align-items: start;
   flex-direction: column;
   justify-content: space-between;
@@ -32,7 +28,7 @@
   gap: 2rem;
 }
 
-.links-container span {
+.links-container {
   align-items: center;
   display: flex;
 }

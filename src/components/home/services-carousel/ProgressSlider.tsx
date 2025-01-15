@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../../common/Button";
-import Text from "../../common/Text";
-import Title from "../../common/Title";
 import ProgressBase from "../../../assets/progress-base.png";
 import data from "./data.json";
 
@@ -72,15 +70,13 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
             alt="Progress Base"
           />
           <Button
-            className="progress-button"
-            text={<Text variant="button-body">Afla mai multe</Text>}
+            className="button-body progress-button"
+            text="Afla mai multe"
           />
           <div className="progress-element">
             {typedData[currentIndex].stats.map((stat, index) => (
               <div key={index} className="progress-container">
-                <span className="progress-label">
-                  <Title variant="h3">{stat.label}</Title>
-                </span>
+                <span className="title-3 progress-label">{stat.label}</span>
                 <div className="progress-row">
                   <div className="progress-bar" data-value={stat.value}>
                     <div
@@ -88,8 +84,8 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
                       style={{ width: `${stat.value}%` }}
                     />
                   </div>
-                  <span className="progress-percentage">
-                    <Title variant="h3">{stat.value}%</Title>
+                  <span className="title-3 progress-percentage">
+                    {stat.value}%
                   </span>
                 </div>
               </div>

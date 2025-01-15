@@ -1,27 +1,17 @@
 import React from "react";
 import "./rich-text.css";
-import Title from "../../common/Title";
+import { Container } from "react-bootstrap";
 
 const RichText = () => {
   return (
-    <div className="rich-text">
-      <div className="rows">
-        <div className="first-row">
-          <Title variant="h1">SERVICII CARE ITI PUN</Title>
-        </div>
-        <div className="second-row">
-          <div className="first-col">
-            <Title variant="h1">BRANDUL</Title>
-          </div>
-          <div className="second-col">
-            <Title variant="h1">ÎN LUMINĂ</Title>{" "}
-          </div>
-        </div>
-        <div className="third-row">
-          <Title variant="h1">ÎN LUMINĂ</Title>
-        </div>
+    <Container className="rich-text">
+      <div className="title-1 first-row">SERVICII CARE ITI PUN</div>
+      <div className="second-row">
+        <div className="title-1 first-col">BRANDUL</div>
+        <div className="title-1 second-col">ÎN LUMINĂ</div>
       </div>
-    </div>
+      <div className="title-1 third-row">ÎN LUMINĂ</div>
+    </Container>
   );
 };
 

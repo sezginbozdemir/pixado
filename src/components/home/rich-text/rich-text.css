@@ -1,5 +1,8 @@
-.rows {
-  margin: 1rem;
+.rich-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 .second-col {
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.8),
@@ -18,15 +21,9 @@
   margin-right: 10rem;
   color: rgba(255, 255, 255, 1);
   justify-content: end;
-  display: none;
+  display: none !important;
 }
 
-.rich-text {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 @media (max-width: 1028px) {
   .second-col {
     display: none;

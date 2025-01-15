@@ -76,17 +76,7 @@
 }
 
 /* Large Screens (1028px and above) */
-@media (min-width: 1028px) {
-  .rotating-label {
-    max-width: 7.5vw;
-  }
-  .vector {
-    max-width: 2vw;
-  }
-}
-
-/* Extra Large Screens (1440px and above) */
-@media (min-width: 1440px) {
+@media (min-width: 992px) {
   .rotating-label {
     max-width: 9vw;
   }
@@ -95,8 +85,18 @@
   }
 }
 
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1540px) {
+  .rotating-label {
+    max-width: 7vw;
+  }
+  .vector {
+    max-width: 2vw;
+  }
+}
+
 /* Tablets and Medium Screens  */
-@media (max-width: 1028px) {
+@media (max-width: 992px) {
   .rotating-label {
     max-width: 15vw;
   }

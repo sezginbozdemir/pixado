@@ -1,7 +1,6 @@
 import React from "react";
 import "./projects-list.css";
-import Title from "../../common/Title";
-import Text from "../../common/Text";
+import { Row, Col, Container } from "react-bootstrap";
 
 interface ProjectCardProps {
   title: string;
@@ -18,8 +17,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   date,
 }) => {
   return (
-    <div className="project">
+    <Container className="project">
       <div className="project-card">
+        <Row className="details-regular work-done">
+          <Col className="work-done-options">Design</Col>
+          <Col className="work-done-options">Branding</Col>
+          <Col className="work-done-options">SEO</Col>
+        </Row>
         <div className="project-image">
           <img
             src={imgUrl || "/project-images/project-card.png"}
@@ -30,18 +34,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="project-details">
         <div className="title-date-container">
-          <span className="project-date">
-            <Text variant="body">{date}</Text>
-          </span>
-          <div className="project-title">
-            <Text variant="body">{title}</Text>
-          </div>
+          <span className="body project-date">{date}</span>
+          <div className="body project-title">{title}</div>
         </div>
-        <p className="project-description">
-          <Title variant="h3">{details}</Title>
-        </p>
+        <p className="project-description title-3">{details}</p>
       </div>
-    </div>
+    </Container>
   );
 };
 

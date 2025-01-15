@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./services-carousel.css";
 import Title from "../../common/Title";
-import Text from "../../common/Text";
 import GreenLine from "../../../assets/green-line.png";
 import lineGroup1 from "../../../assets/line-group-1.png";
 import lineGroup2 from "../../../assets/line-group-2.png";
@@ -29,7 +28,7 @@ const ServicesCarousel = () => {
       <div className="services-carousel">
         <div className="info">
           <div className="info-details">
-            <div className="service-options">
+            <div className="service-options title-2">
               {data.map((data: ServiceData, index: number) => (
                 <div
                   key={index}
@@ -42,32 +41,28 @@ const ServicesCarousel = () => {
                     <img
                       width={35}
                       height={5}
-                      className="green-line"
+                      className="title-2 green-line"
                       src={GreenLine}
                     />
                   )}
-                  <Title variant="h2">{data.title}</Title>
+                  {data.title}
                 </div>
               ))}
             </div>
-            <div className="service-text">
+            <div className="body service-text">
               <p>
-                <Text variant="body">
-                  Primul impact contează – iar noi știm cum să-l transformăm
-                  într-o conexiune. Creăm website-uri care nu doar arată bine,
-                  ci și funcționează impecabil, oferind utilizatorilor o
-                  experiență fluidă și memorabilă. Fie că ai nevoie de un design
-                  modern și minimalist sau de ceva plin de personalitate, noi
-                  aducem viziunea ta la viață.
-                </Text>
+                Primul impact contează – iar noi știm cum să-l transformăm
+                într-o conexiune. Creăm website-uri care nu doar arată bine, ci
+                și funcționează impecabil, oferind utilizatorilor o experiență
+                fluidă și memorabilă. Fie că ai nevoie de un design modern și
+                minimalist sau de ceva plin de personalitate, noi aducem
+                viziunea ta la viață.
               </p>
               <p>
-                <Text variant="body">
-                  La intersecția dintre creativitate și funcționalitate,
-                  proiectele noastre sunt optimizate pentru toate dispozitivele
-                  și construite să atragă atenția.Un site care nu doar arată
-                  bine, ci transmite esența brandului tău cu fiecare detaliu.{" "}
-                </Text>
+                La intersecția dintre creativitate și funcționalitate,
+                proiectele noastre sunt optimizate pentru toate dispozitivele și
+                construite să atragă atenția.Un site care nu doar arată bine, ci
+                transmite esența brandului tău cu fiecare detaliu.{" "}
               </p>
             </div>
           </div>

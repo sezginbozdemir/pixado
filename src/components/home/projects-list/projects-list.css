@@ -1,14 +1,32 @@
+/* PRODUCT CARD TAG */
+
+.work-done {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  color: #081001;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.foo {
+}
+.work-done-options {
+  border: 1px solid #081001;
+  border-radius: 20px;
+  padding: 0.5% 5%;
+  background-color: #6bfbce;
+}
+
 /* PRODUCT CARD */
 
 .project {
   box-sizing: border-box;
-  width: 100%;
-  height: 60%;
+  width: 90% !important;
 }
 .project-card {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .project-image {
@@ -52,20 +70,15 @@
 /* PRODUCT LIST */
 
 .projects-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0rem 12rem;
-  padding: 2rem;
-  justify-content: center;
   position: relative;
   margin-bottom: 10rem;
+  overflow: hidden;
 }
 
 .projects-list-title {
   position: absolute;
-  top: -2rem;
-  left: calc(50% + 6.5rem);
-  width: calc(50% - 13rem);
+  top: 0;
+  left: 55%;
 }
 .first-row-title::before {
   content: "•";
@@ -76,6 +89,6 @@
 .first-row-title {
   margin-left: 0.5rem;
 }
-.project:nth-child(odd) {
-  margin-top: 10rem;
+.projects-list-col:nth-child(even) {
+  margin-top: 12rem;
 }

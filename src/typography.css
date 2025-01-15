@@ -2,28 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
 
 /* Typography */
-.h1 {
+.title-1 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 77px;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 130%;
 }
 
-.h2 {
+.title-2 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 40px;
   font-weight: medium;
   line-height: 120%;
 }
 
-.h3 {
+.title-3 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
   font-weight: medium;
   line-height: 120%;
 }
 
-.h4 {
+.title-4 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -79,14 +79,14 @@
   line-height: 120%;
 }
 
-@media (min-width: 1440px) {
-  .h1 {
+@media (min-width: 1500px) {
+  .title-1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 110px;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 130%;
   }
-  .h3 {
+  .title-3 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 29px;
     font-weight: medium;
@@ -98,28 +98,28 @@
 }
 /* Tablet Styles */
 @media (max-width: 1028px) {
-  .h1 {
+  .title-1 {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 85px;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 130%;
   }
 
-  .h2 {
+  .title-2 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 35px;
     font-weight: medium;
     line-height: 120%;
   }
 
-  .h3 {
+  .title-3 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 24px;
     font-weight: medium;
     line-height: 120%;
   }
 
-  .h4 {
+  .title-4 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -175,28 +175,28 @@
 }
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .h1 {
+  .title-1 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 65px;
     font-weight: bold;
     line-height: 130%;
   }
 
-  .h2 {
+  .title-2 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 35px;
     font-weight: medium;
     line-height: 120%;
   }
 
-  .h3 {
+  .title-3 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 17px;
     font-weight: medium;
     line-height: 120%;
   }
 
-  .h4 {
+  .title-4 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
     font-weight: bold;
