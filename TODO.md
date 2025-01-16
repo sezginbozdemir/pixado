@@ -6,11 +6,15 @@
 
 - [ ] **Make Navbar Functional**
 
+- [x] **Limit ProjectsLists Component to Display Max 4 Items in Homepage**
+
 - [ ] **Remake Service Carousel with Bootstrap**
 
 - [ ] **Customize Wrapper Container for Extra Large Screens**
 
 - [ ] **Remake Typography**
+
+- [ ] **Replace Scroll Animation Background Image with a Video**
 
 - [ ] **Move Pixado Text up while finishing Scroll**
 

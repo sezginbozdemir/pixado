@@ -3,7 +3,7 @@ import "./testimonials.css";
 import { Container, Row, Col } from "react-bootstrap";
 import data from "./data.json";
 import TestimonialCard from "./TestimonialCard";
-import NextButton from "../../common/NextButton";
+import NextButton from "../../common/buttons/NextButton";
 interface TestimonialData {
   name: string;
   occupation: string;

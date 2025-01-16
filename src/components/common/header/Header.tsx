@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../../assets/logo.png";
-import burger from "../../assets/burger.png";
-import Button from "./Button";
-import "./common.css";
+import logo from "../../../assets/logo.png";
+import burger from "../../../assets/burger.png";
+import Button from "../buttons/Button";
+import "./header.css";
 const Header = () => {
   return (
     <>

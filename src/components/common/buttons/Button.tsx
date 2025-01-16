@@ -1,5 +1,5 @@
 import React from "react";
-import "./common.css";
+import "./buttons.css";
 
 type ButtonProps = {
   text: string | React.ReactNode;

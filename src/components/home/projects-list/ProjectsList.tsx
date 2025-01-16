@@ -19,7 +19,7 @@ const ProjectsList = () => {
           ULTIMELE PROIECTE <br /> ALE NOASTRE
         </div>
         <Row>
-          {data.map((project: ProjectData, index: number) => (
+          {data.slice(0, 4).map((project: ProjectData, index: number) => (
             <Col className="projects-list-col" key={index} xs={12} md={6}>
               <ProjectCard
                 title={project.title}

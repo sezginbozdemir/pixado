@@ -1,9 +1,9 @@
 import React from "react";
-import "./common.css";
+import "./footer.css";
 import { Col, Container, Row } from "react-bootstrap";
-import greenDot from "../../assets/green-dot.png";
-import logo from "../../assets/logo.png";
-import NextButton from "./NextButton";
+import greenDot from "../../../assets/green-dot.png";
+import logo from "../../../assets/logo.png";
+import NextButton from "../buttons/NextButton";
 const Footer: React.FC = () => {
   return (
     <Container className="footer-container">

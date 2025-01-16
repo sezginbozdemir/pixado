@@ -8,7 +8,6 @@ const ScrollMask = () => {
     target: ref,
   });
 
-  // Default transformations
   const scale = useTransform(scrollYProgress, [0, 1], [90, 5]);
   const opacity = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]);
 

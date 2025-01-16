@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "../../common/Button";
+import Button from "../../common/buttons/Button";
 import ProgressBase from "../../../assets/progress-base.png";
 import data from "./data.json";
 

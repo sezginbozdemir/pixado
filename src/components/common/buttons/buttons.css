@@ -1,0 +1,17 @@
+.button {
+  background-color: transparent;
+  border: 2px solid #6bfbce;
+  border-radius: 2rem;
+  color: #fcfff9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.1rem 2rem;
+}
+
+.next-button {
+  background-color: rgba(107, 251, 206, 1);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 8px;
+}
