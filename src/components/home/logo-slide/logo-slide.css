@@ -1,0 +1,35 @@
+.carousel-container {
+  margin-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.carousel {
+  animation: 10s slide infinite linear;
+  display: inline-block;
+}
+
+.carousel-container:hover .carousel {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  text-align: center;
+  display: inline-block;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

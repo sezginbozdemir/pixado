@@ -18,7 +18,7 @@ const ProjectsList = () => {
           <div className="body first-row-title">Portofoliu</div>
           ULTIMELE PROIECTE <br /> ALE NOASTRE
         </div>
-        <Row className="foo">
+        <Row>
           {data.map((project: ProjectData, index: number) => (
             <Col className="projects-list-col" key={index} xs={12} md={6}>
               <ProjectCard
