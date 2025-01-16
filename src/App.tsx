@@ -3,8 +3,6 @@ import AppRouter from "./router/AppRouter";
 import "./App.css";
 import "./typography.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
-
-import { Container } from "react-bootstrap";
 import Header from "./components/common/Header";
 function App() {
   return (

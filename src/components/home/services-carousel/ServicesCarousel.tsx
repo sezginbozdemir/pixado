@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./services-carousel.css";
-import Title from "../../common/Title";
 import GreenLine from "../../../assets/green-line.png";
 import lineGroup1 from "../../../assets/line-group-1.png";
 import lineGroup2 from "../../../assets/line-group-2.png";
