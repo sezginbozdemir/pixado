@@ -9,6 +9,7 @@ import LogoSlide from "../components/home/logo-slide/LogoSlide";
 import MarqueeText from "../components/common/MarqueeText";
 import { Col } from "react-bootstrap";
 import Testimonials from "../components/home/testimonials/Testimonials";
+import Footer from "../components/common/Footer";
 const Home = () => {
   return (
     <Col className="home">
@@ -21,6 +22,7 @@ const Home = () => {
       <LogoSlide />
       <Testimonials />
       <MarqueeText />
+      <Footer />
     </Col>
   );
 };

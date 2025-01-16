@@ -1,9 +1,4 @@
-.testimonials-header::before {
-  content: "•";
-  color: white;
-  margin-right: 12px;
-  font-size: 1rem;
-}
+/* TestimonalCard */
 
 .testimonial-card {
   background-image: url("/testimonials/testimonials-card.png");
@@ -29,4 +24,37 @@
   top: 0;
   right: 5%;
   width: 16%;
+}
+
+/* Testimonials */
+
+.testimonials-container {
+  margin-bottom: 8rem;
+}
+
+.testimonials-header-row {
+  margin-bottom: 5rem;
+}
+
+.testimonials-header::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+.testimonials-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-cards-container {
+  position: relative;
+  height: 18rem;
+  overflow: visible; /* Allows cards to overlap */
+}
+
+.testimonial-card-wrapper {
+  position: absolute;
+  transition: transform 0.5s ease;
 }

@@ -132,6 +132,53 @@
   max-width: 11rem;
 }
 
+/* NextButton */
+
+.next-button {
+  background-color: rgba(107, 251, 206, 1);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Footer */
+
+.footer-container {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-image: url("/footer/footer-base.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+}
+
+.footer-row {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.footer-base-img {
+  width: 100%;
+  visibility: hidden;
+}
+.footer-base {
+  position: relative;
+}
+
+.green-dots {
+  position: absolute;
+  top: 2%;
+  max-width: 6%;
+}
+
+.green-dot {
+  margin-bottom: 1rem;
+}
 /* Large Screens (1028px and above) */
 @media (min-width: 992px) {
   .rotating-label {
