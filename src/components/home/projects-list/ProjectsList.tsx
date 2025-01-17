@@ -20,7 +20,7 @@ const ProjectsList = () => {
         </div>
         <Row>
           {data.slice(0, 4).map((project: ProjectData, index: number) => (
-            <Col className="projects-list-col" key={index} xs={12} md={6}>
+            <Col className="projects-list-col" key={index} xs={12} lg={6}>
               <ProjectCard
                 title={project.title}
                 imgUrl={project.imgUrl}

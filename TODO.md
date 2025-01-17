@@ -8,11 +8,11 @@
 
 - [x] **Limit ProjectsLists Component to Display Max 4 Items in Homepage**
 
-- [ ] **Remake Service Carousel with Bootstrap**
+- [x] **Remake Service Carousel with Bootstrap**
 
-- [ ] **Customize Wrapper Container for Extra Large Screens**
+- [?] **Customize Wrapper Container for Extra Large Screens**
 
-- [ ] **Remake Typography**
+- [?] **Remake Typography**
 
 - [ ] **Replace Scroll Animation Background Image with a Video**
 
@@ -22,8 +22,10 @@
 
 - [ ] **Adjust Testimonial Cards for Small Screens**
 
-- [ ] **Create a New Footer for Mobile and Tablet Screens**
+- [ ] **Create a New Footers for Mobile and Tablet Screens**
 
 - [ ] **Place/Replace Decorative Lines on the Homepage**
 
 - [ ] **Make Footer Functional**
+
+- [ ] **ProjectsLists Mobile**

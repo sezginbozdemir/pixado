@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../../common/buttons/Button";
-import ProgressBase from "../../../assets/progress-base.png";
 import data from "./data.json";
-
+import { Col, Row } from "react-bootstrap";
 interface ServiceData {
   title: string;
   imgUrl: string;
@@ -49,51 +48,48 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
   };
 
   return (
-    <>
-      <AnimatePresence custom={direction}>
-        <motion.div
-          key={currentIndex}
-          custom={direction}
-          variants={slideVariants}
-          initial="enter"
-          animate="center"
-          exit="exit"
-          transition={{
-            y: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.5 },
-          }}
-          className="progress-slider"
-        >
-          <img
-            className="progress-base"
-            src={ProgressBase}
-            alt="Progress Base"
-          />
-          <Button
-            className="button-body progress-button"
-            text="Afla mai multe"
-          />
-          <div className="progress-element">
-            {typedData[currentIndex].stats.map((stat, index) => (
-              <div key={index} className="progress-container">
-                <span className="title-3 progress-label">{stat.label}</span>
-                <div className="progress-row">
-                  <div className="progress-bar" data-value={stat.value}>
-                    <div
-                      className="progress-fill"
-                      style={{ width: `${stat.value}%` }}
-                    />
-                  </div>
-                  <span className="title-3 progress-percentage">
-                    {stat.value}%
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </AnimatePresence>
-    </>
+    <AnimatePresence custom={direction}>
+      <img className="progress-base" src="/service-images/progress-base.png" />
+      <motion.div
+        key={currentIndex}
+        custom={direction}
+        variants={slideVariants}
+        initial="enter"
+        animate="center"
+        exit="exit"
+        transition={{
+          y: { type: "spring", stiffness: 300, damping: 30 },
+          opacity: { duration: 0.5 },
+        }}
+        className="progress-slider"
+      >
+        <Row className="progress-element">
+          <Row className="progress-button-row">
+            <Button
+              className="button-body progress-button"
+              text="Afla mai multe"
+            />
+          </Row>
+
+          {typedData[currentIndex].stats.map((stat, index) => (
+            <div key={index} className="progress-container">
+              <Row className="title-3 progress-label">{stat.label}</Row>
+              <Row className="progress-row">
+                <Col xs={10} className="progress-bar" data-value={stat.value}>
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${stat.value}%` }}
+                  />
+                </Col>
+                <Col xs={2} className="title-3 progress-percentage">
+                  {stat.value}%
+                </Col>
+              </Row>
+            </div>
+          ))}
+        </Row>
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

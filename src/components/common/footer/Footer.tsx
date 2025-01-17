@@ -5,6 +5,12 @@ import greenDot from "../../../assets/green-dot.png";
 import logo from "../../../assets/logo.png";
 import NextButton from "../buttons/NextButton";
 const Footer: React.FC = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Adds a smooth scrolling effect
+    });
+  };
   return (
     <Container className="footer-container">
       <div className="footer-base">
@@ -20,7 +26,10 @@ const Footer: React.FC = () => {
             <img className="green-dot" src={greenDot} />
           </Row>
         </Col>
-        <NextButton className="footer-next"></NextButton>
+        <NextButton
+          onClick={handleScrollToTop}
+          className="footer-next"
+        ></NextButton>
         <div className="footer">
           <div className="footer-row body">
             <Row>

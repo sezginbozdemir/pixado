@@ -7,7 +7,7 @@ import lineGroupMulti from "../../../assets/line-group-multi.png";
 import ProgressSlider from "./ProgressSlider";
 import ImageSlider from "./ImageSlider";
 import data from "./data.json";
-
+import { Container, Col, Row } from "react-bootstrap";
 interface ServiceData {
   title: string;
   imgUrl: string;
@@ -23,64 +23,73 @@ const ServicesCarousel = () => {
     setCurrentIndex(index);
   };
   return (
-    <div className="services-container">
-      <div className="services-carousel">
-        <div className="info">
-          <div className="info-details">
-            <div className="service-options title-2">
-              {data.map((data: ServiceData, index: number) => (
-                <div
-                  key={index}
-                  className={`service-option ${
-                    currentIndex === index ? "active" : ""
-                  }`}
-                  onClick={() => handleClick(index)}
-                >
-                  {currentIndex === index && (
-                    <img
-                      width={35}
-                      height={5}
-                      className="title-2 green-line"
-                      src={GreenLine}
-                    />
-                  )}
-                  {data.title}
-                </div>
-              ))}
-            </div>
-            <div className="body service-text">
-              <p>
-                Primul impact contează – iar noi știm cum să-l transformăm
-                într-o conexiune. Creăm website-uri care nu doar arată bine, ci
-                și funcționează impecabil, oferind utilizatorilor o experiență
-                fluidă și memorabilă. Fie că ai nevoie de un design modern și
-                minimalist sau de ceva plin de personalitate, noi aducem
-                viziunea ta la viață.
-              </p>
-              <p>
-                La intersecția dintre creativitate și funcționalitate,
-                proiectele noastre sunt optimizate pentru toate dispozitivele și
-                construite să atragă atenția.Un site care nu doar arată bine, ci
-                transmite esența brandului tău cu fiecare detaliu.{" "}
-              </p>
-            </div>
-          </div>
+    <Container>
+      <div className="services-container">
+        <Row className="services-carousel">
+          <Col xs={12} md={6} lg={8} className="info">
+            <Row className="info-details">
+              <Col xs={12} md={12} lg={6} className="service-options title-2">
+                {data.map((data: ServiceData, index: number) => (
+                  <div
+                    key={index}
+                    className={`service-option ${
+                      currentIndex === index ? "active" : ""
+                    }`}
+                    onClick={() => handleClick(index)}
+                  >
+                    {currentIndex === index && (
+                      <img
+                        width={35}
+                        height={5}
+                        className="title-2 green-line"
+                        src={GreenLine}
+                      />
+                    )}
+                    {data.title}
+                  </div>
+                ))}
+              </Col>
+              <Col xs={12} md={12} lg={6} className="body service-text">
+                <p>
+                  Primul impact contează – iar noi știm cum să-l transformăm
+                  într-o conexiune. Creăm website-uri care nu doar arată bine,
+                  ci și funcționează impecabil, oferind utilizatorilor o
+                  experiență fluidă și memorabilă. Fie că ai nevoie de un design
+                  modern și minimalist sau de ceva plin de personalitate, noi
+                  aducem viziunea ta la viață.
+                </p>
+                <p>
+                  La intersecția dintre creativitate și funcționalitate,
+                  proiectele noastre sunt optimizate pentru toate dispozitivele
+                  și construite să atragă atenția.Un site care nu doar arată
+                  bine, ci transmite esența brandului tău cu fiecare detaliu.{" "}
+                </p>
+              </Col>
+            </Row>
 
-          <div className="info-progress">
-            <ProgressSlider currentIndex={currentIndex} direction={direction} />
-          </div>
-        </div>
-        <div className="visual">
-          <ImageSlider currentIndex={currentIndex} direction={direction} />
-        </div>
-        <img className="line-service-1" src={lineGroup1} />
-        <img className="line-service-2" src={lineGroup2} />
-        <img className="line-service-multi" src={lineGroupMulti} />
+            <Row className="info-progress">
+              <ProgressSlider
+                currentIndex={currentIndex}
+                direction={direction}
+              />
+            </Row>
+          </Col>
+          <Col sm={12} md={6} lg={4} className="visual">
+            <ImageSlider currentIndex={currentIndex} direction={direction} />
+            <img
+              className="visual-base"
+              src="/service-images/service-image-2.png"
+            />
+          </Col>
+          <img className="line-service-1" src={lineGroup1} />
+          <img className="line-service-2" src={lineGroup2} />
+          <img className="line-service-multi" src={lineGroupMulti} />
+        </Row>
+        <Row className="info-progress-mobil">
+          <ProgressSlider currentIndex={currentIndex} direction={direction} />
+        </Row>
       </div>
-      <div className="info-progress-mobil">
-        <ProgressSlider currentIndex={currentIndex} direction={direction} />
-      </div>
-    </div>
+    </Container>
   );
 };
 

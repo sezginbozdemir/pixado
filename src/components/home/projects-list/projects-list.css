@@ -88,6 +88,15 @@
 .first-row-title {
   margin-left: 0.5rem;
 }
-.projects-list-col:nth-child(even) {
-  margin-top: 12rem;
+
+@media (min-width: 992px) {
+  .projects-list-col:nth-child(even) {
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-list-title {
+    display: none;
+  }
 }

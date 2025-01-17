@@ -1,41 +1,10 @@
-.service-conatiner {
+.services-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-.services-carousel {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: relative;
+  gap: 5rem;
   margin-bottom: 10rem;
 }
-.info {
-  margin-left: 5rem;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 6rem;
-}
 
-.visual {
-  width: 40%;
-  position: relative;
-  margin-bottom: 10rem;
-  justify-content: center;
-}
-
-.info-details {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 3rem;
-}
-.service-options {
-  margin-top: 1rem;
-  width: 50%;
-}
 .service-option {
   margin-bottom: 1.4rem;
   display: flex;
@@ -52,14 +21,16 @@
   margin-right: 1rem;
 }
 
-.service-text {
-  width: 50%;
-  overflow: hidden;
+.visual {
+  position: relative;
 }
+.visual-base {
+  width: 100%;
+  display: none;
+}
+
 .visual-img {
-  width: 80%;
-  height: 100%;
-  margin-left: 2rem;
+  width: 100%;
 }
 .visual-label-container {
   position: absolute;
@@ -67,76 +38,57 @@
   left: 15%;
   z-index: 1000;
 }
+.image-slider {
+  position: absolute;
+}
+
 .info-progress {
   position: relative;
-  z-index: 1000;
-  width: 100%;
-  min-height: 55vh;
 }
 .info-progress-mobil {
   position: relative;
-  display: none;
-  width: 100%;
-  align-self: center;
-  min-height: 65vh;
+  display: none !important;
 }
 
 .progress-slider {
-  height: 100%;
-  width: 95%;
   position: absolute;
-}
-.image-slider {
+  top: 0;
+  background-image: url("/service-images/progress-base.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 100%;
-
-  position: absolute;
+  padding: 0 !important;
 }
 
-.image-slider-container {
-  height: 100%;
-  position: relative;
-}
 .progress-base {
-  width: 90%;
-  height: 90%;
-  margin-left: 2rem;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
 }
 
 .progress-element {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 0%;
-  left: 0%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  margin-left: 2rem;
+  width: 100%;
+  height: 100%;
   z-index: 1000;
 }
 
 .progress-container {
-  width: 100%;
-  height: 29%;
+  margin-left: 1rem;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  margin-left: 3rem;
 }
+
 .progress-row {
   width: 100%;
-  height: 28%;
-  display: flex;
-  margin-top: 1rem;
+  height: 50%;
 }
 .progress-bar {
   position: relative;
-  width: 79%;
-  height: 100%;
   background: #eee;
   border-radius: 25px;
+  height: 60%;
   overflow: hidden;
 }
 
@@ -156,27 +108,36 @@
 }
 
 .progress-label {
-  margin-left: 0.5rem;
   font-weight: bold;
-  white-space: nowrap;
 }
 
 .progress-percentage {
+  height: 60%;
   font-weight: bold;
-  margin-left: 1rem;
+}
+.progress-button {
+  width: 36% !important;
+  margin-bottom: 10px !important;
+  margin-right: 10px;
 }
 
+.progress-button-row {
+  display: flex !important;
+  justify-content: end;
+}
 .line-service-1 {
   left: 13%;
   bottom: -10%;
   max-width: 5%;
   position: absolute;
+  display: none;
 }
 .line-service-2 {
   left: 3%;
   bottom: 16%;
   max-width: 8%;
   position: absolute;
+  display: none;
 }
 
 .line-service-multi {
@@ -184,79 +145,23 @@
   bottom: 10%;
   max-width: 17%;
   position: absolute;
+  display: none;
 }
 
-.progress-button {
-  position: absolute;
-  top: 1%;
-  right: 8%;
-  width: 28%;
-  height: 13%;
-}
 @media (min-width: 1440px) {
-  .info-progress {
-    width: 100%;
-  }
 }
-@media (max-width: 1028px) {
-  .services-carousel {
-    margin-bottom: 0rem;
-  }
-  .info-details {
-    flex-direction: column;
-  }
+@media (max-width: 992px) {
   .info-progress {
-    display: none;
+    display: none !important;
   }
   .info-progress-mobil {
-    display: flex;
-    width: 100%;
-    min-height: 50vh;
-    justify-content: center;
-  }
-  .info {
-    width: 50%;
-  }
-  .visual {
-    width: 50%;
-    display: flex;
-  }
-
-  .service-text {
-    width: 100%;
-  }
-  .service-options {
-    width: 100%;
-  }
-  .line-service-1 {
-    display: none;
-  }
-  .line-service-2 {
-    display: none;
-  }
-  .progress-slider {
-    background-color: rgb(9, 17, 0);
+    display: block !important;
   }
 }
 
 @media (max-width: 768px) {
-  .info {
-    width: 100%;
-    margin: 0;
-  }
-  .info-details {
-    padding: 1rem;
-  }
-  .visual {
-    align-self: center;
-    width: 80%;
-    height: 80vh;
-    margin-bottom: 4rem;
-  }
-  .services-carousel {
-    flex-direction: column;
-  }
-  .info-progress-mobil {
-    min-height: 37vh;
+  .visual-base {
+    display: block;
+    visibility: hidden;
   }
 }
