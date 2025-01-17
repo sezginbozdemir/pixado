@@ -18,6 +18,21 @@ const ProjectsList = () => {
           <div className="body first-row-title">Portofoliu</div>
           ULTIMELE PROIECTE <br /> ALE NOASTRE
         </div>
+        <div className="projects-list-title-mobil">
+          <Row>
+            <Col>
+              <div className="first-row-title body">Portofoliu</div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="title-2">
+                ULTIMELE PROIECTE <br /> ALE NOASTRE
+              </div>
+            </Col>
+          </Row>
+        </div>
+
         <Row>
           {data.slice(0, 4).map((project: ProjectData, index: number) => (
             <Col className="projects-list-col" key={index} xs={12} lg={6}>
