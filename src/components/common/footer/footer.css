@@ -136,5 +136,14 @@
   }
   .logo-row {
     margin-top: 0rem !important;
+    max-width: 85%;
+  }
+
+  .footer-next {
+    bottom: 80%;
+  }
+  .green-dots {
+    top: 5%;
+    max-width: 15%;
   }
 }
