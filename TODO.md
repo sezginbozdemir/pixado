@@ -20,7 +20,7 @@
 
 - [ ] **Implement Project Card Tags Logic and Hover Animations**
 
-- [ ] **Adjust Testimonial Cards for Small Screens**
+- [x] **Adjust Testimonial Cards for Small Screens**
 
 - [ ] **Create a New Footers for Mobile and Tablet Screens**
 
@@ -28,4 +28,4 @@
 
 - [ ] **Make Footer Functional**
 
-- [ ] **ProjectsLists Mobile**
+- [x] **ProjectsLists Mobile**

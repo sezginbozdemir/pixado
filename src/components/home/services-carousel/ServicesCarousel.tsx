@@ -10,6 +10,7 @@ import data from "./data.json";
 import { Container, Col, Row } from "react-bootstrap";
 interface ServiceData {
   title: string;
+  description: string[];
   imgUrl: string;
   stats: { label: string; value: number }[];
 }
@@ -22,6 +23,8 @@ const ServicesCarousel = () => {
     setDirection(index > currentIndex ? 1 : -1);
     setCurrentIndex(index);
   };
+
+  const typedData = data as ServiceData[];
   return (
     <Container>
       <div className="services-container">
@@ -50,20 +53,9 @@ const ServicesCarousel = () => {
                 ))}
               </Col>
               <Col xs={12} md={12} lg={6} className="body service-text">
-                <p>
-                  Primul impact contează – iar noi știm cum să-l transformăm
-                  într-o conexiune. Creăm website-uri care nu doar arată bine,
-                  ci și funcționează impecabil, oferind utilizatorilor o
-                  experiență fluidă și memorabilă. Fie că ai nevoie de un design
-                  modern și minimalist sau de ceva plin de personalitate, noi
-                  aducem viziunea ta la viață.
-                </p>
-                <p>
-                  La intersecția dintre creativitate și funcționalitate,
-                  proiectele noastre sunt optimizate pentru toate dispozitivele
-                  și construite să atragă atenția.Un site care nu doar arată
-                  bine, ci transmite esența brandului tău cu fiecare detaliu.{" "}
-                </p>
+                {typedData[currentIndex].description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
               </Col>
             </Row>
 

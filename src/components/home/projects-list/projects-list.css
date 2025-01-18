@@ -104,7 +104,26 @@
   .projects-list-title {
     display: none;
   }
+
+  .project-card {
+    width: 70%;
+  }
+
+  .projects-list-col:nth-child(even) {
+    margin-left: 25% !important;
+  }
+
   .projects-list-title-mobil {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .projects-list-col:nth-child(even) {
+    margin-left: 0rem !important;
   }
 }

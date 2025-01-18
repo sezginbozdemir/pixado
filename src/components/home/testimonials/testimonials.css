@@ -58,3 +58,35 @@
   position: absolute;
   transition: transform 0.5s ease;
 }
+
+.testimonial-slider-mobile {
+  display: none !important;
+}
+
+.dots-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: end;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(37, 38, 35, 1);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: rgba(107, 251, 206, 1);
+}
+
+@media (max-width: 768px) {
+  .testimonial-slider-row {
+    display: none !important;
+  }
+  .testimonial-slider-mobile {
+    display: block !important;
+  }
+}

@@ -102,7 +102,7 @@
 /* Tablets and Medium Screens  */
 @media (max-width: 992px) {
   .rotating-label {
-    max-width: 15vw;
+    max-width: 9vw;
   }
   .vector {
     max-width: 3vw;
@@ -112,9 +112,9 @@
 /* Mobile Screens (Below 768px) */
 @media (max-width: 768px) {
   .rotating-label {
-    max-width: 20vw;
+    max-width: 16vw;
   }
   .vector {
-    max-width: 5vw;
+    max-width: 4vw;
   }
 }
