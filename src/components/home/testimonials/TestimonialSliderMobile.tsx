@@ -19,8 +19,7 @@ const TestimonialSliderMobile: React.FC<TestimonialSliderProps> = ({
   currentIndex,
   data,
 }) => {
-  const cardWidth = 450;
-  const overlap = cardWidth * 0.8;
+  const cardWidth = 400;
 
   return (
     <Row className="testimonial-slider-mobile">

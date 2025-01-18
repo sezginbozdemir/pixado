@@ -8,16 +8,16 @@ interface FooterProps {
   handleScrollToTop: () => void;
 }
 
-const FooterTablet: React.FC<FooterProps> = ({
+const FooterDesktop: React.FC<FooterProps> = ({
   logo,
   greenDot,
   NextButton,
   handleScrollToTop,
 }) => {
   return (
-    <Container className="footer-container-tablet">
+    <Container className="footer-container">
       <div className="footer-base">
-        <img className="footer-base-img" src="/footer/footer-base-tablet.png" />
+        <img className="footer-base-img" src="/footer/footer-base.png" />
         <Col className="green-dots">
           <Row>
             <img className="green-dot" src={greenDot} />
@@ -100,4 +100,4 @@ const FooterTablet: React.FC<FooterProps> = ({
   );
 };
 
-export default FooterTablet;
+export default FooterDesktop;

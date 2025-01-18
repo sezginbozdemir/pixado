@@ -6,10 +6,8 @@ import ServicesCarousel from "../components/home/services-carousel/ServicesCarou
 import ProjectsList from "../components/home/projects-list/ProjectsList";
 import Contact from "../components/home/contact/Contact";
 import LogoSlide from "../components/home/logo-slide/LogoSlide";
-import MarqueeText from "../components/common/MarqueeText";
 import { Col } from "react-bootstrap";
 import Testimonials from "../components/home/testimonials/Testimonials";
-import Footer from "../components/common/footer/Footer";
 const Home = () => {
   return (
     <Col className="home">
@@ -21,8 +19,6 @@ const Home = () => {
       <Contact />
       <LogoSlide />
       <Testimonials />
-      <MarqueeText />
-      <Footer />
     </Col>
   );
 };

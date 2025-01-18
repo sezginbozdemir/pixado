@@ -5,6 +5,7 @@ import lineGroup1 from "../../../assets/line-group-1.png";
 import lineGroup2 from "../../../assets/line-group-2.png";
 import lineGroupMulti from "../../../assets/line-group-multi.png";
 import ProgressSlider from "./ProgressSlider";
+import ProgressSliderMobile from "./ProgressSliderMobile";
 import ImageSlider from "./ImageSlider";
 import data from "./data.json";
 import { Container, Col, Row } from "react-bootstrap";
@@ -60,25 +61,30 @@ const ServicesCarousel = () => {
             </Row>
 
             <Row className="info-progress">
+              <img className="line-service-2" src={lineGroup2} />
+
               <ProgressSlider
                 currentIndex={currentIndex}
                 direction={direction}
+                data={data}
               />
             </Row>
           </Col>
           <Col sm={12} md={6} lg={4} className="visual">
+            <img className="line-service-multi" src={lineGroupMulti} />
             <ImageSlider currentIndex={currentIndex} direction={direction} />
             <img
               className="visual-base"
               src="/service-images/service-image-2.png"
             />
           </Col>
-          <img className="line-service-1" src={lineGroup1} />
-          <img className="line-service-2" src={lineGroup2} />
-          <img className="line-service-multi" src={lineGroupMulti} />
         </Row>
         <Row className="info-progress-mobil">
-          <ProgressSlider currentIndex={currentIndex} direction={direction} />
+          <ProgressSliderMobile
+            data={data}
+            currentIndex={currentIndex}
+            direction={direction}
+          />
         </Row>
       </div>
     </Container>

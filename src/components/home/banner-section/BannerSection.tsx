@@ -54,6 +54,7 @@ const BannerSection = () => {
             initial="hidden"
             animate="visible"
             variants={slideFromRight}
+            className="banner-motion"
           >
             <img className="substract" src={substract} alt="substract" />
             <motion.div
@@ -72,16 +73,16 @@ const BannerSection = () => {
             >
               <div className="menu-body-bold projects-count">50+</div>
               <div className="projects-text body">
-                Proiecte finalizate cu succes alaturi de Pixado
+                Proiecte finalizate cu succes{" "}
+                <span className="alaturi">alaturi de Pixado</span>
               </div>
             </motion.div>
           </motion.div>
+          <img className="line-group-multi" src={lineGroupMulti} />
+          <img className="line-group-2" src={lineGroup2} />
+          <img className="line-group-1" src={lineGroup1} />
         </Col>
       </Row>
-
-      <img className="line-group-1" src={lineGroup1} />
-      <img className="line-group-2" src={lineGroup2} />
-      <img className="line-group-multi" src={lineGroupMulti} />
     </Container>
   );
 };

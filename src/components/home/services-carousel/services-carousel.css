@@ -130,27 +130,19 @@
   display: flex !important;
   justify-content: end;
 }
-.line-service-1 {
-  left: 13%;
-  bottom: -10%;
-  max-width: 5%;
-  position: absolute;
-  display: none;
-}
+
 .line-service-2 {
-  left: 3%;
-  bottom: 16%;
-  max-width: 8%;
+  left: -10%;
+  bottom: 20%;
+  max-width: 15% !important;
   position: absolute;
-  display: none;
 }
 
 .line-service-multi {
   right: 0%;
-  bottom: 10%;
-  max-width: 17%;
+  bottom: -5%;
+  max-width: 45%;
   position: absolute;
-  display: none;
 }
 
 @media (min-width: 1440px) {
@@ -164,6 +156,13 @@
   }
   .progress-container {
     margin-left: 0;
+  }
+  .progress-slider {
+    background-image: url("/service-images/progress-base-mobile.png");
+  }
+
+  .progress-button {
+    width: 50% !important;
   }
 }
 

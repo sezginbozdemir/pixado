@@ -6,6 +6,8 @@
 
 - [ ] **Make Navbar Functional**
 
+- [ ] **Project Count in a seperate component**
+
 - [x] **Limit ProjectsLists Component to Display Max 4 Items in Homepage**
 
 - [x] **Remake Service Carousel with Bootstrap**
@@ -22,12 +24,16 @@
 
 - [x] **Adjust Testimonial Cards for Small Screens**
 
-- [ ] **Create a New Footers for Mobile and Tablet Screens**
+- [x] **Create a New Footers for Mobile and Tablet Screens**
 
-- [ ] **Place/Replace Decorative Lines on the Homepage**
+- [ ] **Complete Footers for Mobile and Tablet Screens**
 
-- [ ] **Make Footer Functional**
+- [x] **Place/Replace Decorative Lines on the Homepage**
+
+- [ ] **Make Footers Functional**
 
 - [x] **ProjectsLists Mobile**
 
 - [ ] **Add Metadata**
+
+- [x] **Progress Slider Mobile**

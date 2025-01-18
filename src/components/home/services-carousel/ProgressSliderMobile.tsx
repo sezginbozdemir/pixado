@@ -14,7 +14,7 @@ interface ProgressSliderProps {
   data: ServiceData[];
 }
 
-const ProgressSlider: React.FC<ProgressSliderProps> = ({
+const ProgressSliderMobile: React.FC<ProgressSliderProps> = ({
   currentIndex,
   direction,
   data,
@@ -48,7 +48,10 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
 
   return (
     <AnimatePresence custom={direction}>
-      <img className="progress-base" src="/service-images/progress-base.png" />
+      <img
+        className="progress-base"
+        src="/service-images/progress-base-mobile.png"
+      />
       <motion.div
         key={currentIndex}
         custom={direction}
@@ -92,4 +95,4 @@ const ProgressSlider: React.FC<ProgressSliderProps> = ({
   );
 };
 
-export default ProgressSlider;
+export default ProgressSliderMobile;

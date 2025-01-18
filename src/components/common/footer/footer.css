@@ -68,8 +68,35 @@
 .green-dot {
   margin-bottom: 1rem;
 }
+
+.footer-container-tablet {
+  display: none;
+}
+
+.footer-container-mobile {
+  display: none;
+}
 @media (max-width: 992px) {
   .footer-container {
     display: none;
+  }
+  .footer-container-tablet {
+    display: block;
+  }
+  .footer {
+    background-image: url("/footer/footer-base-tablet.png");
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container-mobile {
+    display: block;
+  }
+
+  .footer-container-tablet {
+    display: none;
+  }
+  .footer {
+    background-image: url("/footer/footer-base-mobile.png");
   }
 }

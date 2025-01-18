@@ -1,6 +1,7 @@
 import React from "react";
 import "./logo-slide.css";
 import data from "./data.json";
+import twoLines from "../../../assets/two-lines.png";
 import { Container, Col, Row } from "react-bootstrap";
 
 interface Logo {
@@ -12,6 +13,7 @@ const LogoSlide: React.FC = () => {
   return (
     <Container>
       <div className="carousel-container">
+        <img className="two-lines" src={twoLines} />
         <Row>
           <div className="carousel">
             {data.map((logo: Logo, index: number) => (

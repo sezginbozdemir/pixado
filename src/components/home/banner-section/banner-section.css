@@ -1,6 +1,6 @@
 .banner-container {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 13rem;
 }
 .banner-content {
   position: relative;
@@ -62,22 +62,25 @@
 }
 
 .line-group-1 {
-  right: 10%;
-  bottom: -30%;
-  max-width: 15vh;
+  right: 30%;
+  bottom: -25%;
+  max-width: 10vh;
   position: absolute;
 }
-
+.banner-motion {
+  z-index: 1000;
+  position: relative;
+}
 .line-group-2 {
-  right: 43%;
+  right: 95%;
   bottom: 40%;
-  max-width: 14vh;
+  max-width: 12vh;
   position: absolute;
 }
 
 .line-group-multi {
-  left: 5%;
-  bottom: -30%;
+  left: -100%;
+  bottom: -25%;
   max-width: 32vh;
   position: absolute;
 }
@@ -93,5 +96,21 @@
 @media (max-width: 992px) {
   .banner-services {
     margin-bottom: 5rem;
+  }
+
+  .line-group-1 {
+    right: 10%;
+    max-width: 7vh;
+  }
+
+  .line-group-multi {
+    left: 0%;
+    max-width: 22vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .alaturi {
+    display: none;
   }
 }

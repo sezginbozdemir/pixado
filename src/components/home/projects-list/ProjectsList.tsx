@@ -2,6 +2,10 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import data from "./data.json";
 import "./projects-list.css";
+import lineGroup1 from "../../../assets/line-group-1.png";
+import lineGroup2 from "../../../assets/line-group-2.png";
+import lineGroupMulti from "../../../assets/line-group-multi.png";
+
 import { Row, Col, Container } from "react-bootstrap";
 interface ProjectData {
   title: string;
@@ -33,6 +37,9 @@ const ProjectsList = () => {
             </Col>
           </Row>
         </div>
+        <img className="line-projects-1" src={lineGroup1} />
+        <img className="line-projects-2" src={lineGroup2} />
+        <img className="line-projects-multi" src={lineGroupMulti} />
 
         <Row>
           {data.slice(0, 4).map((project: ProjectData, index: number) => (

@@ -1,8 +1,15 @@
 .carousel-container {
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
+}
+
+.two-lines {
+  position: absolute;
+  max-width: 15vh;
+  bottom: 3%;
+  right: 5%;
 }
 
 .carousel {
