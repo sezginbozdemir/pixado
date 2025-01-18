@@ -85,6 +85,38 @@
   }
   .footer {
     background-image: url("/footer/footer-base-tablet.png");
+    justify-content: space-around;
+  }
+
+  .footer-col {
+    margin-left: 4rem;
+  }
+
+  .logo-row {
+    margin-left: 8rem !important;
+    margin-top: 3rem !important;
+    max-width: 70%;
+  }
+  .green-dots {
+    top: 2%;
+    max-width: 12%;
+  }
+  .green-dot {
+    margin-bottom: 2rem;
+  }
+
+  .bottom-row-options-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-left: 3rem;
+  }
+  .bottom-row-options-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
   }
 }
 
