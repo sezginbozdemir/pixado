@@ -171,4 +171,13 @@
     display: block;
     visibility: hidden;
   }
+
+  .visual-img {
+    width: 85%;
+  }
+
+  .image-slider-container {
+    display: flex;
+    justify-content: center;
+  }
 }

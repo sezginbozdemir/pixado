@@ -36,7 +36,7 @@ const FooterMobile: React.FC<FooterProps> = ({
         <div className="footer">
           <div className="footer-row body">
             <Row>
-              <Col lg={6} className="footer-col">
+              <Row className="footer-col">
                 <Row>
                   <div>
                     <img className="logo-footer" src={logo} />
@@ -50,48 +50,52 @@ const FooterMobile: React.FC<FooterProps> = ({
                     ideile în realitate, livrând mereu rezultate memorabile.
                   </p>
                 </Row>
-              </Col>
-              <Col lg={2} className="footer-col">
+              </Row>
+              <Row className="footer-col">
                 <div className="footer-title title-4">Linkuri Utile</div>
 
                 <Row>Home</Row>
                 <Row>Servicii</Row>
                 <Row>Portfoliu</Row>
                 <Row>Contact</Row>
-              </Col>
-              <Col lg={2} className="footer-col">
+              </Row>
+              <Row className="footer-col">
                 <div className="footer-title title-4">Informatii Legale</div>
                 <Row>Termeni si Conditii</Row>
                 <Row>Politica de Cookieuri</Row>
                 <Row>GDPR</Row>
                 <Row>ANPC</Row>
-              </Col>
-              <Col lg={2} className="footer-col">
+              </Row>
+              <Row className="footer-col">
                 <div className="footer-title title-4">Contact</div>
                 <Row>Str Franyo Zoltan, nr. 6, Timișoara</Row>
                 <Row>0123123123</Row>
                 <Row>email</Row>
-              </Col>
-            </Row>
-          </div>
-          <div className="footer-row-center title-1">
-            <Row>AICI PENTRU TINE</Row>
-          </div>
-          <div className="footer-row-bottom body">
-            <Row>
-              <Col lg={7}>
-                <Row>
-                  <Col lg={6}>Website exclusiv creat de Pixado</Col>
-                  <Col lg={6}>Toate drepturile sunt rezervate</Col>
-                </Row>
-              </Col>
-              <Col lg={5}>
-                <Row>
-                  <Col>Politica de confidențialitate</Col>
-                  <Col>Termeni și condiții</Col>
-                  <Col>Politica de Cookies</Col>
-                </Row>
-              </Col>
+              </Row>
+              <Row>
+                <div className="footer-row-center title-1">
+                  <Row>AICI PENTRU TINE</Row>
+                </div>
+              </Row>
+              <Row>
+                <div className="footer-row-bottom body">
+                  <Row>
+                    <Col>
+                      <Row>
+                        <Col>Website exclusiv creat de Pixado</Col>
+                        <Col>Toate drepturile sunt rezervate</Col>
+                      </Row>
+                    </Col>
+                    <Col>
+                      <Row>
+                        <Col>Politica de confidențialitate</Col>
+                        <Col>Termeni și condiții</Col>
+                        <Col>Politica de Cookies</Col>
+                      </Row>
+                    </Col>
+                  </Row>
+                </div>
+              </Row>
             </Row>
           </div>
         </div>
