@@ -33,72 +33,66 @@ const FooterMobile: React.FC<FooterProps> = ({
           onClick={handleScrollToTop}
           className="footer-next"
         ></NextButton>
-        <div className="footer">
-          <div className="footer-row body">
+        <Row className="footer footer-row body">
+          <Row className="footer-col logo-row">
             <Row>
-              <Row className="footer-col">
-                <Row>
-                  <div>
-                    <img className="logo-footer" src={logo} />
-                  </div>
-                </Row>
-                <Row>
-                  <p className="footer-text body">
-                    Pixado este agenția ta de încredere pentru soluții creative
-                    de web design, reclame video și efecte vizuale. Cu un ochi
-                    atent pentru detalii și o echipă pasionată, transformăm
-                    ideile în realitate, livrând mereu rezultate memorabile.
-                  </p>
-                </Row>
-              </Row>
-              <Row className="footer-col">
-                <div className="footer-title title-4">Linkuri Utile</div>
-
-                <Row>Home</Row>
-                <Row>Servicii</Row>
-                <Row>Portfoliu</Row>
-                <Row>Contact</Row>
-              </Row>
-              <Row className="footer-col">
-                <div className="footer-title title-4">Informatii Legale</div>
-                <Row>Termeni si Conditii</Row>
-                <Row>Politica de Cookieuri</Row>
-                <Row>GDPR</Row>
-                <Row>ANPC</Row>
-              </Row>
-              <Row className="footer-col">
-                <div className="footer-title title-4">Contact</div>
-                <Row>Str Franyo Zoltan, nr. 6, Timișoara</Row>
-                <Row>0123123123</Row>
-                <Row>email</Row>
-              </Row>
-              <Row>
-                <div className="footer-row-center title-1">
-                  <Row>AICI PENTRU TINE</Row>
-                </div>
-              </Row>
-              <Row>
-                <div className="footer-row-bottom body">
-                  <Row>
-                    <Col>
-                      <Row>
-                        <Col>Website exclusiv creat de Pixado</Col>
-                        <Col>Toate drepturile sunt rezervate</Col>
-                      </Row>
-                    </Col>
-                    <Col>
-                      <Row>
-                        <Col>Politica de confidențialitate</Col>
-                        <Col>Termeni și condiții</Col>
-                        <Col>Politica de Cookies</Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </div>
-              </Row>
+              <div>
+                <img className="logo-footer" src={logo} />
+              </div>
             </Row>
-          </div>
-        </div>
+            <Row>
+              <p className="footer-text body">
+                Pixado este agenția ta de încredere pentru soluții creative de
+                web design, reclame video și efecte vizuale. Cu un ochi atent
+                pentru detalii și o echipă pasionată, transformăm ideile în
+                realitate, livrând mereu rezultate memorabile.
+              </p>
+            </Row>
+          </Row>
+          <Row>
+            <Col className="footer-col">
+              <div className="footer-title title-4">Linkuri Utile</div>
+
+              <Row>Home</Row>
+              <Row>Servicii</Row>
+              <Row>Portfoliu</Row>
+              <Row>Contact</Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="footer-col">
+              <div className="footer-title title-4">Informatii Legale</div>
+              <Row>Termeni si Conditii</Row>
+              <Row>Politica de Cookieuri</Row>
+              <Row>GDPR</Row>
+              <Row>ANPC</Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="footer-col">
+              <div className="footer-title title-4">Contact</div>
+              <Row>Str Franyo Zoltan, nr. 6, Timișoara</Row>
+              <Row>0123123123</Row>
+              <Row>email</Row>
+            </Col>
+          </Row>
+          <Row>
+            <Row className="footer-row-center title-1">AICI </Row>
+            <Row className="footer-row-center title-1">PENTRU</Row>
+            <Row className="footer-row-center title-1">TINE</Row>
+          </Row>
+          <Row className="footer-row-bottom body">
+            <Col className="bottom-row-options-1" xs={6}>
+              <Row>Website exclusiv creat de Pixado</Row>
+              <Row>Toate drepturile sunt rezervate</Row>
+            </Col>
+            <Col className="bottom-row-options-2" xs={6}>
+              <Row>Politica de confidențialitate</Row>
+              <Row>Termeni și condiții</Row>
+              <Row>Politica de Cookies</Row>
+            </Col>
+          </Row>
+        </Row>
       </div>
     </Container>
   );
