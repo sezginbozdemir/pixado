@@ -8,6 +8,7 @@ interface ProjectData {
   imgUrl?: string;
   details: string;
   date: string;
+  tags: string[];
 }
 
 const ProjectsList = () => {
@@ -41,6 +42,7 @@ const ProjectsList = () => {
                 imgUrl={project.imgUrl}
                 details={project.details}
                 date={project.date}
+                tags={project.tags}
               />
             </Col>
           ))}

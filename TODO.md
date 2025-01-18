@@ -18,7 +18,7 @@
 
 - [ ] **Move Pixado Text up while finishing Scroll**
 
-- [ ] **Implement Project Card Tags Logic and Hover Animations**
+- [x] **Implement Project Card Tags Logic and Hover Animations**
 
 - [x] **Adjust Testimonial Cards for Small Screens**
 
@@ -29,3 +29,5 @@
 - [ ] **Make Footer Functional**
 
 - [x] **ProjectsLists Mobile**
+
+- [ ] **Add Metadata**

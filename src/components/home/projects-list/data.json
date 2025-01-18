@@ -3,24 +3,28 @@
     "title": "Project name",
     "imgUrl": "",
     "details": "Details about project",
-    "date": "2024"
+    "date": "2024",
+    "tags": ["Design", "Branding", "SEO"]
   },
   {
     "title": "Project name",
     "imgUrl": "",
     "details": "Details about project",
-    "date": "2024"
+    "date": "2024",
+    "tags": ["Design", "Branding"]
   },
   {
     "title": "Project name",
     "imgUrl": "",
     "details": "Details about project",
-    "date": "2024"
+    "date": "2024",
+    "tags": ["Branding", "SEO"]
   },
   {
     "title": "Project name",
     "imgUrl": "",
     "details": "Details about project",
-    "date": "2024"
+    "date": "2024",
+    "tags": ["Design"]
   }
 ]

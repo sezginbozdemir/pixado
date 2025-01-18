@@ -3,18 +3,29 @@
 .work-done {
   position: absolute;
   top: 0%;
-  right: 5%;
+  right: 0%;
   color: #081001;
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: end;
   gap: 0.5rem;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Animate both transform and opacity */
+  transform: translateX(-50%);
+  opacity: 0;
 }
 
 .work-done-options {
   border: 1px solid #081001;
   border-radius: 20px;
-  padding: 0.5% 5%;
+  padding: 0.5% 10%;
   background-color: #6bfbce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card:hover .work-done {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* PRODUCT CARD */
@@ -30,17 +41,15 @@
 
 .project-image {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 400px;
 }
 
 .project-image .background-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: url("/project-images/project-card.png");
   mask-image: url("/project-images/project-card.png");
-  -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
 .project-details {
@@ -125,5 +134,17 @@
 
   .projects-list-col:nth-child(even) {
     margin-left: 0rem !important;
+  }
+  .project-image {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+  .work-done {
+    transform: translateX(-45%);
+    height: 7%;
+  }
+  .project-image .background-img {
+    mask-image: url("/project-images/project-card-mobile.png");
   }
 }
