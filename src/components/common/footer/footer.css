@@ -136,11 +136,13 @@
   }
   .logo-row {
     margin-top: 0rem !important;
-    max-width: 85%;
+    margin-left: 0rem !important;
+    padding-left: 6rem !important;
+    max-width: 100% !important;
   }
 
   .footer-next {
-    bottom: 80%;
+    bottom: 75%;
   }
   .green-dots {
     top: 5%;

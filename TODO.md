@@ -26,7 +26,7 @@
 
 - [x] **Create a New Footers for Mobile and Tablet Screens**
 
-- [ ] **Complete Footers for Mobile and Tablet Screens**
+- [x] **Complete Footers for Mobile and Tablet Screens**
 
 - [x] **Place/Replace Decorative Lines on the Homepage**
 
