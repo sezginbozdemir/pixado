@@ -53,19 +53,20 @@ const FooterMobile: React.FC<FooterProps> = ({
             <Col className="footer-col">
               <div className="footer-title title-4">Linkuri Utile</div>
 
-              <Row>Home</Row>
-              <Row>Servicii</Row>
-              <Row>Portfoliu</Row>
-              <Row>Contact</Row>
+              <Row className="footer-option">Home</Row>
+
+              <Row className="footer-option">Servicii</Row>
+              <Row className="footer-option">Portfoliu</Row>
+              <Row className="footer-option">Contact</Row>
             </Col>
           </Row>
           <Row>
             <Col className="footer-col">
               <div className="footer-title title-4">Informatii Legale</div>
-              <Row>Termeni si Conditii</Row>
-              <Row>Politica de Cookieuri</Row>
-              <Row>GDPR</Row>
-              <Row>ANPC</Row>
+              <Row className="footer-option">Termeni si Conditii</Row>
+              <Row className="footer-option">Politica de Cookieuri</Row>
+              <Row className="footer-option">GDPR</Row>
+              <Row className="footer-option">ANPC</Row>
             </Col>
           </Row>
           <Row>
@@ -87,9 +88,9 @@ const FooterMobile: React.FC<FooterProps> = ({
               <Row>Toate drepturile sunt rezervate</Row>
             </Col>
             <Col className="bottom-row-options-2" xs={6}>
-              <Row>Politica de confidențialitate</Row>
-              <Row>Termeni și condiții</Row>
-              <Row>Politica de Cookies</Row>
+              <Row className="footer-option">Politica de confidențialitate</Row>
+              <Row className="footer-option">Termeni și condiții</Row>
+              <Row className="footer-option">Politica de Cookies</Row>
             </Col>
           </Row>
         </Row>

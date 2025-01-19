@@ -76,6 +76,14 @@
 .footer-container-mobile {
   display: none;
 }
+.footer-option {
+  cursor: pointer;
+}
+
+.footer-option:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 992px) {
   .footer-container {
     display: none;

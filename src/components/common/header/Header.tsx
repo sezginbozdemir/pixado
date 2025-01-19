@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../../assets/logo.png";
 import burger from "../../../assets/burger.png";
 import Button from "../buttons/Button";
 import "./header.css";
+
 const Header = () => {
+  const [activeMenu, setActiveMenu] = useState("Home");
+
+  const menuItems = ["Home", "Servicii", "Portfoliu", "Contact"];
+
+  const handleMenuClick = (menu) => {
+    setActiveMenu(menu);
+  };
+
   return (
     <>
       <div className="menu-bar">
@@ -11,10 +20,17 @@ const Header = () => {
           <img className="logo" src={logo} alt="Logo" />
         </div>
         <div className="menu-items">
-          <div className="menu-item menu-body">Home</div>
-          <div className="menu-item menu-body">Servicii</div>
-          <div className="menu-item menu-body">Portfoliu</div>
-          <div className="menu-item menu-body">Contact</div>
+          {menuItems.map((menu) => (
+            <div
+              key={menu}
+              className={`menu-item menu-body ${
+                activeMenu === menu ? "active" : ""
+              }`}
+              onClick={() => handleMenuClick(menu)}
+            >
+              {menu}
+            </div>
+          ))}
         </div>
         <div className="contact-container">
           <Button
@@ -22,7 +38,7 @@ const Header = () => {
             text="Contacteaza-ne"
           ></Button>
           <div className="burger-menu">
-            <img className="burger-menu-icon" src={burger} />
+            <img className="burger-menu-icon" src={burger} alt="Menu" />
           </div>
         </div>
       </div>

@@ -54,17 +54,18 @@ const FooterDesktop: React.FC<FooterProps> = ({
               <Col lg={2} className="footer-col">
                 <div className="footer-title title-4">Linkuri Utile</div>
 
-                <Row>Home</Row>
-                <Row>Servicii</Row>
-                <Row>Portfoliu</Row>
-                <Row>Contact</Row>
+                <Row className="footer-option">Home</Row>
+
+                <Row className="footer-option">Servicii</Row>
+                <Row className="footer-option">Portfoliu</Row>
+                <Row className="footer-option">Contact</Row>
               </Col>
               <Col lg={2} className="footer-col">
                 <div className="footer-title title-4">Informatii Legale</div>
-                <Row>Termeni si Conditii</Row>
-                <Row>Politica de Cookieuri</Row>
-                <Row>GDPR</Row>
-                <Row>ANPC</Row>
+                <Row className="footer-option">Termeni si Conditii</Row>
+                <Row className="footer-option">Politica de Cookieuri</Row>
+                <Row className="footer-option">GDPR</Row>
+                <Row className="footer-option">ANPC</Row>
               </Col>
               <Col lg={2} className="footer-col">
                 <div className="footer-title title-4">Contact</div>
@@ -87,9 +88,11 @@ const FooterDesktop: React.FC<FooterProps> = ({
               </Col>
               <Col lg={5}>
                 <Row>
-                  <Col>Politica de confidențialitate</Col>
-                  <Col>Termeni și condiții</Col>
-                  <Col>Politica de Cookies</Col>
+                  <Col className="footer-option">
+                    Politica de confidențialitate
+                  </Col>
+                  <Col className="footer-option">Termeni și condiții</Col>
+                  <Col className="footer-option">Politica de Cookies</Col>
                 </Row>
               </Col>
             </Row>

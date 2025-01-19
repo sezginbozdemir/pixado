@@ -4,7 +4,7 @@
 
 ### - Homepage
 
-- [ ] **Make Navbar Functional**
+- [x] **Make Navbar Functional**
 
 - [ ] **Project Count in a seperate component**
 
@@ -18,7 +18,7 @@
 
 - [ ] **Replace Scroll Animation Background Image with a Video**
 
-- [ ] **Move Pixado Text up while finishing Scroll**
+- [?] **Move Pixado Text up while finishing Scroll**
 
 - [x] **Implement Project Card Tags Logic and Hover Animations**
 
@@ -30,10 +30,12 @@
 
 - [x] **Place/Replace Decorative Lines on the Homepage**
 
-- [ ] **Make Footers Functional**
+- [x] **Make Footers Functional**
 
 - [x] **ProjectsLists Mobile**
 
 - [ ] **Add Metadata**
 
 - [x] **Progress Slider Mobile**
+
+- [ ] **Navbar and Footer links**

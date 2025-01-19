@@ -10,7 +10,7 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({ text, onClick, className }) => {
   return (
     <button onClick={onClick} className={`button ${className}`}>
-      {text}
+      <span>{text}</span>{" "}
     </button>
   );
 };

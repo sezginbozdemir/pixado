@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
           <div className="body links-container">
             <Button className="contact-button" text="Contacteaza-ne"></Button>
-            Află mai multe
+            <div className="afla">Afla mai multe</div>{" "}
           </div>
         </Col>
       </Row>

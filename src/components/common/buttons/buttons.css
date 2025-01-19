@@ -1,11 +1,39 @@
 .button {
+  position: relative;
+  display: inline-block;
   background-color: transparent;
   border: 2px solid #6bfbce;
   border-radius: 2rem;
   color: #fcfff9;
   cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0.1rem 2rem;
+  transition: color 0.4s ease 0.2s;
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  background-color: #6bfbce;
+  border-radius: 50%;
+  transform: translate(-50%, 50%) scale(0);
+  transition: transform 0.9s ease;
+  z-index: 0;
+}
+
+.button:hover::before {
+  transform: translate(-50%, 50%) scale(8);
+}
+
+.button:hover {
+  color: rgba(8, 16, 1, 1);
+}
+.button span {
+  position: relative;
+  z-index: 1;
 }
 
 .next-button {

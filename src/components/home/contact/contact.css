@@ -36,3 +36,11 @@
   width: 13rem;
   height: 3rem;
 }
+.afla:hover {
+  opacity: 0.7;
+}
+
+.afla {
+  cursor: pointer;
+  text-decoration: underline;
+}
