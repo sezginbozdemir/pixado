@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Aurora Vision",
+    "imgUrl": "",
+    "details": "A modern website redesign for a tech startup.",
+    "date": "2023",
+    "tags": ["Design", "Branding"],
+    "type": "landing page"
+  },
+  {
+    "id": 2,
+    "title": "EcoFlow Campaign",
+    "imgUrl": "",
+    "details": "Digital campaign for an eco-friendly product line.",
+    "date": "2024",
+    "tags": ["SEO", "Branding", "ADS"],
+    "type": "reclame video"
+  },
+  {
+    "id": 3,
+    "title": "Lunar Luxe",
+    "imgUrl": "",
+    "details": "E-commerce website for luxury clothing.",
+    "date": "2022",
+    "tags": ["Design", "Development"],
+    "type": "business"
+  },
+  {
+    "id": 4,
+    "title": "Pulse Analytics",
+    "imgUrl": "",
+    "details": "Dashboard design for a data analytics platform.",
+    "date": "2024",
+    "tags": ["UI", "Design", "UX"],
+    "type": "VFX"
+  },
+  {
+    "id": 5,
+    "title": "Nova Marketing",
+    "imgUrl": "",
+    "details": "A social media marketing strategy for a startup.",
+    "date": "2023",
+    "tags": ["Marketing", "SEO"],
+    "type": "business"
+  },
+  {
+    "id": 6,
+    "title": "Bright Horizons",
+    "imgUrl": "",
+    "details": "Educational platform branding and logo design.",
+    "date": "2021",
+    "tags": ["Design"],
+    "type": "corporate"
+  },
+  {
+    "id": 7,
+    "title": "Quantum Finance",
+    "imgUrl": "",
+    "details": "Corporate website for a fintech company.",
+    "date": "2022",
+    "tags": ["Branding", "SEO"],
+    "type": "corporate"
+  },
+  {
+    "id": 8,
+    "title": "Vertex Solutions",
+    "imgUrl": "",
+    "details": "Rebranding for a cloud solutions provider.",
+    "date": "2023",
+    "tags": ["Branding", "SEO", "APP"],
+    "type": "b2b"
+  },
+  {
+    "id": 9,
+    "title": "PixelCraft Studio",
+    "imgUrl": "",
+    "details": "Portfolio website for a creative studio.",
+    "date": "2024",
+    "tags": ["Design", "UI"],
+    "type": "landing page"
+  },
+  {
+    "id": 10,
+    "title": "Summit Digital",
+    "imgUrl": "",
+    "details": "Digital transformation for a regional business.",
+    "date": "2022",
+    "tags": ["Marketing", "SEO", "CMS"],
+    "type": "business"
+  },
+  {
+    "id": 11,
+    "title": "GreenTech Initiative",
+    "imgUrl": "",
+    "details": "Website for an eco-friendly tech company.",
+    "date": "2021",
+    "tags": ["Development", "UI"],
+    "type": "corporate"
+  },
+  {
+    "id": 12,
+    "title": "MetroArt",
+    "imgUrl": "",
+    "details": "Branding and design for a modern art gallery.",
+    "date": "2023",
+    "tags": ["Branding", "Design", "UI"],
+    "type": "corporate"
+  },
+  {
+    "id": 13,
+    "title": "Aurora Fitness",
+    "imgUrl": "",
+    "details": "Mobile app for a fitness brand.",
+    "date": "2024",
+    "tags": ["UI", "UX"],
+    "type": "b2b"
+  },
+  {
+    "id": 14,
+    "title": "Neptune Solutions",
+    "imgUrl": "",
+    "details": "Corporate rebranding for a logistics firm.",
+    "date": "2022",
+    "tags": ["Branding"],
+    "type": "corporate"
+  },
+  {
+    "id": 15,
+    "title": "Stellar Prints",
+    "imgUrl": "",
+    "details": "E-commerce platform for custom printing services.",
+    "date": "2023",
+    "tags": ["Design", "Development", "API"],
+    "type": "business"
+  },
+  {
+    "id": 16,
+    "title": "Civic Connect",
+    "imgUrl": "",
+    "details": "Community engagement platform design.",
+    "date": "2024",
+    "tags": ["UI", "SEO", "APP"],
+    "type": "b2b"
+  }
+]

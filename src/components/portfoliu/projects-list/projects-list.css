@@ -8,7 +8,7 @@
   display: flex !important;
   justify-content: end;
   gap: 0.5rem;
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Animate both transform and opacity */
+  transition: transform 0.5s ease, opacity 0.5s ease;
   transform: translateX(-50%);
   opacity: 0;
 }
@@ -107,17 +107,39 @@
 .line-projects-1 {
   left: 20%;
   top: 0%;
-  max-width: 6% !important;
+  max-width: 4% !important;
   position: absolute;
 }
 .line-projects-2 {
   left: 15%;
-  bottom: 10%;
+  bottom: 3%;
   max-width: 6% !important;
   position: absolute;
 }
+
+.line-projects-4 {
+  left: 48%;
+  top: 10%;
+  max-width: 4% !important;
+  position: absolute;
+}
+
+.line-projects-6 {
+  left: 48%;
+  bottom: 10%;
+  max-width: 4% !important;
+  position: absolute;
+}
+.projects-two-lines {
+  left: 48%;
+  bottom: 60%;
+  max-width: 5% !important;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
 .line-projects-multi {
-  bottom: 3%;
+  bottom: 1%;
   right: 10%;
   max-width: 12% !important;
   position: absolute;

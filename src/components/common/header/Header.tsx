@@ -1,18 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import burger from "../../../assets/burger.png";
 import Button from "../buttons/Button";
 import "./header.css";
 
 const Header = () => {
-  const [activeMenu, setActiveMenu] = useState("Home");
+  const [activeMenu, setActiveMenu] = useState<string>("home");
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const menuItems = ["Home", "Servicii", "Portfoliu", "Contact"];
+  const menuItems: string[] = ["home", "servicii", "portfoliu", "contact"];
 
-  const handleMenuClick = (menu) => {
+  const handleMenuClick = (menu: string): void => {
     setActiveMenu(menu);
+    navigate(`/${menu}`);
   };
 
+  useEffect(() => {
+    const currentPath = location.pathname.split("/")[1] || "home";
+    setActiveMenu(currentPath);
+  }, [location]);
   return (
     <>
       <div className="menu-bar">

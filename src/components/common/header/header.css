@@ -18,6 +18,7 @@
 .menu-item {
   margin-right: 8%;
   cursor: pointer;
+  text-transform: capitalize;
 }
 .menu-item.active {
   color: #6bfbce;
