@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./projects-list.css";
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -23,6 +23,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [marginStyle, setMarginStyle] = useState<React.CSSProperties>({});
+  const location = useLocation();
+
+  const [isPortfolioPath, setIsPortfolioPath] = useState(false);
+
+  useEffect(() => {
+    const matchPortfolioPath = /^\/portfoliu\/\d+$/.test(location.pathname);
+    setIsPortfolioPath(matchPortfolioPath);
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -52,7 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   }, [screenWidth, tags]);
   return (
     <Container className="project">
-      <Row className="project-card">
+      <Row className={`project-card ${isPortfolioPath ? "full-width" : ""}`}>
         <Row className="details-regular work-done" style={marginStyle}>
           {tags[0] && (
             <Col xs={3} md={2} className="work-done-options">

@@ -1,8 +1,14 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import data from "./data.json";
 import greenDecor from "../../../assets/green-decor.png";
 import RotatingLabel from "../../common/RotatingLabel";
+import ProjectCard from "./ProjectCard";
 import "./projects-list.css";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -176,6 +182,39 @@ const ProjectDetail: React.FC = () => {
             className="detail-banner-image-2"
             src={project.banner2 || "/project-images/wallpaper-1.png"}
           />
+        </div>
+      </Row>
+      <Row className="title-2">Proiecte similare</Row>
+      <Row>
+        <div className="slider-container">
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true, type: "bullets" }}
+            slidesPerView={1}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1200: { slidesPerView: 2 },
+            }}
+            freeMode={true}
+            grabCursor={true}
+          >
+            {typedData
+              .filter((p) => p.type === project.type && p.id !== project.id)
+              .map((filteredProject) => (
+                <Col key={filteredProject.id}>
+                  <SwiperSlide>
+                    <ProjectCard
+                      id={filteredProject.id}
+                      title={filteredProject.title}
+                      imgUrl={filteredProject.imgUrl}
+                      details={filteredProject.details}
+                      date={filteredProject.date}
+                      tags={filteredProject.tags}
+                    />
+                  </SwiperSlide>
+                </Col>
+              ))}
+          </Swiper>
         </div>
       </Row>
     </Container>
