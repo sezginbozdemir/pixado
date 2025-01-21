@@ -12,6 +12,18 @@ interface ProjectData {
   date: string;
   tags: string[];
   type: string;
+  client: string;
+  duration: string;
+  website: string;
+  banner1: string;
+  banner2: string;
+  img1: string;
+  img2: string;
+  img3: string;
+  img4: string;
+  description: string;
+  scope: string;
+  role: string;
 }
 
 const typedData: ProjectData[] = data as ProjectData[];
@@ -25,7 +37,7 @@ const ProjectDetail: React.FC = () => {
   const project = typedData.find((p) => p.id === parseInt(id || "", 10));
 
   if (!project) {
-    return <div>Project not found!</div>;
+    return <div className="body">Project not found!</div>;
   }
 
   return (
@@ -59,21 +71,100 @@ const ProjectDetail: React.FC = () => {
           />
         </div>
       </Row>
-      <Row className="detail-description">
-        <Col lg={6} className="title-2">
-          Câteva detalii despre <br />
-          proiect , o propozitie
-        </Col>
-        <Col className="body" lg={6}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat
-            consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris
-            graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet
-            feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet
-            mauris graseda ut.
-          </p>
-        </Col>
-      </Row>
+      <div className="detail-description">
+        <Row>
+          <Col lg={6} className="title-2">
+            Câteva detalii despre <br />
+            proiect , o propozitie
+          </Col>
+          <Col className="body" lg={6}>
+            <p>{project.description}</p>
+            <Row>
+              <Col className="description-options">
+                <Row>Client</Row>
+                <Row className="title-3">{project.client}</Row>
+              </Col>
+              <Col className="description-options">
+                <Row>Durata proiect</Row>
+                <Row className="title-3">{project.duration}</Row>
+              </Col>
+              <Col className="description-options">
+                <Row>Website</Row>
+                <Row className="title-3">{project.website}</Row>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </div>
+      <div className="gallery-images">
+        <Row>
+          <Col>
+            <img
+              className="gallery-image"
+              src={project.img1 || "/project-images/wallpaper-1.png"}
+            />
+          </Col>
+          <Col>
+            <img
+              className="gallery-image"
+              src={project.img2 || "/project-images/wallpaper-1.png"}
+            />
+          </Col>
+        </Row>
+      </div>
+      <div className="detail-description">
+        <Row>
+          <Col lg={6} className="title-2">
+            Scopul proiectului
+          </Col>
+          <Col className="body" lg={6}>
+            <p>{project.scope}</p>
+          </Col>
+        </Row>
+      </div>
+      <div className="detail-description">
+        <Row>
+          <Col lg={6} className="title-2">
+            Rolul nostru în procesul <br />
+            design si dezvoltare{" "}
+          </Col>
+          <Col className="body" lg={6}>
+            <p>{project.role}</p>
+          </Col>
+        </Row>
+      </div>
+      <div className="detail-banner">
+        <img
+          className="detail-banner-image"
+          src={project.banner1 || "/project-images/wallpaper-1.png"}
+        />
+      </div>
+      <div className="banner-gallery-images">
+        <Row>
+          <Col>
+            <div className="gallery-image-container-3">
+              <img
+                className="gallery-image-3"
+                src={project.img3 || "/project-images/wallpaper-1.png"}
+              />
+            </div>
+          </Col>
+          <Col>
+            <div className="gallery-image-container-4">
+              <img
+                className="gallery-image-4"
+                src={project.img4 || "/project-images/wallpaper-1.png"}
+              />
+            </div>
+          </Col>
+        </Row>
+      </div>
+      <div className="detail-banner-2">
+        <img
+          className="detail-banner-image-2"
+          src={project.banner2 || "/project-images/wallpaper-1.png"}
+        />
+      </div>
     </Container>
   );
 };

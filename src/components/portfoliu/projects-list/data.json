@@ -6,7 +6,13 @@
     "details": "A modern website redesign for a tech startup.",
     "date": "2023",
     "tags": ["Design", "Branding"],
-    "type": "landing page"
+    "type": "landing page",
+    "client": "John Smith",
+    "duration": "3 months",
+    "website": "www.auroravision.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac magna ac ligula gravida feugiat. Integer nec sapien eu dui convallis sollicitudin.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis nulla sit amet justo gravida, vel ullamcorper felis fringilla.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut ligula in justo sollicitudin malesuada. Aliquam erat volutpat. Sed egestas volutpat ligula."
   },
   {
     "id": 2,
@@ -15,7 +21,13 @@
     "details": "Digital campaign for an eco-friendly product line.",
     "date": "2024",
     "tags": ["SEO", "Branding", "ADS"],
-    "type": "reclame video"
+    "type": "reclame video",
+    "client": "Sarah Johnson",
+    "duration": "2 months",
+    "website": "www.ecoflow.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id orci ac erat consequat tincidunt. Vivamus vehicula efficitur libero, a tristique velit.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis eros at dui faucibus, eu placerat justo sollicitudin.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin sit amet neque et nisi rhoncus tincidunt a ac magna."
   },
   {
     "id": 3,
@@ -24,7 +36,13 @@
     "details": "E-commerce website for luxury clothing.",
     "date": "2022",
     "tags": ["Design", "Development"],
-    "type": "business"
+    "type": "business",
+    "client": "Michael Brown",
+    "duration": "4 months",
+    "website": "www.lunarluxe.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut turpis magna. Sed vestibulum magna id felis accumsan, et faucibus lorem placerat.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius eros in risus tincidunt, a fringilla risus tincidunt.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Vivamus viverra mi eu metus convallis, ac tincidunt odio gravida."
   },
   {
     "id": 4,
@@ -33,7 +51,13 @@
     "details": "Dashboard design for a data analytics platform.",
     "date": "2024",
     "tags": ["UI", "Design", "UX"],
-    "type": "VFX"
+    "type": "VFX",
+    "client": "Emma Wilson",
+    "duration": "6 months",
+    "website": "www.pulseanalytics.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet turpis id risus malesuada elementum. Donec ac arcu ac ante ullamcorper tempor.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt ante sed lectus porttitor, id euismod eros auctor.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod augue id magna facilisis, sed venenatis ante pharetra."
   },
   {
     "id": 5,
@@ -42,7 +66,13 @@
     "details": "A social media marketing strategy for a startup.",
     "date": "2023",
     "tags": ["Marketing", "SEO"],
-    "type": "business"
+    "type": "business",
+    "client": "Olivia Martinez",
+    "duration": "2 months",
+    "website": "www.novamarketing.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nisi nec lectus auctor sodales a a justo. Phasellus aliquet eros in orci congue.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet malesuada elit. Pellentesque scelerisque leo a mauris mollis.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac nibh vel ligula consectetur volutpat. Vestibulum ac odio nisi."
   },
   {
     "id": 6,
@@ -51,7 +81,13 @@
     "details": "Educational platform branding and logo design.",
     "date": "2021",
     "tags": ["Design"],
-    "type": "corporate"
+    "type": "corporate",
+    "client": "Liam Anderson",
+    "duration": "1 month",
+    "website": "www.brighthorizons.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at urna eu nunc sollicitudin placerat. Nullam et orci non augue dictum volutpat.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla turpis a nisl scelerisque, ac suscipit ligula auctor.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Etiam vel libero et enim porttitor varius."
   },
   {
     "id": 7,
@@ -60,7 +96,13 @@
     "details": "Corporate website for a fintech company.",
     "date": "2022",
     "tags": ["Branding", "SEO"],
-    "type": "corporate"
+    "type": "corporate",
+    "client": "Sophia Taylor",
+    "duration": "5 months",
+    "website": "www.quantumfinance.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum felis a nisi sollicitudin, euismod vehicula sapien sodales.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan eros nec magna varius, eu feugiat erat hendrerit.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat dui vitae ante eleifend, ac elementum metus sollicitudin."
   },
   {
     "id": 8,
@@ -69,7 +111,13 @@
     "details": "Rebranding for a cloud solutions provider.",
     "date": "2023",
     "tags": ["Branding", "SEO", "APP"],
-    "type": "b2b"
+    "type": "b2b",
+    "client": "Benjamin Moore",
+    "duration": "3 months",
+    "website": "www.vertexsolutions.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Integer ac neque ut mi mollis scelerisque ut at libero.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat dui ac risus pretium, eu sollicitudin eros hendrerit.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit eget metus tincidunt mollis. Vivamus at risus non enim rhoncus."
   },
   {
     "id": 9,
@@ -78,7 +126,13 @@
     "details": "Portfolio website for a creative studio.",
     "date": "2024",
     "tags": ["Design", "UI"],
-    "type": "landing page"
+    "type": "landing page",
+    "client": "Mia Lee",
+    "duration": "2 months",
+    "website": "www.pixelcraftstudio.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pharetra velit nec dolor pharetra, eu euismod ligula gravida.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec leo neque. Vestibulum vel lectus a urna pretium interdum.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis mauris eu libero egestas, at tempor nisl aliquet."
   },
   {
     "id": 10,
@@ -87,7 +141,13 @@
     "details": "Digital transformation for a regional business.",
     "date": "2022",
     "tags": ["Marketing", "SEO", "CMS"],
-    "type": "business"
+    "type": "business",
+    "client": "Charlotte Davis",
+    "duration": "4 months",
+    "website": "www.summitdigital.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac justo sit amet metus ullamcorper hendrerit. Suspendisse potenti.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum nunc sit amet nunc pretium, eu placerat arcu luctus.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor tortor sed elit consectetur, vel egestas augue facilisis."
   },
   {
     "id": 11,
@@ -96,7 +156,13 @@
     "details": "Website for an eco-friendly tech company.",
     "date": "2021",
     "tags": ["Development", "UI"],
-    "type": "corporate"
+    "type": "corporate",
+    "client": "Noah White",
+    "duration": "3 months",
+    "website": "www.greentechinitiative.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin dui et leo fermentum, non condimentum mi pretium.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum augue nec justo pharetra, vel efficitur dui hendrerit.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula sollicitudin augue, et tincidunt libero auctor."
   },
   {
     "id": 12,
@@ -105,7 +171,13 @@
     "details": "Branding and design for a modern art gallery.",
     "date": "2023",
     "tags": ["Branding", "Design", "UI"],
-    "type": "corporate"
+    "type": "corporate",
+    "client": "Amelia Harris",
+    "duration": "2 months",
+    "website": "www.metroart.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis dui sit amet libero pharetra, nec condimentum augue tincidunt.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id velit at ipsum gravida egestas. Donec malesuada velit ligula.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac nulla id ante sollicitudin scelerisque."
   },
   {
     "id": 13,
@@ -114,7 +186,13 @@
     "details": "Mobile app for a fitness brand.",
     "date": "2024",
     "tags": ["UI", "UX"],
-    "type": "b2b"
+    "type": "b2b",
+    "client": "Elijah Martin",
+    "duration": "3 months",
+    "website": "www.aurorafitness.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut augue ac risus facilisis posuere a sit amet mauris.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in tristique erat. Quisque euismod lectus ac lorem viverra.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada turpis ut nunc rutrum, et tempus turpis tristique."
   },
   {
     "id": 14,
@@ -123,7 +201,13 @@
     "details": "Corporate rebranding for a logistics firm.",
     "date": "2022",
     "tags": ["Branding"],
-    "type": "corporate"
+    "type": "corporate",
+    "client": "Harper Clark",
+    "duration": "1 month",
+    "website": "www.neptunesolutions.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis sapien et nulla vehicula, ac efficitur dui scelerisque.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales tortor vel risus ultrices, at scelerisque ligula molestie.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec arcu at dui pretium facilisis."
   },
   {
     "id": 15,
@@ -132,7 +216,13 @@
     "details": "E-commerce platform for custom printing services.",
     "date": "2023",
     "tags": ["Design", "Development", "API"],
-    "type": "business"
+    "type": "business",
+    "client": "Evelyn Hall",
+    "duration": "4 months",
+    "website": "www.stellarprints.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tristique ante ac justo placerat, vel tincidunt sapien ultricies.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquet justo sit amet nunc ultricies, at tempus ante tincidunt.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nunc sed leo non risus egestas suscipit."
   },
   {
     "id": 16,
@@ -141,6 +231,12 @@
     "details": "Community engagement platform design.",
     "date": "2024",
     "tags": ["UI", "SEO", "APP"],
-    "type": "b2b"
+    "type": "b2b",
+    "client": "Lucas Scott",
+    "duration": "3 months",
+    "website": "www.civicconnect.com",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id ipsum volutpat, eleifend lorem non, laoreet risus.",
+    "role": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat ipsum ut lacus cursus, ut sollicitudin libero suscipit.",
+    "scope": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra arcu nec sapien fermentum, et condimentum ligula varius."
   }
 ]
