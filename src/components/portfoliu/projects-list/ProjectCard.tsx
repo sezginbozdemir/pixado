@@ -69,7 +69,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </Row>
         <div className="project-image">
           <img
-            src={imgUrl || "/project-images/project-card.png"}
+            src={imgUrl || "/project-images/wallpaper-1.png"}
             alt={title}
             className="background-img"
           />

@@ -14,12 +14,18 @@
   position: relative;
 }
 
-.substract {
+.banner-wallpaper-wrapper {
   max-width: 100%;
-  object-fit: cover;
-  -webkit-mask-image: url("/banners/subtract-copy.png");
+  background-color: rgba(128, 128, 128, 0.5);
   mask-image: url("/banners/subtract-copy.png");
-  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  padding: 0.3px;
+}
+
+.banner-wallpaper {
+  margin-bottom: -4px;
+  max-width: 100%;
+  mask-image: url("/banners/subtract-copy.png");
   mask-size: 100% 100%;
 }
 

@@ -43,6 +43,11 @@
   position: relative;
   width: 600px;
   height: 400px;
+  mask-image: url("/project-images/project-card.png");
+  mask-size: 100% 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 0.4px !important;
+  margin: 0 !important;
 }
 
 .project-image .background-img {
@@ -193,6 +198,7 @@
     position: relative;
     width: 400px;
     height: 500px;
+    mask-image: url("/project-images/project-card-mobile.png");
   }
   .work-done {
     transform: translateX(-45%);

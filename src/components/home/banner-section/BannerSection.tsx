@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
-import substract from "../../../assets/subtract.png";
+import bannerWallpaper from "../../../assets/wallpaper-2.png";
 import lineGroup1 from "../../../assets/line-group-1.png";
 import lineGroup2 from "../../../assets/line-group-2.png";
 import lineGroupMulti from "../../../assets/line-group-multi.png";
@@ -56,7 +56,10 @@ const BannerSection = () => {
             variants={slideFromRight}
             className="banner-motion"
           >
-            <img className="substract" src={substract} alt="substract" />
+            <div className="banner-wallpaper-wrapper">
+              <img className="banner-wallpaper" src={bannerWallpaper} />
+            </div>
+
             <motion.div
               initial="hidden"
               animate="visible"
