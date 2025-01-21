@@ -241,7 +241,7 @@
 }
 .detail-banner-2 {
   margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 5rem !important;
 }
 
 .gallery-images {
@@ -297,6 +297,16 @@
 .description-options {
   padding: 0 !important;
 }
+.banner-gallery-images {
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-rotating-label {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+}
 @media (min-width: 992px) {
   .projects-list-col:nth-child(even) {
     margin-top: 12rem;
@@ -346,6 +356,11 @@
 }
 
 @media (max-width: 768px) {
+  .detail-rotating-label {
+    right: -15%;
+    bottom: 58%;
+  }
+
   .gallery-image-3 {
     mask-image: url("/project-images/gallery-left-mobile.png");
   }

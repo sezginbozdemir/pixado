@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "./data.json";
 import greenDecor from "../../../assets/green-decor.png";
+import RotatingLabel from "../../common/RotatingLabel";
 import "./projects-list.css";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -146,6 +147,10 @@ const ProjectDetail: React.FC = () => {
         </div>
       </div>
       <div className="banner-gallery-images">
+        <div className="detail-rotating-label">
+          <RotatingLabel />
+        </div>
+
         <Row>
           <Col xs={12} md={6}>
             <div className="gallery-image-container-3">
@@ -165,12 +170,14 @@ const ProjectDetail: React.FC = () => {
           </Col>
         </Row>
       </div>
-      <div className="detail-banner-2">
-        <img
-          className="detail-banner-image-2"
-          src={project.banner2 || "/project-images/wallpaper-1.png"}
-        />
-      </div>
+      <Row>
+        <div className="detail-banner-2">
+          <img
+            className="detail-banner-image-2"
+            src={project.banner2 || "/project-images/wallpaper-1.png"}
+          />
+        </div>
+      </Row>
     </Container>
   );
 };
