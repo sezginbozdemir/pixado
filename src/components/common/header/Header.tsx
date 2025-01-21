@@ -14,7 +14,8 @@ const Header = () => {
 
   const handleMenuClick = (menu: string): void => {
     setActiveMenu(menu);
-    navigate(`/${menu}`);
+    const path = menu === "home" ? "/" : `/${menu}`;
+    navigate(path);
   };
 
   useEffect(() => {

@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { useLocation } from "react-router-dom";
 import "./projects-list.css";
 import lineGroup1 from "../../../assets/line-group-1.png";
 import lineGroup2 from "../../../assets/line-group-2.png";
@@ -19,8 +20,9 @@ interface ProjectData {
 interface ProjectsListProps {
   projects: ProjectData[];
 }
-
 const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
     <div className="projects-list">
       <Container>
@@ -44,9 +46,21 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
         </div>
         <img className="line-projects-1" src={lineGroup1} />
         <img className="line-projects-2" src={lineGroup2} />
-        <img className="line-projects-4" src={lineGroup1} />
-        <img className="line-projects-6" src={lineGroup1} />
-        <img className="projects-two-lines" src={twoLines} />
+        <img
+          className={`line-projects-4 ${isHomePage ? "display-none" : ""}
+`}
+          src={lineGroup1}
+        />
+        <img
+          className={`line-projects-6 ${isHomePage ? "display-none" : ""}
+`}
+          src={lineGroup1}
+        />
+        <img
+          className={`projects-two-lines ${isHomePage ? "display-none" : ""}
+`}
+          src={twoLines}
+        />
         <img className="line-projects-multi" src={lineGroupMulti} />
 
         <Row>

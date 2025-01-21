@@ -48,8 +48,10 @@ const Filters: React.FC<FiltersProps> = ({ projects, setProjects }) => {
           lg={3}
           onClick={() => handleFilter("all")}
         >
-          toate lucrarile
-          <span className="project-count">{projects.length}</span>
+          <div className="filter-button-inner">
+            toate lucrarile{" "}
+            <span className="project-count">{projects.length}</span>
+          </div>
         </Col>
         {uniqueTypes.map((type) => {
           const projectCount = projects.filter(
@@ -67,7 +69,10 @@ const Filters: React.FC<FiltersProps> = ({ projects, setProjects }) => {
               lg={3}
               key={type}
             >
-              {type} <span className="project-count">{projectCount}</span>
+              <div className="filter-button-inner">
+                {type}
+                <span className="project-count">{projectCount}</span>
+              </div>
             </Col>
           );
         })}

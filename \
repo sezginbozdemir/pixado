@@ -204,27 +204,15 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-}
-
-.tag-outer {
-  display: flex;
-  justify-content: end;
+  padding-right: 5rem !important;
 }
 @media (min-width: 992px) {
   .projects-list-col:nth-child(even) {
     margin-top: 12rem;
   }
 }
-@media (min-width: 1202px) {
-  .tag-outer {
-    padding-right: 5rem !important;
-  }
-}
+
 @media (max-width: 992px) {
-  .tag-outer {
-    justify-content: start;
-    padding-right: 0rem !important;
-  }
   .projects-list-title {
     display: none;
   }
@@ -246,20 +234,15 @@
   .projects-list-title-mobil {
     display: block;
   }
+  .floating-title {
+    padding-right: 2rem !important;
+  }
 }
 
 @media (max-width: 768px) {
-  .detail-head-image {
-    mask-image: url("/project-images/detail-head-mobil.png");
-  }
-  .detail-head {
-    mask-image: url("/project-images/detail-head-mobil.png");
-  }
   .floating-title {
+    padding-right: 0rem !important;
     top: 0;
-  }
-  .float-text {
-    font-size: 1.5rem !important;
   }
   .project-card {
     width: 100%;

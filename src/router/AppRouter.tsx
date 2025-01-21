@@ -13,7 +13,7 @@ const AppRouter = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfoliu" element={<Portfoliu />} />
         <Route path="/portfoliu/:id" element={<ProjectDetail />} />

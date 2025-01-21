@@ -16,6 +16,9 @@
 .filter-button {
   opacity: 0.7;
 }
+.filter-button-inner {
+  cursor: pointer;
+}
 .filter-button.active {
   opacity: 1;
 }
