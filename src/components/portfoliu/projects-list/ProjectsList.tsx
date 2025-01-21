@@ -53,6 +53,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
           {projects.map((project: ProjectData, index: number) => (
             <Col className="projects-list-col" key={index} xs={12} lg={6}>
               <ProjectCard
+                id={project.id}
                 title={project.title}
                 imgUrl={project.imgUrl}
                 details={project.details}

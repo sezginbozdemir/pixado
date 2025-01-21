@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./projects-list.css";
 import { Row, Col, Container } from "react-bootstrap";
 
 interface ProjectCardProps {
+  id: number;
   title: string;
   imgUrl?: string;
   details: string;
@@ -12,6 +14,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
+  id,
   title,
   imgUrl,
   details,
@@ -67,12 +70,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </Col>
           )}
         </Row>
+
         <div className="project-image">
-          <img
-            src={imgUrl || "/project-images/wallpaper-1.png"}
-            alt={title}
-            className="background-img"
-          />
+          <Link to={`/portfoliu/${id}`} className="project-card-link">
+            <img
+              src={imgUrl || "/project-images/wallpaper-1.png"}
+              alt={title}
+              className="background-img"
+            />
+          </Link>
         </div>
       </Row>
       <div className="project-details">

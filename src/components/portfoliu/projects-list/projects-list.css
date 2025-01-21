@@ -1,4 +1,4 @@
-/* PRODUCT CARD TAG */
+/* PROJECT CARD TAG */
 
 .work-done {
   position: absolute;
@@ -28,7 +28,7 @@
   opacity: 1;
 }
 
-/* PRODUCT CARD */
+/* PROJECT CARD */
 
 .project {
   box-sizing: border-box;
@@ -37,6 +37,10 @@
 .project-card {
   overflow: hidden;
   position: relative;
+}
+
+.project-card-link {
+  cursor: pointer;
 }
 
 .project-image {
@@ -80,7 +84,7 @@
   font-size: 1rem;
 }
 
-/* PRODUCT LIST */
+/* PROJECT LIST */
 
 .projects-list {
   position: relative;
