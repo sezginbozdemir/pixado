@@ -118,7 +118,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    padding-left: 3rem;
+    padding-left: 3rem !important;
   }
   .bottom-row-options-2 {
     display: flex;
@@ -140,7 +140,7 @@
     background-image: url("/footer/footer-base-mobile.png");
   }
   .bottom-row-options-2 {
-    padding-left: 3rem;
+    padding-left: 3rem !important;
   }
   .logo-row {
     margin-top: 0rem !important;

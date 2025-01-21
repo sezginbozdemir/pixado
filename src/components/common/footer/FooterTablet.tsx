@@ -34,14 +34,14 @@ const FooterTablet: React.FC<FooterProps> = ({
           className="footer-next"
         ></NextButton>
         <Row className="footer footer-row body">
-          <Row className="footer-col logo-row">
+          <Row className="footer-col">
             <Row>
-              <div>
+              <div className="logo-row">
                 <img className="logo-footer" src={logo} />
               </div>
             </Row>
             <Row>
-              <p className="footer-text body">
+              <p className="footer-text body logo-row">
                 Pixado este agenția ta de încredere pentru soluții creative de
                 web design, reclame video și efecte vizuale. Cu un ochi atent
                 pentru detalii și o echipă pasionată, transformăm ideile în
