@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "./data.json";
+import greenDecor from "../../../assets/green-decor.png";
 import "./projects-list.css";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -98,13 +99,13 @@ const ProjectDetail: React.FC = () => {
       </div>
       <div className="gallery-images">
         <Row>
-          <Col>
+          <Col xs={12} md={6}>
             <img
               className="gallery-image"
               src={project.img1 || "/project-images/wallpaper-1.png"}
             />
           </Col>
-          <Col>
+          <Col xs={12} md={6}>
             <img
               className="gallery-image"
               src={project.img2 || "/project-images/wallpaper-1.png"}
@@ -126,22 +127,27 @@ const ProjectDetail: React.FC = () => {
         <Row>
           <Col lg={6} className="title-2">
             Rolul nostru în procesul <br />
-            design si dezvoltare{" "}
+            design si dezvoltare
           </Col>
           <Col className="body" lg={6}>
             <p>{project.role}</p>
           </Col>
         </Row>
       </div>
-      <div className="detail-banner">
-        <img
-          className="detail-banner-image"
-          src={project.banner1 || "/project-images/wallpaper-1.png"}
-        />
+      <div>
+        <div className="banner-wrapper">
+          <div className="detail-banner">
+            <img
+              className="detail-banner-image"
+              src={project.banner1 || "/project-images/wallpaper-1.png"}
+            />
+          </div>
+          <img className="green-decor" src={greenDecor} />
+        </div>
       </div>
       <div className="banner-gallery-images">
         <Row>
-          <Col>
+          <Col xs={12} md={6}>
             <div className="gallery-image-container-3">
               <img
                 className="gallery-image-3"
@@ -149,7 +155,7 @@ const ProjectDetail: React.FC = () => {
               />
             </div>
           </Col>
-          <Col>
+          <Col xs={12} md={6}>
             <div className="gallery-image-container-4">
               <img
                 className="gallery-image-4"
