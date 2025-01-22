@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BannerSection from "../components/home/banner-section/BannerSection";
 import ScrollAnimation from "../components/home/scroll-animation/ScrollAnimation";
 import RichText from "../components/home/rich-text/RichText";
@@ -11,6 +11,10 @@ import { Col } from "react-bootstrap";
 import Testimonials from "../components/home/testimonials/Testimonials";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const projects = data.slice(0, 4);
   return (
     <Col className="home">

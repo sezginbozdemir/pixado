@@ -14,6 +14,10 @@ interface ProjectData {
 }
 
 const Portfoliu = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [projects, setProjects] = useState<ProjectData[]>([]);
 
   useEffect(() => {

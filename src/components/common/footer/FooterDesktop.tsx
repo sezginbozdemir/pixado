@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 interface FooterProps {
   logo: string;
@@ -54,11 +55,27 @@ const FooterDesktop: React.FC<FooterProps> = ({
               <Col lg={2} className="footer-col">
                 <div className="footer-title title-4">Linkuri Utile</div>
 
-                <Row className="footer-option">Home</Row>
+                <Row className="footer-option">
+                  <Link className="back-link" to="/">
+                    Home
+                  </Link>
+                </Row>
 
-                <Row className="footer-option">Servicii</Row>
-                <Row className="footer-option">Portfoliu</Row>
-                <Row className="footer-option">Contact</Row>
+                <Row className="footer-option">
+                  <Link className="back-link" to="/servicii">
+                    Servicii
+                  </Link>
+                </Row>
+                <Row className="footer-option">
+                  <Link className="back-link" to="/portfoliu">
+                    Portofoliu
+                  </Link>
+                </Row>
+                <Row className="footer-option">
+                  <Link className="back-link" to="/contact">
+                    Contact
+                  </Link>
+                </Row>
               </Col>
               <Col lg={2} className="footer-col">
                 <div className="footer-title title-4">Informatii Legale</div>

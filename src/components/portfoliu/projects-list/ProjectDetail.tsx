@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation, Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -37,9 +37,10 @@ interface ProjectData {
 const typedData: ProjectData[] = data as ProjectData[];
 
 const ProjectDetail: React.FC = () => {
+  const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [location]);
 
   const { id } = useParams<{ id: string }>();
   const project = typedData.find((p) => p.id === parseInt(id || "", 10));
@@ -52,7 +53,9 @@ const ProjectDetail: React.FC = () => {
     <Container className="detail-container">
       <Row>
         <Col className="detail-back body" xs={12} lg={3}>
-          Inapoi
+          <Link to="/portfoliu" className="back-link">
+            Inapoi
+          </Link>
         </Col>
         <Col className="tag-outer" xs={12} lg={4}>
           <Row className="details-regular tag-row">
@@ -68,8 +71,11 @@ const ProjectDetail: React.FC = () => {
       <Row className="detail-head-row">
         <Row>
           <div className="floating-title">
-            <Row className="body">{project.date}</Row>
-            <Row className="title-2 float-text">{project.title}</Row>
+            <div className="body float-row">
+              {project.date}
+              <br />
+              <span className="title-2 float-text"> {project.title}</span>
+            </div>
           </div>
         </Row>
         <div className="detail-head">

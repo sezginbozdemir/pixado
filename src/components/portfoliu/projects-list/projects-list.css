@@ -269,6 +269,11 @@
   margin-right: 12px;
   font-size: 1rem;
 }
+.back-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 .detail-container {
   margin-top: 5rem;
@@ -334,6 +339,13 @@
 .full-width {
   width: 100% !important;
 }
+.float-text {
+  padding: 0 !important;
+}
+
+.float-row {
+  padding-right: 15% !important;
+}
 
 @media (min-width: 992px) {
   .projects-list-col:nth-child(even) {
@@ -349,6 +361,14 @@
   }
 }
 @media (max-width: 992px) {
+  .float-row {
+    padding-right: 7% !important;
+  }
+
+  .detail-back {
+    margin-bottom: 1rem;
+  }
+
   .green-decor {
     bottom: 10%;
     right: 1%;
@@ -387,6 +407,10 @@
 }
 
 @media (max-width: 768px) {
+  .float-row {
+    padding-right: 5% !important;
+  }
+
   .detail-rotating-label {
     right: -15%;
     bottom: 58%;
@@ -427,9 +451,6 @@
   }
   .floating-title {
     top: 0;
-  }
-  .float-text {
-    font-size: 1.5rem !important;
   }
   .project-card {
     width: 100%;
