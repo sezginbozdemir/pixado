@@ -36,7 +36,7 @@ const BannerSection = () => {
             animate="visible"
             variants={slideFromLeft}
           >
-            <div className="title-1">TESTING</div>
+            <div className="title-1">TESTING....</div>
 
             <div className="title-1 banner-text">
               SERVICII DE <br />
