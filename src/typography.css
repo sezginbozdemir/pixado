@@ -5,77 +5,77 @@
 .title-1 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 130%;
 }
 
 .title-2 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 40px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 120%;
 }
 
 .title-3 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 120%;
 }
 
 .title-4 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 130%;
 }
 
 .menu-body-bold {
   font-family: "Space Grotesk", sans-serif;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 120%;
 }
 
 .menu-body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 25px;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 120%;
 }
 
 .eyebrow-body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 25px;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 120%;
 }
 
 .body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 140%;
 }
 
 .details-regular {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 140%;
 }
 
 .details-medium {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 140%;
 }
 
 .button-body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: regular;
+  font-weight: 400;
   line-height: 120%;
 }
 
@@ -83,13 +83,13 @@
   .title-1 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 130%;
   }
   .title-3 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 29px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 120%;
   }
   .body {
@@ -101,75 +101,75 @@
   .title-1 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 130%;
   }
 
   .title-2 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 35px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 120%;
   }
 
   .title-3 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 24px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 120%;
   }
 
   .title-4 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 130%;
   }
 
   .menu-body-bold {
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 120%;
   }
 
   .menu-body {
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 120%;
   }
 
   .eyebrow-body {
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 120%;
   }
   .body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 140%;
   }
   .details-regular {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 140%;
   }
 
   .details-medium {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 140%;
   }
 
   .button-body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 120%;
   }
 }
@@ -178,76 +178,76 @@
   .title-1 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 65px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 130%;
   }
 
   .title-2 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 35px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 120%;
   }
 
   .title-3 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 17px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 120%;
   }
 
   .title-4 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 130%;
   }
 
   .menu-body-bold {
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 120%;
   }
 
   .menu-body {
     font-family: "Space Grotesk", sans-serif;
     font-size: 20px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 120%;
   }
 
   .eyebrow-body {
     font-family: "Space Grotesk", sans-serif;
     font-size: 18px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 120%;
   }
   .body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 140%;
   }
 
   .details-regular {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 140%;
   }
 
   .details-medium {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 140%;
   }
 
   .button-body {
     font-family: "Roboto", sans-serif;
     font-size: 13px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 120%;
   }
 }

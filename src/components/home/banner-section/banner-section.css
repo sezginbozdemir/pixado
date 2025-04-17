@@ -20,13 +20,15 @@
   mask-image: url("/banners/subtract-copy.png");
   mask-size: 100% 100%;
   padding: 0.3px;
+  height: 100%;
 }
 
 .banner-wallpaper {
-  margin-bottom: -4px;
   max-width: 100%;
   mask-image: url("/banners/subtract-copy.png");
   mask-size: 100% 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .projects-count-container {
@@ -76,6 +78,7 @@
 .banner-motion {
   z-index: 1000;
   position: relative;
+  height: 100%;
 }
 .line-group-2 {
   right: 95%;

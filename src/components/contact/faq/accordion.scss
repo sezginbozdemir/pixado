@@ -1,0 +1,42 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/accordion";
+
+.accordion {
+  box-shadow: none;
+
+  .accordion-item {
+    border-radius: 25px;
+    background-color: #252623;
+  }
+  .accordion-button:not(.collapsed)::after {
+    transform: rotate(90deg);
+  }
+
+  .accordion-button {
+    color: #333;
+    font-weight: 600;
+    color: white;
+    height: 90px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%;
+    &:focus {
+      box-shadow: none;
+    }
+
+    &::after {
+      background-image: url("/faq-arrow.png");
+      width: 1.5rem;
+      height: 1.5rem;
+      background-size: 1.5rem;
+    }
+  }
+
+  .accordion-body {
+    padding: 2rem 1rem;
+  }
+}

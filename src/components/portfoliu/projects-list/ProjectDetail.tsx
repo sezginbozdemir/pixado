@@ -74,7 +74,7 @@ const ProjectDetail: React.FC = () => {
             <div className="body float-row">
               {project.date}
               <br />
-              <span className="title-2 float-text"> {project.title}</span>
+              <span className="title-2 float-text">{project.title}</span>
             </div>
           </div>
         </Row>

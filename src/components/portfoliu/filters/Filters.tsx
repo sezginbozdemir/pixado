@@ -49,7 +49,7 @@ const Filters: React.FC<FiltersProps> = ({ projects, setProjects }) => {
           onClick={() => handleFilter("all")}
         >
           <div className="filter-button-inner">
-            toate lucrarile{" "}
+            toate lucrarile
             <span className="project-count">{projects.length}</span>
           </div>
         </Col>
