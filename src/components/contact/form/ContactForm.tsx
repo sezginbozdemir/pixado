@@ -55,7 +55,7 @@ const ContactForm = () => {
               <Form.Control
                 as="textarea"
                 className="contact-textarea body contact-input"
-                placeholder="Nume Prenume"
+                placeholder="Mesajul tau"
               />
             </Form.Group>
           </Col>

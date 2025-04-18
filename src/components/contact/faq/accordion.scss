@@ -1,21 +1,42 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-@import "bootstrap/scss/transitions";
-@import "bootstrap/scss/accordion";
-
 .accordion {
   box-shadow: none;
 
   .accordion-item {
     border-radius: 25px;
     background-color: #252623;
+    border: none;
+    margin-bottom: 1rem;
+  }
+  .accordion-header {
+    border-radius: 25px;
   }
   .accordion-button:not(.collapsed)::after {
     transform: rotate(90deg);
+    background-image: url("/faq-arrow.png");
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #252623;
+    color: white;
+  }
+  .accordion-item:last-of-type {
+    border-radius: 25px;
+  }
+  .accordion-item:last-of-type > .accordion-header .accordion-button {
+    border-radius: 25px;
+  }
+  .accordion-item:first-of-type {
+    border-radius: 25px;
+  }
+  .accordion-item:first-of-type > .accordion-header .accordion-button {
+    border-radius: 25px;
   }
 
   .accordion-button {
+    background-color: transparent;
+    border-radius: 25px;
     color: #333;
     font-weight: 600;
     color: white;
@@ -38,5 +59,6 @@
 
   .accordion-body {
     padding: 2rem 1rem;
+    color: white;
   }
 }

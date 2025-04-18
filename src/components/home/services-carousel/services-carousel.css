@@ -98,10 +98,13 @@
 }
 .progress-bar {
   position: relative;
-  background: #eee;
+  background-color: white !important;
   border-radius: 25px;
-  height: 60%;
+  height: 35px;
   overflow: hidden;
+  @media (max-width: 768px) {
+    height: 25px;
+  }
 }
 
 .progress-fill {

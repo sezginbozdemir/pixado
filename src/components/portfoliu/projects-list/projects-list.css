@@ -166,7 +166,6 @@
   object-fit: cover;
   mask-image: url("/project-images/detail-head.png");
   mask-size: 100% 100%;
-  margin-bottom: -4px;
 }
 .gallery-image-container-3 {
   mask-image: url("/project-images/gallery-left.png");
@@ -196,7 +195,6 @@
   object-fit: cover;
   mask-image: url("/project-images/gallery-left.png");
   mask-size: 100% 100%;
-  margin-bottom: -0.3rem !important;
 }
 .gallery-image-4 {
   width: 100%;
@@ -204,7 +202,6 @@
   object-fit: cover;
   mask-image: url("/project-images/gallery-right.png");
   mask-size: 100% 100%;
-  margin-bottom: -0.3rem !important;
 }
 .detail-banner-image {
   width: 100%;
@@ -212,7 +209,6 @@
   object-fit: cover;
   mask-image: url("/project-images/detail-banner.png");
   mask-size: 100% 100%;
-  margin-bottom: -1rem !important;
 }
 .green-decor {
   position: absolute;
@@ -225,7 +221,7 @@
   height: 450px;
   object-fit: cover;
   border-radius: 35px;
-  border: 0.4px solid rgba(128, 128, 128, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 .detail-banner {
@@ -256,6 +252,7 @@
   mask-image: url("/project-images/detail-head.png");
   mask-size: 100% 100%;
   padding: 1px !important;
+  overflow: hidden;
 }
 
 .tag-col {
@@ -347,7 +344,7 @@
   padding-right: 15% !important;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .projects-list-col:nth-child(even) {
     margin-top: 12rem;
   }

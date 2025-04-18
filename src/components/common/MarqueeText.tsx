@@ -7,26 +7,22 @@ const MarqueeText: React.FC = () => {
       <div className="marquee-container">
         <Row>
           <div className="marquee">
-            <Col className="marquee-item title-1">
-              <span className="marquee-contact">Contactează-ne</span> să lucrăm
-              împreună
-            </Col>
-            <Col className="marquee-item title-1">
-              <span className="marquee-contact">Contactează-ne</span> să lucrăm
-              împreună
-            </Col>
+            {[1, 2, 3, 4].map((index) => (
+              <Col key={index} className="marquee-item title-1">
+                <span className="marquee-contact">Contactează-ne</span> să
+                lucrăm împreună
+              </Col>
+            ))}
           </div>
         </Row>
         <Row>
           <div className="marquee-reverse">
-            <Col className="marquee-item title-1">
-              <span className="marquee-contact">Contactează-ne</span> să lucrăm
-              împreună
-            </Col>
-            <Col className="marquee-item title-1">
-              <span className="marquee-contact">Contactează-ne</span> să lucrăm
-              împreună
-            </Col>
+            {[1, 2, 3, 4].map((index) => (
+              <Col key={index} className="marquee-item title-1">
+                <span className="marquee-contact">Contactează-ne</span> să
+                lucrăm împreună
+              </Col>
+            ))}
           </div>
         </Row>
       </div>

@@ -75,10 +75,7 @@ const BannerSection = () => {
               className="projects-count-container"
             >
               <div className="menu-body-bold projects-count">50+</div>
-              <div className="projects-text body">
-                Proiecte finalizate cu succes{" "}
-                <span className="alaturi">alaturi de Pixado</span>
-              </div>
+              <div className="projects-text">Proiecte finalizate cu succes</div>
             </motion.div>
           </motion.div>
           <img className="line-group-multi" src={lineGroupMulti} />

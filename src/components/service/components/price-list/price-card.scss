@@ -1,0 +1,73 @@
+.price-card {
+  height: 100%;
+  width: 100%;
+  background-color: #252623;
+  mask-image: url("/service-images/price-card.png");
+  mask-size: 100% 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.price-card-wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  mask-image: url("/service-images/price-card.png");
+  mask-size: 100% 100%;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-card-container {
+  height: 580px;
+  width: 100%;
+  position: relative;
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+  }
+  @media (max-width: 1024px) {
+    height: 550px;
+  }
+}
+.price-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.price {
+  font-family: Space Grotesk;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #6bfbce;
+}
+.price-card-links {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.link::before {
+  content: "✓";
+  color: white;
+  margin-right: 8px;
+}
+.price-card-button {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  width: 35%;
+  height: 8%;
+  @media (max-width: 768px) {
+    left: 55px;
+  }
+}
+.card-text {
+  height: 50px;
+}

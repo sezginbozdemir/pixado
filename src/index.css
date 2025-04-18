@@ -5,6 +5,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(9, 17, 0);
 }
 
 body {
@@ -13,8 +14,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: #fcfff9 !important;
+  background-color: rgb(9, 17, 0);
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: rgb(9, 17, 0);
 }

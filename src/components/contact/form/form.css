@@ -1,13 +1,17 @@
 .contact-input {
   width: 100%;
   height: 80px;
-  border-radius: 25px;
-  border: none;
-  text-indent: 10px;
-  background-color: #252623;
-  color: white;
+  border-radius: 25px !important;
+  border: none !important;
+  text-indent: 10px !important;
+  background-color: #252623 !important;
+  color: white !important;
+  box-shadow: none !important;
   &:focus {
-    outline: none;
+    outline: none !important;
+  }
+  &::placeholder {
+    color: #6c757d !important;
   }
 }
 .input-wrapper-left {

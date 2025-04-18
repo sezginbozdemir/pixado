@@ -58,7 +58,7 @@ const WebSlider = () => {
           </div>
         </SwiperSlide>
       ))}
-      <SwiperSlide className="web-slides">
+      <SwiperSlide className="web-slides-last">
         <div className="slide-web-two">
           <div className="web-img-container">
             <div className="web-img-wrapper">
