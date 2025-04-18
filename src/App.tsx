@@ -3,6 +3,10 @@ import AppRouter from "./router/AppRouter";
 import "./App.css";
 import "./typography.css";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 function App() {
   return (
     <div className="App">

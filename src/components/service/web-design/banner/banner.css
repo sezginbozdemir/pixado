@@ -1,0 +1,48 @@
+.web-banner-wrapper {
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  mask-image: url("/project-images/detail-banner.png");
+  mask-size: 100% 100%;
+  padding: 1px;
+  @media (max-width: 992px) {
+    mask-image: url("/project-images/detail-banner-mobile.png");
+  }
+}
+.web-banner-img {
+  width: 100%;
+  height: 100%;
+  mask-image: url("/project-images/detail-banner.png");
+  mask-size: 100% 100%;
+  object-fit: cover;
+  display: block;
+  @media (max-width: 992px) {
+    mask-image: url("/project-images/detail-banner-mobile.png");
+  }
+}
+
+.web-banner-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 992px) {
+    height: 550px;
+  }
+  @media (max-width: 768px) {
+    height: 350px;
+  }
+}
+.web-decor {
+  position: absolute;
+  bottom: 7%;
+  right: 2%;
+  max-width: 4%;
+  @media (max-width: 992px) {
+    max-width: 7%;
+    bottom: 6%;
+  }
+  @media (max-width: 768px) {
+  }
+}

@@ -7,6 +7,7 @@ import ProjectDetail from "../components/portfoliu/projects-list/ProjectDetail";
 import Services from "../pages/Services";
 import Header from "../components/common/header/Header";
 import Footer from "../components/common/footer/Footer";
+import WebDesign from "../pages/WebDesign";
 
 const AppRouter = () => {
   return (
@@ -17,8 +18,8 @@ const AppRouter = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfoliu" element={<Portfoliu />} />
         <Route path="/portfoliu/:id" element={<ProjectDetail />} />
-
-        <Route path="/services" element={<Services />} />
+        <Route path="/servicii/web-design" element={<WebDesign />} />
+        <Route path="/servicii" element={<Services />} />
       </Routes>
       <Footer />
     </Router>

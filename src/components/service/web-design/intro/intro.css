@@ -1,0 +1,40 @@
+.web-intro-row {
+  align-items: end;
+  @media (max-width: 992px) {
+    gap: 1rem;
+  }
+}
+
+.web-header-col {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 992px) {
+    justify-content: start;
+  }
+}
+.web-design-header {
+  width: 70%;
+}
+.web-breadcrumb::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+.web-breadcrumb {
+  align-content: end;
+}
+.web-text {
+  width: 90%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+.web-text-col {
+  display: flex;
+  justify-content: end;
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+}

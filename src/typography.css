@@ -79,7 +79,7 @@
   line-height: 120%;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1028px) {
   .title-1 {
     font-family: "Space Grotesk", sans-serif;
     font-size: 5rem;

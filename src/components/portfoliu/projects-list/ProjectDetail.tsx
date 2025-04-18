@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { FreeMode, Pagination } from "swiper/modules";
 import data from "./data.json";
 import greenDecor from "../../../assets/green-decor.png";
 import RotatingLabel from "../../common/RotatingLabel";
@@ -194,7 +191,7 @@ const ProjectDetail: React.FC = () => {
       <Row>
         <div className="slider-container">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, FreeMode]}
             pagination={{ clickable: true, type: "bullets" }}
             slidesPerView={1}
             breakpoints={{
@@ -207,18 +204,16 @@ const ProjectDetail: React.FC = () => {
             {typedData
               .filter((p) => p.type === project.type && p.id !== project.id)
               .map((filteredProject) => (
-                <Col key={filteredProject.id}>
-                  <SwiperSlide>
-                    <ProjectCard
-                      id={filteredProject.id}
-                      title={filteredProject.title}
-                      imgUrl={filteredProject.imgUrl}
-                      details={filteredProject.details}
-                      date={filteredProject.date}
-                      tags={filteredProject.tags}
-                    />
-                  </SwiperSlide>
-                </Col>
+                <SwiperSlide key={filteredProject.id}>
+                  <ProjectCard
+                    id={filteredProject.id}
+                    title={filteredProject.title}
+                    imgUrl={filteredProject.imgUrl}
+                    details={filteredProject.details}
+                    date={filteredProject.date}
+                    tags={filteredProject.tags}
+                  />
+                </SwiperSlide>
               ))}
           </Swiper>
         </div>
