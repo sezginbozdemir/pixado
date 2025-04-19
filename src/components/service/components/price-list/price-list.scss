@@ -12,3 +12,13 @@
     padding-left: 3rem;
   }
 }
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price-list-container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}

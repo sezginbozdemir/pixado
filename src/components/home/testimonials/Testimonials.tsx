@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./testimonials.css";
 import { Container, Row, Col } from "react-bootstrap";
-import data from "./data.json";
+import data from "../../../data/home/testimonials.json";
 import NextButton from "../../common/buttons/NextButton";
 import TestimonialSlider from "./TestimonialSlider";
 import TestimonialSliderMobile from "./TestimonialSliderMobile";

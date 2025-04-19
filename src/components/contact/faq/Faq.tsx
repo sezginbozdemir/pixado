@@ -2,7 +2,7 @@ import React from "react";
 import "./faq.css";
 import "./accordion.scss";
 import { Accordion, Col, Row } from "react-bootstrap";
-import data from "./faq.json";
+import data from "../../../data/contact/faq.json";
 const faqData: FAQItem[] = data;
 
 type FAQItem = {

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import data from "./data.json";
+import data from "../../../data/home/services-carousel.json";
 import RotatingLabel from "../../common/RotatingLabel";
 
 interface ImageSliderProps {

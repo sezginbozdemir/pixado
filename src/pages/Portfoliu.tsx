@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
 import ProjectsList from "../components/portfoliu/projects-list/ProjectsList";
 import Filters from "../components/portfoliu/filters/Filters";
-import data from "../components/portfoliu/projects-list/data.json";
+import data from "../data/projects/projects.json";
 interface ProjectData {
   id: number;
   title: string;

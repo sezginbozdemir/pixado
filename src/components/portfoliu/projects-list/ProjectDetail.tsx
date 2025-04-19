@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
-import data from "./data.json";
+import data from "../../../data/projects/projects.json";
 import greenDecor from "../../../assets/green-decor.png";
 import RotatingLabel from "../../common/RotatingLabel";
 import ProjectCard from "./ProjectCard";

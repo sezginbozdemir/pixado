@@ -1,6 +1,6 @@
 import React from "react";
 import "./logo-slide.css";
-import data from "./data.json";
+import data from "../../../data/home/logo-slide.json";
 import twoLines from "../../../assets/two-lines.png";
 import { Container, Col, Row } from "react-bootstrap";
 

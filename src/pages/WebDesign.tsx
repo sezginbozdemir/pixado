@@ -4,8 +4,11 @@ import Intro from "../components/service/web-design/intro/Intro";
 import WebBanner from "../components/service/web-design/banner/WebBanner";
 import WebSlider from "../components/service/web-design/web-slider/WebSlider";
 import PriceList from "../components/service/components/price-list/PriceList";
-import data from "../data/services/web-design/data.json";
+import priceList from "../data/services/web-design/price-list.json";
+import infoList from "../data/services/web-design/info-list.json";
+import infoData from "../data/services/web-design/intro.json";
 import Faq from "../components/contact/faq/Faq";
+import InfoList from "../components/service/components/info-list/InfoList";
 
 const WebDesign = () => {
   useEffect(() => {
@@ -14,10 +17,11 @@ const WebDesign = () => {
 
   return (
     <Container style={{ height: "100%" }}>
-      <Intro />
-      <WebBanner />
+      <Intro data={infoData} />
+      <WebBanner img={infoData.img} />
       <WebSlider />
-      <PriceList data={data} />
+      <PriceList data={priceList} />
+      <InfoList data={infoList} />
       <Faq />
     </Container>
   );

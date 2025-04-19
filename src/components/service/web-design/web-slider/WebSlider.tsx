@@ -6,7 +6,7 @@ import { FreeMode } from "swiper/modules";
 import Button from "../../../common/buttons/Button";
 import NextButton from "../../../common/buttons/NextButton";
 import placeholder from "../../../../assets/placeholder.png";
-import data from "./data.json";
+import data from "../../../../data/services/web-design/detail-slider.json";
 const sliderData: SliderItem[] = data;
 
 type SliderItem = {

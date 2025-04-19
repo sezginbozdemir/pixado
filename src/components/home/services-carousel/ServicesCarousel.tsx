@@ -7,7 +7,7 @@ import lineGroupMulti from "../../../assets/line-group-multi.png";
 import ProgressSlider from "./ProgressSlider";
 import ProgressSliderMobile from "./ProgressSliderMobile";
 import ImageSlider from "./ImageSlider";
-import data from "./data.json";
+import data from "../../../data/home/services-carousel.json";
 import { Container, Col, Row } from "react-bootstrap";
 interface ServiceData {
   title: string;

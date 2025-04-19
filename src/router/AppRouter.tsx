@@ -8,6 +8,8 @@ import Services from "../pages/Services";
 import Header from "../components/common/header/Header";
 import Footer from "../components/common/footer/Footer";
 import WebDesign from "../pages/WebDesign";
+import ReclameVideo from "../pages/ReclameVideo";
+import VfxVideo from "../pages/VfxVideo";
 
 const AppRouter = () => {
   return (
@@ -19,6 +21,8 @@ const AppRouter = () => {
         <Route path="/portfoliu" element={<Portfoliu />} />
         <Route path="/portfoliu/:id" element={<ProjectDetail />} />
         <Route path="/servicii/web-design" element={<WebDesign />} />
+        <Route path="/servicii/reclame-video" element={<ReclameVideo />} />
+        <Route path="/servicii/vfx-video" element={<VfxVideo />} />
         <Route path="/servicii" element={<Services />} />
       </Routes>
       <Footer />
