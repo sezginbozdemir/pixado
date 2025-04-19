@@ -210,11 +210,28 @@
   mask-image: url("/project-images/detail-banner.png");
   mask-size: 100% 100%;
 }
+
 .green-decor {
   position: absolute;
-  bottom: 7%;
-  right: 2%;
-  max-width: 4%;
+  bottom: 60px;
+  right: -10px;
+  height: 50px;
+  width: 120px;
+  @media (max-width: 1200px) {
+    right: -30px;
+  }
+  @media (max-width: 768px) {
+    height: 40px;
+    width: 90px;
+    bottom: 45px;
+    right: -15px;
+  }
+  @media (max-width: 450px) {
+    height: 35px;
+    width: 80px;
+    bottom: 45px;
+    right: -15px;
+  }
 }
 .detail-banner-image-2 {
   width: 100%;
@@ -366,12 +383,6 @@
     margin-bottom: 1rem;
   }
 
-  .green-decor {
-    bottom: 10%;
-    right: 1%;
-    max-width: 5%;
-  }
-
   .gallery-image {
     height: 500px;
   }
@@ -432,12 +443,6 @@
   }
   .detail-banner {
     mask-image: url("/project-images/detail-banner-mobile.png");
-  }
-
-  .green-decor {
-    bottom: 7%;
-    right: 2%;
-    max-width: 8%;
   }
 
   .detail-head-image {

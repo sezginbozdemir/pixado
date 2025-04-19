@@ -1,11 +1,13 @@
 import React from "react";
 import "./banner.css";
-import decor from "../../../../assets/green-decor.png";
+import ArrowButton from "../../../common/buttons/ArrowButton";
+
 interface Props {
   img: string;
+  onClick: () => void;
 }
 
-const WebBanner = ({ img }: Props) => {
+const WebBanner = ({ img, onClick }: Props) => {
   return (
     <div className="web-banner-container">
       <div className="web-banner-wrapper">
@@ -15,7 +17,7 @@ const WebBanner = ({ img }: Props) => {
           alt="Pixado"
         />
       </div>
-      <img src={decor} className="web-decor" alt="Pixado" />
+      <ArrowButton onClick={onClick} className="web-decor" />
     </div>
   );
 };

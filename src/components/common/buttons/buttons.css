@@ -46,3 +46,47 @@
   align-items: center;
   justify-content: center;
 }
+.arrow-button {
+  background-color: rgba(107, 251, 206, 1);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 8px;
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  height: auto;
+  animation: arrowSlide 2s ease-in-out infinite;
+}
+
+@keyframes arrowSlide {
+  0% {
+    left: -30px;
+    opacity: 0;
+  }
+  20% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  80% {
+    left: calc(100% + 30px);
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    left: -30px;
+    opacity: 0;
+  }
+}

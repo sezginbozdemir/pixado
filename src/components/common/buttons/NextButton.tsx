@@ -7,12 +7,12 @@ type ButtonProps = {
   className?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ onClick, className }) => {
+const NextButton: React.FC<ButtonProps> = ({ onClick, className }) => {
   return (
     <button className={`next-button ${className}`} onClick={onClick}>
-      <img src={nextArrow} className="next-arrow" />
+      <img src={nextArrow} />
     </button>
   );
 };
 
-export default Button;
+export default NextButton;

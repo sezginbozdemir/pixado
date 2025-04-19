@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
 import data from "../../../data/projects/projects.json";
-import greenDecor from "../../../assets/green-decor.png";
 import RotatingLabel from "../../common/RotatingLabel";
 import ProjectCard from "./ProjectCard";
 import "./projects-list.css";
 import { Container, Row, Col } from "react-bootstrap";
+import ArrowButton from "../../common/buttons/ArrowButton";
 
 interface ProjectData {
   id: number;
@@ -38,6 +38,14 @@ const ProjectDetail: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  const RowRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRef = () => {
+    if (RowRef.current) {
+      RowRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const { id } = useParams<{ id: string }>();
   const project = typedData.find((p) => p.id === parseInt(id || "", 10));
@@ -152,7 +160,7 @@ const ProjectDetail: React.FC = () => {
               src={project.banner1 || "/project-images/wallpaper-1.png"}
             />
           </div>
-          <img className="green-decor" src={greenDecor} />
+          <ArrowButton onClick={scrollToRef} className="green-decor" />
         </div>
       </div>
       <div className="banner-gallery-images">
@@ -160,7 +168,7 @@ const ProjectDetail: React.FC = () => {
           <RotatingLabel />
         </div>
 
-        <Row>
+        <Row ref={RowRef}>
           <Col xs={12} md={6}>
             <div className="gallery-image-container-3">
               <img

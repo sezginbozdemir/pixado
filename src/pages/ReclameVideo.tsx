@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
-import SimpleBanner from "../components/service/components/simple-banner/SimpleBanner";
+import ReclamAnimation from "../components/service/reclame-video/reclam-animation/ReclamAnimation";
 
 const ReclameVideo = () => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const ReclameVideo = () => {
 
   return (
     <Container style={{ height: "100%" }}>
-      <SimpleBanner img="" />
+      <ReclamAnimation img1="" img2="" img3="" img4="" />
     </Container>
   );
 };

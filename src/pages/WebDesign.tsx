@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import Intro from "../components/service/web-design/intro/Intro";
 import WebBanner from "../components/service/web-design/banner/WebBanner";
@@ -14,12 +14,21 @@ const WebDesign = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const SliderRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRef = () => {
+    if (SliderRef.current) {
+      SliderRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <Container style={{ height: "100%" }}>
       <Intro data={infoData} />
-      <WebBanner img={infoData.img} />
-      <WebSlider />
+      <WebBanner onClick={scrollToRef} img={infoData.img} />
+      <div ref={SliderRef}>
+        <WebSlider />
+      </div>
       <PriceList data={priceList} />
       <InfoList data={infoList} />
       <Faq />

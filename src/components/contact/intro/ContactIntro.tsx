@@ -2,9 +2,13 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./intro.css";
 import placeholder from "../../../assets/placeholder.png";
-import decor from "../../../assets/green-decor.png";
+import ArrowButton from "../../common/buttons/ArrowButton";
 
-const ContactIntro = () => {
+interface Props {
+  onClick: () => void;
+}
+
+const ContactIntro = ({ onClick }: Props) => {
   return (
     <div className="intro-row">
       <Row className="body-row">
@@ -27,7 +31,7 @@ const ContactIntro = () => {
           <div className="contact-img-wrapper">
             <img src={placeholder} className="contact-img" alt="Pixado" />
           </div>
-          <img src={decor} className="contact-decor" alt="Pixado" />
+          <ArrowButton onClick={onClick} className="contact-decor" />
         </Col>
       </Row>
     </div>
