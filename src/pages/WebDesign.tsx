@@ -23,16 +23,21 @@ const WebDesign = () => {
   };
 
   return (
-    <Container style={{ height: "100%" }}>
-      <Intro data={infoData} />
-      <WebBanner onClick={scrollToRef} img={infoData.img} />
+    <>
+      <Container style={{ height: "100%" }}>
+        <Intro data={infoData} />
+        <WebBanner onClick={scrollToRef} img={infoData.img} />
+      </Container>
+
       <div ref={SliderRef}>
         <WebSlider />
       </div>
-      <PriceList data={priceList} />
-      <InfoList data={infoList} />
-      <Faq />
-    </Container>
+      <Container style={{ height: "100%" }}>
+        <PriceList data={priceList} />
+        <InfoList data={infoList} />
+        <Faq />
+      </Container>
+    </>
   );
 };
 

@@ -1,5 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
+
 import "./scroll-animation.css";
 
 const ScrollMask = () => {
@@ -13,21 +15,7 @@ const ScrollMask = () => {
 
   const scaleSmallScreen = useTransform(scrollYProgress, [0, 1], [5, 90]);
   const opacitySmallScreen = useTransform(scrollYProgress, [0.2, 0.45], [1, 0]);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isSmallScreen = useMediaQuery({ maxWidth: 767 });
 
   return (
     <div ref={ref} className="scroll-mask-container">

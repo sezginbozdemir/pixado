@@ -20,6 +20,7 @@
   .accordion-button:not(.collapsed) {
     background-color: #252623;
     color: white;
+    box-shadow: none;
   }
   .accordion-item:last-of-type {
     border-radius: 25px;

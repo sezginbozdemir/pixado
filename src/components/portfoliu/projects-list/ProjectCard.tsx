@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./projects-list.css";
 import { Row, Col, Container } from "react-bootstrap";
+import { useMediaQuery } from "react-responsive";
 
 interface ProjectCardProps {
   id: number;
@@ -21,7 +22,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   date,
   tags,
 }) => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const isTabletOrLarger = useMediaQuery({ minWidth: 769 });
+
   const [marginStyle, setMarginStyle] = useState<React.CSSProperties>({});
   const location = useLocation();
 
@@ -33,16 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   }, [location.pathname]);
 
   useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    if (screenWidth > 768) {
+    if (isTabletOrLarger) {
       if (!tags[1]) {
         setMarginStyle({ right: "28%" });
       } else if (!tags[2]) {
@@ -57,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         setMarginStyle({});
       }
     }
-  }, [screenWidth, tags]);
+  }, [isTabletOrLarger, tags]);
   return (
     <Container className="project">
       <Row className={`project-card ${isPortfolioPath ? "full-width" : ""}`}>
@@ -72,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {tags[1]}
             </Col>
           )}
-          {tags[2] && screenWidth > 768 && (
+          {tags[2] && isTabletOrLarger && (
             <Col md={1} className="work-done-options">
               {tags[2]}
             </Col>

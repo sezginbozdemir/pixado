@@ -4,6 +4,27 @@
   align-items: center;
   gap: 4rem;
   margin-bottom: 5rem;
+  position: relative;
+}
+.decor-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: auto;
+  @media (max-width: 992px) {
+    width: 50px;
+  }
+}
+.decor-two {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  @media (max-width: 992px) {
+    width: 150px;
+  }
 }
 .flex-container {
   display: flex;

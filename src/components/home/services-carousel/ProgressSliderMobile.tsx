@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "../../common/buttons/Button";
 import { Col, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 interface ServiceData {
   title: string;
   imgUrl: string;
@@ -30,6 +31,13 @@ const ProgressSliderMobile: React.FC<ProgressSliderProps> = ({
       }
     });
   }, []);
+  const navigate = useNavigate();
+
+  const handleMoreClick = () => {
+    const title = data[currentIndex].title;
+    const slug = title.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/servicii/${slug}`);
+  };
 
   const slideVariants = {
     enter: (direction: number) => ({
@@ -68,6 +76,7 @@ const ProgressSliderMobile: React.FC<ProgressSliderProps> = ({
         <Row className="progress-element">
           <Row className="progress-button-row">
             <Button
+              onClick={handleMoreClick}
               className="button-body progress-button"
               text="Afla mai multe"
             />
