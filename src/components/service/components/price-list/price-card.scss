@@ -60,6 +60,7 @@
 }
 .price-card-button {
   position: absolute;
+  z-index: 5000;
   bottom: 10px;
   left: 25px;
   width: 35%;

@@ -22,7 +22,7 @@ const AppRouter = () => {
         <Route path="/portfoliu/:id" element={<ProjectDetail />} />
         <Route path="/servicii/web-design" element={<WebDesign />} />
         <Route path="/servicii/reclame-video" element={<ReclameVideo />} />
-        <Route path="/servicii/vfx-video" element={<VfxVideo />} />
+        <Route path="/servicii/vfx" element={<VfxVideo />} />
         <Route path="/servicii" element={<Services />} />
       </Routes>
       <Footer />

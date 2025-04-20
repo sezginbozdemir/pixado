@@ -1,0 +1,113 @@
+.vfx-ani-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.vfx-ani-text {
+  width: 40%;
+  text-align: center;
+}
+.vfx-line {
+  position: absolute;
+  width: 2000px;
+  height: 550px;
+  transform: rotate(-45deg);
+  z-index: 5;
+  border-radius: 58px;
+
+  &.vfx-green {
+    background-color: #6bfbce;
+  }
+
+  &.vfx-purple {
+    background-color: #6368ad;
+  }
+}
+.topLeft {
+  position: absolute;
+
+  // Default (XL+ screens)
+  top: 116%;
+  left: -131%;
+
+  @media (max-width: 1399px) {
+    top: 116%;
+    left: -154%;
+  }
+
+  @media (max-width: 1199px) {
+    top: 116%;
+    left: -182%;
+  }
+
+  @media (max-width: 991px) {
+    top: 116%;
+    left: -243%;
+  }
+
+  @media (max-width: 767px) {
+    top: 116%;
+    left: -326%;
+  }
+}
+
+.bottomRight {
+  position: absolute;
+
+  // Default (XL+ screens)
+  top: 175%;
+  left: -26%;
+
+  @media (max-width: 1399px) {
+    top: 175%;
+    left: -48%;
+  }
+
+  @media (max-width: 1199px) {
+    top: 175%;
+    left: -76%;
+  }
+
+  @media (max-width: 991px) {
+    top: 175%;
+    left: -132%;
+  }
+
+  @media (max-width: 767px) {
+    top: 175%;
+    left: -199%;
+  }
+}
+
+.center {
+  position: absolute;
+
+  // Default (XL+ screens)
+  top: -162%;
+  left: 52%;
+
+  @media (max-width: 1399px) {
+    top: -162%;
+    left: 39%;
+  }
+
+  @media (max-width: 1199px) {
+    top: -162%;
+    left: 28%;
+  }
+
+  @media (max-width: 991px) {
+    top: -162%;
+    left: 4%;
+  }
+
+  @media (max-width: 767px) {
+    top: -162%;
+    left: -26%;
+  }
+}

@@ -1,4 +1,4 @@
-.carousel-container {
+.logo-carousel-container {
   padding-bottom: 10rem;
   overflow: hidden;
   position: relative;
@@ -12,21 +12,21 @@
   right: 5%;
 }
 
-.carousel {
+.logo-carousel {
   animation: 10s slide infinite linear;
   display: inline-block;
 }
 
-.carousel-container:hover .carousel {
+.logo-carousel-container:hover .carousel {
   animation-play-state: paused;
 }
 
-.carousel-item {
+.logo-carousel-item {
   text-align: center;
   display: inline-block;
 }
 
-.carousel-image {
+.logo-carousel-image {
   max-width: 100%;
   height: 150px;
   object-fit: contain;

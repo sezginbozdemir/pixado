@@ -45,7 +45,8 @@ const Header = () => {
           <Button
             className="menu-button button-body"
             text="Contacteaza-ne"
-          ></Button>
+            onClick={() => handleMenuClick("contact")}
+          />
           <div className="burger-menu">
             <img className="burger-menu-icon" src={burger} alt="Menu" />
           </div>

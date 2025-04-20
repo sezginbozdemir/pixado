@@ -2,8 +2,11 @@ import React from "react";
 import "./contact.css";
 import Button from "../../common/buttons/Button";
 import { Container, Row, Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
   return (
     <Container className="contact">
       <Row className="first-container">
@@ -22,7 +25,13 @@ const Contact = () => {
             mauris graseda ut.
           </div>
           <div className="body links-container">
-            <Button className="contact-button" text="Contacteaza-ne"></Button>
+            <Button
+              onClick={() => {
+                navigate("contact");
+              }}
+              className="contact-button"
+              text="Contacteaza-ne"
+            ></Button>
             <div className="afla">Afla mai multe</div>{" "}
           </div>
         </Col>

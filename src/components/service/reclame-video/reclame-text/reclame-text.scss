@@ -1,0 +1,53 @@
+.reclame-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  @media (max-width: 992px) {
+    align-items: center;
+  }
+}
+.reclame-text {
+  width: 50%;
+  @media (max-width: 992px) {
+    width: 90%;
+  }
+}
+.reclame-text-button {
+  width: 220px;
+  height: 55px;
+}
+.see-below-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  @media (max-width: 992px) {
+    align-items: center;
+    margin-top: 2rem;
+  }
+  @media (max-width: 768px) {
+    align-items: start;
+  }
+}
+.see-below {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.green {
+  color: #6bfbce;
+}

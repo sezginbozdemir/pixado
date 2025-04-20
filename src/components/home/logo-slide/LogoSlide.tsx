@@ -12,18 +12,26 @@ interface Logo {
 const LogoSlide: React.FC = () => {
   return (
     <Container>
-      <div className="carousel-container">
+      <div className="logo-carousel-container">
         <img className="two-lines" src={twoLines} />
         <Row>
-          <div className="carousel">
+          <div className="logo-carousel">
             {data.map((logo: Logo, index: number) => (
-              <Col xs={6} lg={3} key={index} className="carousel-item">
-                <img src={logo.url} alt={logo.alt} className="carousel-image" />
+              <Col xs={6} lg={3} key={index} className="logo-carousel-item">
+                <img
+                  src={logo.url}
+                  alt={logo.alt}
+                  className="logo-carousel-image"
+                />
               </Col>
             ))}
             {data.map((logo: Logo, index: number) => (
-              <Col xs={6} lg={3} key={index} className="carousel-item">
-                <img src={logo.url} alt={logo.alt} className="carousel-image" />
+              <Col xs={6} lg={3} key={index} className="logo-carousel-item">
+                <img
+                  src={logo.url}
+                  alt={logo.alt}
+                  className="logo-carousel-image"
+                />
               </Col>
             ))}
           </div>
