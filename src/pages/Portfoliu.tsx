@@ -3,6 +3,7 @@ import { Col } from "react-bootstrap";
 import ProjectsList from "../components/portfoliu/projects-list/ProjectsList";
 import Filters from "../components/portfoliu/filters/Filters";
 import data from "../data/projects/projects.json";
+import PageMeta from "../components/common/PageMeta";
 interface ProjectData {
   id: number;
   title: string;
@@ -26,6 +27,7 @@ const Portfoliu = () => {
 
   return (
     <Col className="portfoliu">
+      <PageMeta title="Portfoliu" description="Portfoliu Meta" />
       <Filters projects={data} setProjects={setProjects} />
       <ProjectsList projects={projects} />
     </Col>

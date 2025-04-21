@@ -1,44 +1,20 @@
-import React, { useEffect, useRef } from "react";
-import { useParams, useLocation, Link } from "react-router-dom";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
-import data from "../../../data/projects/projects.json";
 import RotatingLabel from "../../common/RotatingLabel";
 import ProjectCard from "./ProjectCard";
 import "./projects-list.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ArrowButton from "../../common/buttons/ArrowButton";
+import { ProjectData } from "../../../pages/Project";
 
-interface ProjectData {
-  id: number;
-  title: string;
-  imgUrl?: string;
-  details: string;
-  date: string;
-  tags: string[];
-  type: string;
-  client: string;
-  duration: string;
-  website: string;
-  banner1: string;
-  banner2: string;
-  img1: string;
-  img2: string;
-  img3: string;
-  img4: string;
-  description: string;
-  scope: string;
-  role: string;
+interface Props {
+  typedData: ProjectData[];
+  project: ProjectData;
 }
 
-const typedData: ProjectData[] = data as ProjectData[];
-
-const ProjectDetail: React.FC = () => {
-  const location = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
+const ProjectDetail: React.FC<Props> = ({ typedData, project }) => {
   const RowRef = useRef<HTMLDivElement>(null);
 
   const scrollToRef = () => {
@@ -46,13 +22,6 @@ const ProjectDetail: React.FC = () => {
       RowRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const { id } = useParams<{ id: string }>();
-  const project = typedData.find((p) => p.id === parseInt(id || "", 10));
-
-  if (!project) {
-    return <div className="body">Project not found!</div>;
-  }
 
   return (
     <Container className="detail-container">

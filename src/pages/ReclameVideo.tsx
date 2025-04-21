@@ -8,6 +8,7 @@ import InfoList from "../components/service/components/info-list/InfoList";
 import data from "../data/services/reclame-video/about.json";
 import infoList from "../data/services/reclame-video/info-list.json";
 import priceList from "../data/services/reclame-video/price-list.json";
+import PageMeta from "../components/common/PageMeta";
 
 const ReclameVideo = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const ReclameVideo = () => {
   };
   return (
     <Container style={{ height: "100%" }}>
+      <PageMeta title="Reclame Video" description="Reclame Video Meta" />
       <ReclamBanner onClick={scrollToRef} data={data} />
       <div ref={ReclameRef}>
         <ReclameText data={data} />

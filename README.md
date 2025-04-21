@@ -4,7 +4,7 @@ Pixado is a responsive, animation-enhanced React project built with [Vite](https
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **React 18**
 - **Vite 6**
@@ -17,7 +17,7 @@ Pixado is a responsive, animation-enhanced React project built with [Vite](https
 
 ---
 
-## 📦 Getting Started
+## Getting Started
 
 ### 1. Clone the Repo
 
@@ -42,7 +42,7 @@ The app will be available at `http://localhost:5173` (or another port if configu
 
 ---
 
-## 🏗️ Build for Production
+## Build for Production
 
 ```bash
 npm run build
@@ -61,7 +61,7 @@ npm run preview
 
 ---
 
-## 🧹 Linting
+## Linting
 
 Run ESLint on the project:
 
@@ -71,20 +71,15 @@ npm run lint
 
 ---
 
-## 🚀 Deployment (Server Workflow)
+## Deployment (Server Workflow)
 
 Pixado is deployed by pushing to a **bare Git repo** on your production server.
 
 ---
 
-## 🧠 Author
+## Author
 
 - **Sezgin Bozdemir**  
   [GitHub](https://github.com/sezginbozdemir)
 
 ---
-
-## 📄 License
-
-MIT – feel free to use, modify, and share.
-

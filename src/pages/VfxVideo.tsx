@@ -8,6 +8,7 @@ import data from "../data/services/vfx-video/about.json";
 import PriceList from "../components/service/components/price-list/PriceList";
 import InfoList from "../components/service/components/info-list/InfoList";
 import VfxAnimation from "../components/service/vfx-video/vfx-animation/VfxAnimation";
+import PageMeta from "../components/common/PageMeta";
 
 const VfxVideo = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const VfxVideo = () => {
 
   return (
     <Container style={{ height: "100%" }}>
+      <PageMeta title="VFX" description="VFX" />
       <SimpleBanner img={data.banner} />
       <VfxText data={data} />
       <VfxAnimation />

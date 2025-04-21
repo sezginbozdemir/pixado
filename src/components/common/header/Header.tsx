@@ -4,9 +4,12 @@ import logo from "../../../assets/logo.png";
 import burger from "../../../assets/burger.png";
 import Button from "../buttons/Button";
 import "./header.css";
+import SideMenu from "./SideMenu";
+import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState<string>("home");
+  const [burgerOpen, setBurgerOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -16,6 +19,7 @@ const Header = () => {
     setActiveMenu(menu);
     const path = menu === "home" ? "/" : `/${menu}`;
     navigate(path);
+    setBurgerOpen(false);
   };
 
   useEffect(() => {
@@ -47,11 +51,23 @@ const Header = () => {
             text="Contacteaza-ne"
             onClick={() => handleMenuClick("contact")}
           />
-          <div className="burger-menu">
+          <div
+            className="burger-menu"
+            onClick={() => setBurgerOpen((prev) => !prev)}
+          >
             <img className="burger-menu-icon" src={burger} alt="Menu" />
           </div>
         </div>
       </div>
+      <AnimatePresence>
+        <SideMenu
+          onClose={() => setBurgerOpen(false)}
+          handleMenuClick={handleMenuClick}
+          activeMenu={activeMenu}
+          items={menuItems}
+          isOpen={burgerOpen}
+        />
+      </AnimatePresence>
     </>
   );
 };

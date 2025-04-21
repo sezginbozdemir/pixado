@@ -9,6 +9,7 @@ import priceList from "../data/services/web-design/price-list.json";
 import infoList from "../data/services/web-design/info-list.json";
 import infoData from "../data/services/web-design/intro.json";
 import Faq from "../components/contact/faq/Faq";
+import PageMeta from "../components/common/PageMeta";
 
 const WebDesign = () => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const WebDesign = () => {
 
   return (
     <>
+      <PageMeta title="Web Design" description="Web Design" />
       <Container style={{ height: "100%" }}>
         <Intro data={infoData} />
         <WebBanner onClick={scrollToRef} img={infoData.img} />
