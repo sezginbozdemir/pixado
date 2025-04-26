@@ -12,9 +12,10 @@ interface Data {
 interface Props {
   data: Data;
   button?: boolean;
+  onClick?: () => void;
 }
 
-const Benefits = ({ data, button }: Props) => {
+const Benefits = ({ data, button, onClick }: Props) => {
   return (
     <div className="benefits">
       <Row>
@@ -29,7 +30,11 @@ const Benefits = ({ data, button }: Props) => {
               ))}
             </div>
             {button && (
-              <Button className="benefits-button" text={data.button} />
+              <Button
+                onClick={onClick}
+                className="benefits-button"
+                text={data.button}
+              />
             )}
           </div>
         </Col>

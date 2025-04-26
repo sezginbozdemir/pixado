@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 10rem;
   margin-bottom: 10rem;
+  @media (max-width: 992px) {
+    gap: 5rem;
+  }
 }
 
 .branding-services-container {
@@ -18,12 +21,21 @@
   align-items: start;
   width: 50%;
   margin-top: 2rem;
+  @media (max-width: 992px) {
+    width: 100%;
+    align-items: center;
+    padding: 0rem 1rem;
+  }
 }
 .branding-services-container:nth-of-type(2) .branding-details {
-  margin-left: 10rem;
+  @media (min-width: 992px) {
+    margin-left: 10rem;
+  }
 }
 .branding-services-container:nth-of-type(3) .branding-details {
-  margin-left: 25rem;
+  @media (min-width: 992px) {
+    margin-left: 25rem;
+  }
 }
 
 .branding-title {

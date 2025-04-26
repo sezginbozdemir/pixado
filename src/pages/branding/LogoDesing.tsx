@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import priceList from "../../data/services/branding/logo-design/price-list.json";
 import infoData from "../../data/services/branding/logo-design/logo-design.json";
@@ -15,6 +15,13 @@ const LogoDesign = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const ref = useRef<HTMLDivElement>(null);
+
+  const scrollToRef = () => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -23,8 +30,10 @@ const LogoDesign = () => {
         <Intro data={infoData} />
         <LogoDesignIntro data={infoData} />
         <Inclusives data={infoData} />
-        <Benefits button data={infoData} />
-        <PriceList data={priceList} />
+        <Benefits onClick={scrollToRef} button data={infoData} />
+        <div ref={ref}>
+          <PriceList data={priceList} />
+        </div>
         <Faq data={faq} />
       </Container>
     </>
