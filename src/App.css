@@ -1,3 +1,9 @@
+.branding-img-wrapper {
+  padding: 0rem 8rem;
+  @media (max-width: 992px) {
+    padding: 0;
+  }
+}
 #root {
   display: flex;
   margin: 0;

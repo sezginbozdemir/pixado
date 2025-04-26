@@ -1,0 +1,25 @@
+{
+  "banner": "",
+  "title": "Branding",
+  "text": "SERVICII DE BRANDING COMPLETE",
+  "description": "Brandingul este mai mult decât o imagine frumoasă – este fundația pe care se construiește percepția publicului despre afacerea ta. La Pixado, abordăm brandingul ca pe un proces strategic și creativ, care aduce laolaltă elemente vizuale și valori de brand într-o identitate coerentă, relevantă și ușor de recunoscut.",
+  "subDescription": "Serviciul nostru de branding include trei componente esențiale:",
+  "services": [
+    {
+      "title": "Logo Design",
+      "text": "Logo-ul este punctul de pornire al oricărui brand. Este semnătura ta vizuală, prima impresie pe care o creezi. Noi construim logo-uri care nu sunt doar estetice, ci care transmit mesajul corect și se potrivesc perfect cu identitatea business-ului tău. Fie că vrei ceva minimalist, emblematic sau jucăuș, ne asigurăm că rezultatul este memorabil, scalabil și unic.",
+      "button": "Află mai multe despre procesul de creație"
+    },
+    {
+      "title": "Identitate Vizuală",
+      "text": "După logo, urmează definirea întregului sistem vizual al brandului: culori, fonturi, stil grafic, layout-uri, simboluri auxiliare – toate create pentru a forma o imagine coerentă și ușor de recunoscut. Identitatea vizuală te ajută să fii constant și profesionist în toate materialele tale – de la site, la social media, până la materiale print.",
+      "button": "Vezi cum dezvoltăm o identitate vizuală completă"
+    },
+    {
+      "title": "Manual branding",
+      "text": "Pentru ca imaginea ta să fie utilizată corect de fiecare dată, ai nevoie de un manual branding. Acest document adună toate regulile de utilizare ale elementelor vizuale, astfel încât brandul tău să rămână consecvent indiferent cine lucrează cu el. De la poziționarea logo-ului, până la exemple de aplicații în diverse medii, brandbook-ul este instrumentul care garantează coerența și profesionalismul în comunicare.",
+      "button": "Descoperă ce conține un manual branding"
+    }
+  ],
+  "img": "/branding/branding-img.png"
+}

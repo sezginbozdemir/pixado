@@ -13,8 +13,8 @@ const ScrollMask = () => {
   const scale = useTransform(scrollYProgress, [0, 1], [90, 5]);
   const opacity = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]);
 
-  const scaleSmallScreen = useTransform(scrollYProgress, [0, 1], [5, 90]);
-  const opacitySmallScreen = useTransform(scrollYProgress, [0.2, 0.45], [1, 0]);
+  const scaleSmallScreen = useTransform(scrollYProgress, [0, 1], [90, 4]);
+  const opacitySmallScreen = useTransform(scrollYProgress, [0.2, 0.45], [0, 1]);
   const isSmallScreen = useMediaQuery({ maxWidth: 767 });
 
   return (

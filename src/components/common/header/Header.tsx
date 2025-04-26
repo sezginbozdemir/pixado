@@ -16,10 +16,10 @@ const Header = () => {
   const menuItems: string[] = ["home", "servicii", "portfoliu", "contact"];
 
   const handleMenuClick = (menu: string): void => {
+    setBurgerOpen(false);
     setActiveMenu(menu);
     const path = menu === "home" ? "/" : `/${menu}`;
     navigate(path);
-    setBurgerOpen(false);
   };
 
   useEffect(() => {

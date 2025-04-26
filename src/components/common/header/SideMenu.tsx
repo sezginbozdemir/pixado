@@ -6,18 +6,18 @@ const sidebar = {
   open: {
     clipPath: `circle(500px at 100% 0px)`,
     transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2,
+      type: "tween",
+      ease: "easeInOut",
+      duration: 0.5,
     },
   },
   closed: {
     clipPath: "circle(0px at 100% 0)",
     transition: {
-      delay: 0.3,
-      type: "spring",
-      stiffness: 400,
-      damping: 40,
+      delay: 0.1,
+      type: "tween",
+      ease: "easeInOut",
+      duration: 0.5,
     },
   },
 };

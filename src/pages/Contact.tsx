@@ -4,6 +4,8 @@ import ContactIntro from "../components/contact/intro/ContactIntro";
 import ContactForm from "../components/contact/form/ContactForm";
 import Faq from "../components/contact/faq/Faq";
 import PageMeta from "../components/common/PageMeta";
+import data from "../data/contact/faq.json";
+
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +25,7 @@ const Contact = () => {
       <div ref={formRef}>
         <ContactForm />
       </div>
-      <Faq />
+      <Faq data={data} />
     </Container>
   );
 };

@@ -1,5 +1,5 @@
 .web-intro-row {
-  align-items: end;
+  align-items: start;
   @media (max-width: 992px) {
     gap: 1rem;
   }
@@ -33,8 +33,13 @@
 }
 .web-text-col {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   justify-content: end;
   @media (max-width: 992px) {
     justify-content: center;
   }
+}
+.branding-services {
+  color: #6bfbce;
 }

@@ -10,6 +10,8 @@ import WebDesign from "../pages/WebDesign";
 import ReclameVideo from "../pages/ReclameVideo";
 import VfxVideo from "../pages/VfxVideo";
 import Project from "../pages/Project";
+import Branding from "../pages/Branding";
+import LogoDesign from "../pages/LogoDesing";
 
 const AppRouter = () => {
   return (
@@ -22,6 +24,8 @@ const AppRouter = () => {
         <Route path="/portfoliu/:id" element={<Project />} />
         <Route path="/servicii/web-design" element={<WebDesign />} />
         <Route path="/servicii/reclame-video" element={<ReclameVideo />} />
+        <Route path="/servicii/branding" element={<Branding />} />
+        <Route path="/servicii/branding/logo-design" element={<LogoDesign />} />
         <Route path="/servicii/vfx" element={<VfxVideo />} />
         <Route path="/servicii" element={<Services />} />
       </Routes>

@@ -24,14 +24,6 @@
   width: 100%;
 }
 
-@media (min-width: 1028px) {
-}
-
-/* Extra Large Screens (1440px and above) */
-@media (max-width: 1440px) {
-}
-
-/* Mobile Screens (Below 768px) */
 @media (max-width: 1028px) {
   .scroll-mask-container {
     height: 180vh;
@@ -42,10 +34,10 @@
 }
 @media (max-width: 768px) {
   .scroll-content {
-    height: 70vh;
+    height: 100vh;
   }
   .scroll-mask-container {
-    height: 70vh;
+    height: 180vh;
   }
   .text-mask {
     font-size: 1.5rem;

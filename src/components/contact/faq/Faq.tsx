@@ -2,14 +2,15 @@ import React from "react";
 import "./faq.css";
 import "./accordion.scss";
 import { Accordion, Col, Row } from "react-bootstrap";
-import data from "../../../data/contact/faq.json";
-const faqData: FAQItem[] = data;
 
-type FAQItem = {
+interface FAQItem {
   question: string;
   answer: string;
-};
-const Faq = () => {
+}
+interface Props {
+  data: FAQItem[];
+}
+const Faq = ({ data }: Props) => {
   return (
     <div className="faq-wrapper">
       <Row>
@@ -18,7 +19,7 @@ const Faq = () => {
         </Col>
         <Col xs={12} lg={6}>
           <Accordion>
-            {faqData.map((item, index) => (
+            {data.map((item, index) => (
               <Accordion.Item key={index} eventKey={index.toString()}>
                 <Accordion.Header>{item.question}</Accordion.Header>
                 <Accordion.Body className="body">{item.answer}</Accordion.Body>
