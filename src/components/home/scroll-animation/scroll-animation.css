@@ -15,9 +15,9 @@
 
 .text-mask {
   width: 100%;
-  font-family: sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
+  height: 100%;
+  font-family: Tilt Warp;
+  font-size: 18rem;
 }
 .mask-container {
   height: 100%;
@@ -29,7 +29,7 @@
     height: 180vh;
   }
   .text-mask {
-    font-size: 2rem;
+    font-size: 12rem;
   }
 }
 @media (max-width: 768px) {
@@ -40,6 +40,6 @@
     height: 180vh;
   }
   .text-mask {
-    font-size: 1.5rem;
+    font-size: 6rem;
   }
 }
