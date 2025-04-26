@@ -10,8 +10,8 @@ import WebDesign from "../pages/WebDesign";
 import ReclameVideo from "../pages/ReclameVideo";
 import VfxVideo from "../pages/VfxVideo";
 import Project from "../pages/Project";
-import Branding from "../pages/Branding";
-import LogoDesign from "../pages/LogoDesing";
+import Branding from "../pages/branding/Branding";
+import LogoDesign from "../pages/branding/LogoDesing";
 
 const AppRouter = () => {
   return (

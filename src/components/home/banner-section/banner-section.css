@@ -73,9 +73,10 @@
   border-radius: 2rem;
   padding: 0.6rem;
   border: solid 3px rgba(37, 38, 35, 1);
-  margin-right: 5%;
+  margin-right: 1rem;
   white-space: nowrap;
   z-index: 99999;
+  margin-bottom: 1rem;
 }
 
 .line-group-1 {

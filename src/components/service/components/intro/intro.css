@@ -13,7 +13,7 @@
   }
 }
 .web-design-header {
-  width: 70%;
+  width: 500px;
 }
 .web-breadcrumb::before {
   content: "•";

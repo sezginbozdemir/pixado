@@ -59,6 +59,7 @@ const BannerSection = () => {
               <div className="title-3 banner-label">WEBSITURI</div>
               <div className="title-3 banner-label">RECLAME VIDEO</div>
               <div className="title-3 banner-label">VFX</div>
+              <div className="title-3 banner-label">BRANDING</div>
             </div>
           </motion.div>
         </Col>

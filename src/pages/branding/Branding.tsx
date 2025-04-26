@@ -1,15 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
-import priceList from "../data/services/branding/price-list.json";
-import infoList from "../data/services/branding/info-list.json";
-import infoData from "../data/services/branding/branding.json";
-import PageMeta from "../components/common/PageMeta";
-import WebBanner from "../components/service/components/banner/WebBanner";
-import Intro from "../components/service/components/intro/Intro";
-import PriceList from "../components/service/components/price-list/PriceList";
-import InfoList from "../components/service/components/info-list/InfoList";
-import SimpleBanner from "../components/service/components/simple-banner/SimpleBanner";
-import BrandingServices from "../components/service/branding/sub-services/BrandingServices";
+import priceList from "../../data/services/branding/price-list.json";
+import infoList from "../../data/services/branding/info-list.json";
+import infoData from "../../data/services/branding/branding.json";
+import PageMeta from "../../components/common/PageMeta";
+import WebBanner from "../../components/service/components/banner/WebBanner";
+import Intro from "../../components/service/components/intro/Intro";
+import PriceList from "../../components/service/components/price-list/PriceList";
+import InfoList from "../../components/service/components/info-list/InfoList";
+import SimpleBanner from "../../components/service/components/simple-banner/SimpleBanner";
+import BrandingServices from "../../components/service/branding/sub-services/BrandingServices";
 
 const Branding = () => {
   useEffect(() => {
