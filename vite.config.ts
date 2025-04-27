@@ -3,6 +3,9 @@ import react from "@vitejs/plugin-react";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
+  preview: {
+    port: 4174,
+  },
   resolve: {
     alias: {
       "@": "/src",
