@@ -1,0 +1,41 @@
+{
+  "title": "Branding",
+  "text": "MANUAL BRANDING",
+  "description": "Un brandbook este un ghid vizual și conceptual care descrie în detaliu cum trebuie să arate și să comunice un brand în orice context – digital, tipărit, intern sau extern. Acesta asigură coerență vizuală și verbală în toate materialele create de-a lungul timpului.",
+  "inclusiveTitle": "Ce include serviciul de design logo?",
+  "inclusives": [
+    "2-3 concepte inițiale de logo",
+    "Ghid de utilizare rapidă a logo-ului",
+    "Cercetare de brand și analiză de piață",
+    "Livrarea fișierelor în format complet",
+    "Moodboard vizual și propuneri de direcții",
+    "Variante pe fond deschis, închis, monocrom"
+  ],
+  "banner": "/branding/branding-img.png",
+
+  "benefitsTitleTwo": "De ce ai nevoie de o identitate vizuală?",
+  "benefitsTwo": [
+    {
+      "title": "Claritate și profesionalism",
+      "text": "O identitate bine construită transmite încredere și profesionalism din primul moment."
+    },
+    {
+      "title": "Coerență vizuală în comunicare",
+      "text": "De la postări social media la website, toate materialele tale vorbesc aceeași limbă vizuală."
+    },
+    {
+      "title": "Recunoaștere și memorabilitate",
+      "text": "Un sistem vizual bine gândit ajută publicul să-ți recunoască brandul oriunde îl întâlnește."
+    }
+  ],
+  "button": "Alege pachetul potrivit ție",
+  "benefitsTitle": "Beneficiile unui logo",
+  "benefits": [
+    "Crește recunoașterea brandului",
+    "Creează încredere și profesionalism",
+    "Ajută la diferențierea pe piață",
+    "Se adaptează ușor în toate mediile de comunicare",
+    "Susține dezvoltarea ulterioară a identității vizuale"
+  ],
+  "benefitsImg": "/branding/branding-pages.png"
+}

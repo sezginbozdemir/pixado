@@ -1,0 +1,25 @@
+.visual-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 5rem;
+  padding: 0rem 5rem;
+}
+.visual-benefits-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.visual-benefits-text {
+  width: 80%;
+}
+.visual-benefits-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.visual-benefits-button {
+  width: 300px;
+  height: 55px;
+}

@@ -6,9 +6,9 @@ interface Props {
 
 const SimpleBanner = ({ img }: Props) => {
   return (
-    <div className="img-wrapper">
+    <div className="simple-banner-img-wrapper">
       <img
-        className="img"
+        className="simple-banner-img"
         src={img || "/project-images/wallpaper-1.png"}
         alt="Pixado"
       />

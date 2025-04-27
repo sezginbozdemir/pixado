@@ -1,0 +1,44 @@
+.visual-card-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.visual-card-wrapper {
+  width: 100%;
+  height: 100%;
+  mask-image: url("/branding/visual-identity-card.png");
+  mask-size: 100% 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1px;
+}
+.visual-card-text {
+  align-content: end;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.visual-card-text::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+.visual-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url("/branding/visual-identity-card.png");
+  mask-size: 100% 100%;
+}
+.visual-identity-cards {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.visual-identity-col {
+  margin-bottom: 2rem;
+}

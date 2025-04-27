@@ -49,7 +49,7 @@ const ReclamAnimation = ({ data }: Props) => {
         animate={controls}
       >
         <img
-          className="img"
+          className="reclam-animation-img"
           src={data.img1 || "/project-images/wallpaper-1.png"}
           alt="pixado"
         />
@@ -58,7 +58,7 @@ const ReclamAnimation = ({ data }: Props) => {
         <div className="box-one" />
         <div className="box box-two">
           <img
-            className="img"
+            className="reclam-animation-img"
             src={data.img2 || "/reclame-video/placeholder-2.png"}
             alt="pixado"
           />
@@ -67,14 +67,14 @@ const ReclamAnimation = ({ data }: Props) => {
       <div className="flex-two">
         <div className="box box-three">
           <img
-            className="img"
+            className="reclam-animation-img"
             src={data.img3 || "/reclame-video/placeholder-2.png"}
             alt="pixado"
           />
         </div>
         <div className="box box-four">
           <img
-            className="img"
+            className="reclam-animation-img"
             src={data.img4 || "/reclame-video/placeholder.png"}
             alt="pixado"
           />

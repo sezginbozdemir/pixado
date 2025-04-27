@@ -1,12 +1,12 @@
-.img {
+.simple-banner-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
-.img-wrapper {
+.simple-banner-img-wrapper {
   border: 1px solid rgba(128, 128, 128, 0.5);
-  height: 600px;
   border-radius: 30px;
   overflow: hidden;
   width: 100%;
+  height: 100%;
 }
