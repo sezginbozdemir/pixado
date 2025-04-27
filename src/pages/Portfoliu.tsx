@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Col } from "react-bootstrap";
-import ProjectsList from "../components/portfoliu/projects-list/ProjectsList";
-import Filters from "../components/portfoliu/filters/Filters";
-import data from "../data/projects/projects.json";
-import PageMeta from "../components/common/PageMeta";
+import ProjectsList from "@/components/portfoliu/projects-list/ProjectsList";
+import Filters from "@/components/portfoliu/filters/Filters";
+import data from "@/data/projects/projects.json";
+import PageMeta from "@/components/common/PageMeta";
 interface ProjectData {
   id: number;
   title: string;

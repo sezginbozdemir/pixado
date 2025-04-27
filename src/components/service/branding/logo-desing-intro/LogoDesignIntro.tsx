@@ -1,4 +1,3 @@
-import React from "react";
 import "./intro.scss";
 import { Col, Row } from "react-bootstrap";
 interface Data {

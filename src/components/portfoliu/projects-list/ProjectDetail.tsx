@@ -1,13 +1,13 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
-import RotatingLabel from "../../common/RotatingLabel";
+import RotatingLabel from "@/components/common/RotatingLabel";
 import ProjectCard from "./ProjectCard";
 import "./projects-list.css";
 import { Container, Row, Col } from "react-bootstrap";
-import ArrowButton from "../../common/buttons/ArrowButton";
-import { ProjectData } from "../../../pages/Project";
+import ArrowButton from "@/components/common/buttons/ArrowButton";
+import { ProjectData } from "@/pages/Project";
 
 interface Props {
   typedData: ProjectData[];

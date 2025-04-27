@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "../../common/buttons/Button";
+import Button from "@/components/common/buttons/Button";
 import { Col, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 interface ServiceData {

@@ -1,8 +1,7 @@
-import React from "react";
 import "./reclame-text.scss";
-import Button from "../../../common/buttons/Button";
-import decorOne from "../../../../assets/line-group-2.png";
-import decorTwo from "../../../../assets/line-group-multi.png";
+import Button from "@/components/common/buttons/Button";
+import decorOne from "@/assets/line-group-2.png";
+import decorTwo from "@/assets/line-group-multi.png";
 import { useNavigate } from "react-router-dom";
 interface Reclame {
   title: string;

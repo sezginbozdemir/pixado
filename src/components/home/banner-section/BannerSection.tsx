@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
-import bannerWallpaper from "../../../assets/wallpaper-2.png";
-import lineGroup1 from "../../../assets/line-group-1.png";
-import lineGroup2 from "../../../assets/line-group-2.png";
-import lineGroupMulti from "../../../assets/line-group-multi.png";
-import RotatingLabel from "../../common/RotatingLabel";
+import bannerWallpaper from "@/assets/wallpaper-2.png";
+import lineGroup1 from "@/assets/line-group-1.png";
+import lineGroup2 from "@/assets/line-group-2.png";
+import lineGroupMulti from "@/assets/line-group-multi.png";
+import RotatingLabel from "@//components/common/RotatingLabel";
 import "./banner-section.css";
 
 const BannerSection = () => {
@@ -56,10 +56,10 @@ const BannerSection = () => {
               PREMIUM
             </div>
             <div className="banner-labels">
-              <div className="title-3 banner-label">WEBSITURI</div>
-              <div className="title-3 banner-label">RECLAME VIDEO</div>
-              <div className="title-3 banner-label">VFX</div>
               <div className="title-3 banner-label">BRANDING</div>
+
+              <div className="title-3 banner-label">WEBSITURI</div>
+              <div className="title-3 banner-label">ONLINE MARKETING</div>
             </div>
           </motion.div>
         </Col>

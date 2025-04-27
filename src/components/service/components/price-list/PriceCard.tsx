@@ -1,6 +1,5 @@
-import React from "react";
 import "./price-card.scss";
-import Button from "../../../common/buttons/Button";
+import Button from "@/components/common/buttons/Button";
 import { PriceList } from "./PriceList";
 
 const PriceCard = ({ title, text, price, links }: PriceList) => {

@@ -1,8 +1,7 @@
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./intro.css";
-import placeholder from "../../../assets/placeholder.png";
-import ArrowButton from "../../common/buttons/ArrowButton";
+import placeholder from "@/assets/placeholder.png";
+import ArrowButton from "@/components/common/buttons/ArrowButton";
 
 interface Props {
   onClick: () => void;

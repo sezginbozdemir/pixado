@@ -1,6 +1,5 @@
-import React from "react";
 import "./cards.scss";
-import placeholder from "../../../../../assets/placeholder.png";
+import placeholder from "@/assets/placeholder.png";
 interface Props {
   img: string;
   text: string;

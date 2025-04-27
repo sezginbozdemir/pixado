@@ -1,7 +1,6 @@
-import React from "react";
 import "./benefits.scss";
 import { Col, Row } from "react-bootstrap";
-import Button from "../../../../common/buttons/Button";
+import Button from "@/components/common/buttons/Button";
 interface Data {
   benefitsTitleTwo: string;
   benefitsTwo: {

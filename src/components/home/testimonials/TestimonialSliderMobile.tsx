@@ -1,4 +1,3 @@
-import React from "react";
 import "./testimonials.css";
 import { Row, Col } from "react-bootstrap";
 import TestimonialCard from "./TestimonialCard";

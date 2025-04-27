@@ -1,4 +1,3 @@
-import React from "react";
 import "./rich-text.css";
 import { Container, Col, Row } from "react-bootstrap";
 

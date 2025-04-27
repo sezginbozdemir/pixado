@@ -1,4 +1,3 @@
-import React from "react";
 import "./banner.scss";
 interface Data {
   shortTextTwo: string;

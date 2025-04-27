@@ -1,7 +1,6 @@
-import React from "react";
 import "./footer.css";
-import greenDot from "../../../assets/green-dot.png";
-import logo from "../../../assets/logo.png";
+import greenDot from "@/assets/green-dot.png";
+import logo from "@/assets/logo.png";
 import NextButton from "../buttons/NextButton";
 import FooterMobile from "./FooterMobile";
 import FooterTablet from "./FooterTablet";

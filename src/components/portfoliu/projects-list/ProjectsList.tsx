@@ -1,11 +1,10 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
 import { useLocation } from "react-router-dom";
 import "./projects-list.css";
-import lineGroup1 from "../../../assets/line-group-1.png";
-import lineGroup2 from "../../../assets/line-group-2.png";
-import lineGroupMulti from "../../../assets/line-group-multi.png";
-import twoLines from "../../../assets/two-lines.png";
+import lineGroup1 from "@/assets/line-group-1.png";
+import lineGroup2 from "@/assets/line-group-2.png";
+import lineGroupMulti from "@/assets/line-group-multi.png";
+import twoLines from "@/assets/two-lines.png";
 import { Row, Col, Container } from "react-bootstrap";
 interface ProjectData {
   id: number;

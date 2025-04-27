@@ -1,4 +1,3 @@
-import React from "react";
 import "./simple-banner.scss";
 interface Props {
   img: string;

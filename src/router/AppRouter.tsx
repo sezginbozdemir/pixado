@@ -1,19 +1,18 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import Contact from "../pages/Contact";
-import Portfoliu from "../pages/Portfoliu";
-import Services from "../pages/Services";
-import Header from "../components/common/header/Header";
-import Footer from "../components/common/footer/Footer";
-import WebDesign from "../pages/WebDesign";
-import ReclameVideo from "../pages/ReclameVideo";
-import VfxVideo from "../pages/VfxVideo";
-import Project from "../pages/Project";
-import Branding from "../pages/branding/Branding";
-import LogoDesign from "../pages/branding/LogoDesing";
-import VisualIdentity from "../pages/branding/VisualIdentity";
-import ManualBranding from "../pages/branding/ManualBranding";
+import Home from "@/pages/Home";
+import Contact from "@/pages/Contact";
+import Portfoliu from "@/pages/Portfoliu";
+import Services from "@/pages/Services";
+import Header from "@/components/common/header/Header";
+import Footer from "@/components/common/footer/Footer";
+import WebDesign from "@/pages/WebDesign";
+import ReclameVideo from "@/pages/ReclameVideo";
+import VfxVideo from "@/pages/VfxVideo";
+import Project from "@/pages/Project";
+import Branding from "@/pages/branding/Branding";
+import LogoDesign from "@/pages/branding/LogoDesing";
+import VisualIdentity from "@/pages/branding/VisualIdentity";
+import ManualBranding from "@/pages/branding/ManualBranding";
 
 const AppRouter = () => {
   return (

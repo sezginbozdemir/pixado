@@ -1,4 +1,3 @@
-import React from "react";
 import "./price-list.scss";
 import PriceCard from "./PriceCard";
 import { Swiper, SwiperSlide } from "swiper/react";

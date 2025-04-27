@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
-import ContactIntro from "../components/contact/intro/ContactIntro";
-import ContactForm from "../components/contact/form/ContactForm";
-import Faq from "../components/contact/faq/Faq";
-import PageMeta from "../components/common/PageMeta";
-import data from "../data/contact/faq.json";
+import ContactIntro from "@/components/contact/intro/ContactIntro";
+import ContactForm from "@/components/contact/form/ContactForm";
+import Faq from "@/components/contact/faq/Faq";
+import PageMeta from "@/components/common/PageMeta";
+import data from "@/data/contact/faq.json";
 
 const Contact = () => {
   useEffect(() => {

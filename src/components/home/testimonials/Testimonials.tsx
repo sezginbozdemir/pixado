@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./testimonials.css";
 import { Container, Row, Col } from "react-bootstrap";
-import data from "../../../data/home/testimonials.json";
-import NextButton from "../../common/buttons/NextButton";
+import data from "@/data/home/testimonials.json";
+import NextButton from "@/components/common/buttons/NextButton";
 import TestimonialSlider from "./TestimonialSlider";
 import TestimonialSliderMobile from "./TestimonialSliderMobile";
 const Testimonials = () => {

@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./slider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { FreeMode } from "swiper/modules";
-import Button from "../../../common/buttons/Button";
-import NextButton from "../../../common/buttons/NextButton";
-import placeholder from "../../../../assets/placeholder.png";
-import data from "../../../../data/services/web-design/detail-slider.json";
+import Button from "@/components/common/buttons/Button";
+import NextButton from "@/components/common/buttons/NextButton";
+import placeholder from "@/assets/placeholder.png";
+import data from "@/data/services/web-design/detail-slider.json";
 import { Container } from "react-bootstrap";
 import { useScroll, motion, useTransform } from "framer-motion";
 const sliderData: SliderItem[] = data;

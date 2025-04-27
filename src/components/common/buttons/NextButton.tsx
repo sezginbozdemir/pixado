@@ -1,6 +1,5 @@
-import React from "react";
 import "./buttons.css";
-import nextArrow from "../../../assets/next-arrow.png";
+import nextArrow from "@/assets/next-arrow.png";
 
 type ButtonProps = {
   onClick?: () => void;

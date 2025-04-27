@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import logo from "../../../assets/logo.png";
-import burger from "../../../assets/burger.png";
+import logo from "@/assets/logo.png";
+import burger from "@/assets/burger.png";
 import Button from "../buttons/Button";
 import "./header.css";
 import SideMenu from "./SideMenu";

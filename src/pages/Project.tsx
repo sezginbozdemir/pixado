@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import data from "../data/projects/projects.json";
+import { useEffect } from "react";
+import data from "@/data/projects/projects.json";
 import { useLocation, useParams } from "react-router-dom";
-import ProjectDetail from "../components/portfoliu/projects-list/ProjectDetail";
-import PageMeta from "../components/common/PageMeta";
+import ProjectDetail from "@/components/portfoliu/projects-list/ProjectDetail";
+import PageMeta from "@/components/common/PageMeta";
 
 export interface ProjectData {
   id: number;

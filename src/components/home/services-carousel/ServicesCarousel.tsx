@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./services-carousel.css";
-import GreenLine from "../../../assets/green-line.png";
-import lineGroup1 from "../../../assets/line-group-1.png";
-import lineGroup2 from "../../../assets/line-group-2.png";
-import lineGroupMulti from "../../../assets/line-group-multi.png";
+import GreenLine from "@/assets/green-line.png";
+import lineGroup2 from "@/assets/line-group-2.png";
+import lineGroupMulti from "@/assets/line-group-multi.png";
 import ProgressSlider from "./ProgressSlider";
 import ProgressSliderMobile from "./ProgressSliderMobile";
 import ImageSlider from "./ImageSlider";
-import data from "../../../data/home/services-carousel.json";
+import data from "@/data/home/services-carousel.json";
 import { Container, Col, Row } from "react-bootstrap";
 interface ServiceData {
   title: string;

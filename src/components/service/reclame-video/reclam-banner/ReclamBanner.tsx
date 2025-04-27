@@ -1,6 +1,5 @@
-import React from "react";
 import "./reclam-banner.scss";
-import ArrowButton from "../../../common/buttons/ArrowButton";
+import ArrowButton from "@/components/common/buttons/ArrowButton";
 interface Banner {
   banner: string;
   details: {

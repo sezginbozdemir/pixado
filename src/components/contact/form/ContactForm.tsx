@@ -1,9 +1,7 @@
-import React from "react";
-import { useState } from "react";
 import "./form.css";
 import { Col, Form, Row } from "react-bootstrap";
-import Button from "../../common/buttons/Button";
-import dot from "../../../assets/green-dot.png";
+import Button from "@/components/common/buttons/Button";
+import dot from "@/assets/green-dot.png";
 
 const ContactForm = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import "./info-list.scss";
 import { Col, Row } from "react-bootstrap";
 

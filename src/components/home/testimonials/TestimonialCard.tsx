@@ -1,7 +1,6 @@
-import React from "react";
 import "./testimonials.css";
 import { Container, Row } from "react-bootstrap";
-import quote from "../../../assets/quote.png";
+import quote from "@/assets/quote.png";
 
 interface TestimonialCardProps {
   name: string;

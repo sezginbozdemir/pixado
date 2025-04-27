@@ -1,6 +1,5 @@
-import React from "react";
 import "./contact.css";
-import Button from "../../common/buttons/Button";
+import Button from "@/components/common/buttons/Button";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 

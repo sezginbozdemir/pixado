@@ -1,16 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
-import Intro from "../components/service/components/intro/Intro";
-import WebBanner from "../components/service/components/banner/WebBanner";
-import WebSlider from "../components/service/web-design/web-slider/WebSlider";
-import PriceList from "../components/service/components/price-list/PriceList";
-import InfoList from "../components/service/components/info-list/InfoList";
-import priceList from "../data/services/web-design/price-list.json";
-import infoList from "../data/services/web-design/info-list.json";
-import infoData from "../data/services/web-design/intro.json";
-import faq from "../data/services/web-design/faq.json";
-import Faq from "../components/contact/faq/Faq";
-import PageMeta from "../components/common/PageMeta";
+import Intro from "@/components/service/components/intro/Intro";
+import WebBanner from "@/components/service/components/banner/WebBanner";
+import WebSlider from "@/components/service/web-design/web-slider/WebSlider";
+import PriceList from "@/components/service/components/price-list/PriceList";
+import InfoList from "@/components/service/components/info-list/InfoList";
+import priceList from "@/data/services/web-design/price-list.json";
+import infoList from "@/data/services/web-design/info-list.json";
+import infoData from "@/data/services/web-design/intro.json";
+import faq from "@/data/services/web-design/faq.json";
+import Faq from "@/components/contact/faq/Faq";
+import PageMeta from "@/components/common/PageMeta";
 
 const WebDesign = () => {
   useEffect(() => {

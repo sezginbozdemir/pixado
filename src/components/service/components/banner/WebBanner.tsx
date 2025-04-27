@@ -1,6 +1,5 @@
-import React from "react";
 import "./banner.css";
-import ArrowButton from "../../../common/buttons/ArrowButton";
+import ArrowButton from "@/components/common/buttons/ArrowButton";
 
 interface Props {
   img: string;

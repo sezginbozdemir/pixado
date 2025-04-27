@@ -1,9 +1,7 @@
-import React from "react";
 import "./vfx.scss";
-import Button from "../../../common/buttons/Button";
-import decorTwo from "../../../../assets/line-group-multi.png";
-import decorThree from "../../../../assets/line-group-1.png";
-
+import Button from "@/components/common/buttons/Button";
+import decorTwo from "@/assets/line-group-multi.png";
+import decorThree from "@/assets/line-group-1.png";
 import { useNavigate } from "react-router-dom";
 interface Reclame {
   header: string;
