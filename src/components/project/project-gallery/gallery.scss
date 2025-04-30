@@ -1,0 +1,116 @@
+.gallery-image-container-3 {
+  mask-image: url("/project-images/gallery-left.png");
+  mask-size: 100% 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1px !important;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-image-container-4 {
+  mask-image: url("/project-images/gallery-right.png");
+  mask-size: 100% 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1px !important;
+}
+.gallery-image-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url("/project-images/gallery-left.png");
+  mask-size: 100% 100%;
+}
+.gallery-image-4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url("/project-images/gallery-right.png");
+  mask-size: 100% 100%;
+}
+.detail-banner-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  mask-image: url("/project-images/detail-banner.png");
+  mask-size: 100% 100%;
+}
+
+.green-decor {
+  position: absolute;
+  bottom: 60px;
+  right: -10px;
+  height: 50px;
+  width: 120px;
+  @media (max-width: 1200px) {
+    right: -30px;
+  }
+  @media (max-width: 768px) {
+    height: 40px;
+    width: 90px;
+    bottom: 45px;
+    right: -15px;
+  }
+  @media (max-width: 450px) {
+    height: 35px;
+    width: 80px;
+    bottom: 45px;
+    right: -15px;
+  }
+}
+.detail-banner-image-2 {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 35px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.detail-banner {
+  background-color: rgba(128, 128, 128, 0.5);
+  object-fit: cover;
+  mask-image: url("/project-images/detail-banner.png");
+  mask-size: 100% 100%;
+  padding: 1px;
+  margin-bottom: 2.5rem;
+}
+.banner-wrapper {
+  position: relative;
+}
+
+.banner-gallery-images {
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-rotating-label {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+}
+
+@media (max-width: 768px) {
+  .detail-rotating-label {
+    right: -15%;
+    bottom: 58%;
+  }
+
+  .gallery-image-3 {
+    mask-image: url("/project-images/gallery-left-mobile.png");
+  }
+  .gallery-image-4 {
+    mask-image: url("/project-images/gallery-right-mobile.png");
+  }
+  .gallery-image-container-3 {
+    mask-image: url("/project-images/gallery-left-mobile.png");
+  }
+
+  .gallery-image-container-4 {
+    mask-image: url("/project-images/gallery-right-mobile.png");
+  }
+
+  .detail-banner-image {
+    mask-image: url("/project-images/detail-banner-mobile.png");
+  }
+  .detail-banner {
+    mask-image: url("/project-images/detail-banner-mobile.png");
+  }
+}

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  margin-bottom: 10rem;
 }
 .service-options {
   margin-top: 1rem !important;

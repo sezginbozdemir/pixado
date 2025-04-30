@@ -2,6 +2,7 @@ import "./price-list.scss";
 import PriceCard from "./PriceCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
+import Spacing from "@/components/common/Spacing";
 
 export interface PriceList {
   title: string;
@@ -21,11 +22,14 @@ interface Props {
 
 const PriceList = ({ data }: Props) => {
   return (
-    <div className="price-list-container">
+    <div>
+      <Spacing size={3} />
+
       <div className="header">
         <div className="title-2">PACHETE PRETURI</div>
         <div className="title-2">{data.header}</div>
       </div>
+      <Spacing size={2} />
       <Swiper
         className="my-swiper"
         modules={[Pagination, FreeMode]}
@@ -51,6 +55,7 @@ const PriceList = ({ data }: Props) => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Spacing size={3} />
     </div>
   );
 };

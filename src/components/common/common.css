@@ -25,7 +25,6 @@
 /* MarqueeText */
 
 .marquee-container {
-  margin-bottom: 10rem;
   overflow: hidden;
   position: relative;
   white-space: nowrap;

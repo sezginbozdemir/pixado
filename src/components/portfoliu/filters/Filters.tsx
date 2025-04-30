@@ -34,7 +34,7 @@ const Filters: React.FC<FiltersProps> = ({ projects, setProjects }) => {
   };
 
   return (
-    <Container className="filters-container">
+    <Container>
       <Row>
         <Col className="portfoliu-head eyebrow-body" xs={12} md={6} lg={3}>
           Portfoliu

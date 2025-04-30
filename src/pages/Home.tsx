@@ -10,6 +10,7 @@ import LogoSlide from "@/components/home/logo-slide/LogoSlide";
 import { Col } from "react-bootstrap";
 import Testimonials from "@/components/home/testimonials/Testimonials";
 import PageMeta from "@/components/common/PageMeta";
+import Spacing from "@/components/common/Spacing";
 
 const Home = () => {
   useEffect(() => {
@@ -21,12 +22,18 @@ const Home = () => {
     <Col className="home">
       <PageMeta title="Home" description="Home Meta" />
       <BannerSection />
+      <Spacing size={4} />
       <ScrollAnimation />
       <RichText />
+      <Spacing size={4} />
       <ServicesCarousel />
+      <Spacing size={8} />
       <ProjectsList projects={projects} />
+      <Spacing size={6} />
       <Contact />
+      <Spacing size={6} />
       <LogoSlide />
+      <Spacing size={6} />
       <Testimonials />
     </Col>
   );

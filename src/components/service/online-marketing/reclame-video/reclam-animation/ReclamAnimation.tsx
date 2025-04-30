@@ -57,7 +57,13 @@ const ReclamAnimation = ({ data, ready }: Props) => {
       </motion.div>
 
       <div className="flex-one">
-        <div className="box-one" />
+        <div className="box box-one box-hidden">
+          <img
+            className="reclam-animation-img"
+            src={data.img1 || "/project-images/wallpaper-1.png"}
+            alt="pixado"
+          />
+        </div>
         <div className="box box-two">
           <img
             className="reclam-animation-img"

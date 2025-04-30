@@ -7,6 +7,9 @@
   position: relative;
   overflow: hidden;
   gap: 2rem;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 }
 
 .flex-one {
@@ -15,6 +18,9 @@
   height: 100%;
   gap: 2rem;
   overflow: hidden;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .flex-two {
   display: flex;
@@ -23,12 +29,18 @@
   height: 100%;
   gap: 2rem;
   overflow: hidden;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .box {
   border-radius: 20px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   box-sizing: border-box;
   overflow: hidden;
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
 }
 .reclam-animation-img {
   width: 100%;
@@ -39,23 +51,43 @@
 .box-one {
   width: 60%;
   height: 100%;
+  @media (max-width: 768px) {
+    height: 236px;
+  }
+}
+.box-hidden {
+  @media (min-width: 768px) {
+    visibility: hidden;
+  }
 }
 .box-two {
   width: 40%;
   height: 100%;
+  @media (max-width: 768px) {
+    height: 292px;
+  }
 }
 
 .box-three {
   width: 45%;
   height: 100%;
+  @media (max-width: 768px) {
+    height: 212px;
+  }
 }
 
 .box-four {
   width: 50%;
   height: 100%;
+  @media (max-width: 768px) {
+    height: 232px;
+  }
 }
 
 .float {
   z-index: 1;
   position: absolute;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }

@@ -14,6 +14,7 @@
   mask-image: url("/project-images/detail-banner.png");
   mask-size: 100% 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   @media (max-width: 992px) {
     mask-image: url("/project-images/detail-banner-mobile.png");
@@ -23,9 +24,7 @@
 .web-banner-container {
   position: relative;
   width: 100%;
-  height: 450px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  height: 550px;
 
   @media (max-width: 992px) {
     height: 550px;

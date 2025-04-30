@@ -1,0 +1,92 @@
+.detail-head-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url("/project-images/detail-head.png");
+  mask-size: 100% 100%;
+}
+.detail-head {
+  margin-top: 1rem !important;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url("/project-images/detail-head.png");
+  mask-size: 100% 100%;
+  padding: 1px !important;
+  overflow: hidden;
+}
+.tag-col {
+  margin-right: 1rem;
+  color: black;
+}
+
+.detail-back::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+.back-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.detail-head-row {
+  position: relative;
+}
+
+.floating-title {
+  position: absolute;
+  top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.tag-outer {
+  display: flex;
+  justify-content: end;
+}
+.float-text {
+  padding: 0 !important;
+}
+
+.float-row {
+  padding-right: 15% !important;
+}
+
+@media (min-width: 1202px) {
+  .tag-outer {
+    padding-right: 5rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .float-row {
+    padding-right: 7% !important;
+  }
+
+  .detail-back {
+    margin-bottom: 1rem;
+  }
+
+  .tag-outer {
+    justify-content: start;
+    padding-right: 0rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .float-row {
+    padding-right: 5% !important;
+  }
+  .detail-head-image {
+    mask-image: url("/project-images/detail-head-mobil.png");
+  }
+  .detail-head {
+    mask-image: url("/project-images/detail-head-mobil.png");
+  }
+  .floating-title {
+    top: 0;
+  }
+}

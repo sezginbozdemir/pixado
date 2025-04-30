@@ -1,0 +1,51 @@
+import { Col, Row } from "react-bootstrap";
+import "./project-hero.scss";
+import { Link } from "react-router-dom";
+import { ProjectData } from "@/pages/Project";
+
+interface Props {
+  project: Pick<ProjectData, "tags" | "date" | "title" | "imgUrl">;
+}
+
+const ProjectHero = ({ project }: Props) => {
+  return (
+    <>
+      <Row>
+        <Col className="detail-back body" xs={12} lg={3}>
+          <Link to="/portfoliu" className="back-link">
+            Inapoi
+          </Link>
+        </Col>
+        <Col className="tag-outer" xs={12} lg={4}>
+          <Row className="details-regular tag-row">
+            {project.tags.map((tag, index) => (
+              <Col key={index} className="tag-col work-done-options">
+                {tag}
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+
+      <Row className="detail-head-row">
+        <Row>
+          <div className="floating-title">
+            <div className="body float-row">
+              {project.date}
+              <br />
+              <span className="title-2 float-text">{project.title}</span>
+            </div>
+          </div>
+        </Row>
+        <div className="detail-head">
+          <img
+            className="detail-head-image"
+            src={project.imgUrl || "/project-images/wallpaper-1.png"}
+          />
+        </div>
+      </Row>
+    </>
+  );
+};
+
+export default ProjectHero;

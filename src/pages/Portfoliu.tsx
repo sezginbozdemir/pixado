@@ -4,6 +4,7 @@ import ProjectsList from "@/components/portfoliu/projects-list/ProjectsList";
 import Filters from "@/components/portfoliu/filters/Filters";
 import data from "@/data/projects/projects.json";
 import PageMeta from "@/components/common/PageMeta";
+import Spacing from "@/components/common/Spacing";
 interface ProjectData {
   id: number;
   title: string;
@@ -29,6 +30,7 @@ const Portfoliu = () => {
     <Col className="portfoliu">
       <PageMeta title="Portfoliu" description="Portfoliu Meta" />
       <Filters projects={data} setProjects={setProjects} />
+      <Spacing size={5} />
       <ProjectsList projects={projects} />
     </Col>
   );

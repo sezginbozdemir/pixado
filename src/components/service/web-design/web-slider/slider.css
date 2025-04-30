@@ -147,6 +147,9 @@
   @media (min-width: 1200px) {
     width: 750px !important;
   }
+  @media (max-width: 768px) {
+    width: 350px !important;
+  }
 }
 .web-container {
   height: 100vh;

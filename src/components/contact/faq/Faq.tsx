@@ -1,6 +1,7 @@
 import "./faq.css";
 import "./accordion.scss";
 import { Accordion, Col, Row } from "react-bootstrap";
+import Spacing from "@/components/common/Spacing";
 
 interface FAQItem {
   question: string;
@@ -11,7 +12,8 @@ interface Props {
 }
 const Faq = ({ data }: Props) => {
   return (
-    <div className="faq-wrapper">
+    <>
+      <Spacing size={5} />
       <Row>
         <Col className="title-col-faq" xs={12} lg={6}>
           <Row className="faq-title title-2">AFLĂ MAI MULTE DESPRE NOI</Row>
@@ -27,7 +29,8 @@ const Faq = ({ data }: Props) => {
           </Accordion>
         </Col>
       </Row>
-    </div>
+      <Spacing size={5} />
+    </>
   );
 };
 export default Faq;

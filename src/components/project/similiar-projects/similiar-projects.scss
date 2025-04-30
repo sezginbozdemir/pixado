@@ -1,0 +1,23 @@
+.swiper-wrapper {
+  padding: 2rem 0rem !important;
+}
+
+.swiper-pagination {
+  top: 1% !important;
+  left: 3% !important;
+  text-align: start !important;
+  z-index: 0 !important;
+}
+
+.slider-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-container .swiper-pagination-bullet {
+  background-color: #ccc;
+}
+
+.slider-container .swiper-pagination-bullet-active {
+  background-color: #6bfbce;
+}

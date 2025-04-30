@@ -6,6 +6,7 @@ import FooterMobile from "./FooterMobile";
 import FooterTablet from "./FooterTablet";
 import FooterDesktop from "./FooterDesktop";
 import MarqueeText from "../MarqueeText";
+import Spacing from "../Spacing";
 const Footer: React.FC = () => {
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -16,6 +17,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <MarqueeText />
+      <Spacing size={5} />
       <FooterDesktop
         greenDot={greenDot}
         logo={logo}

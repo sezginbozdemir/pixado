@@ -7,7 +7,7 @@ const Contact = () => {
   const navigate = useNavigate();
 
   return (
-    <Container className="contact">
+    <Container>
       <Row className="first-container">
         <Col xs={12} lg={6} className="first-col-contact">
           <div className="body who">Cine suntem noi</div>

@@ -16,32 +16,30 @@ interface Props {
 
 const Benefits = ({ data, button, onClick }: Props) => {
   return (
-    <div className="benefits">
-      <Row>
-        <Col xs={12} lg={6}>
-          <div className="benefits-col-one">
-            <div className="title-2"> {data.benefitsTitle}</div>
-            <div className="benefits-list">
-              {data.benefits.map((item, index) => (
-                <span key={index} className="title-4">
-                  <img src="/icons/blue-tick.png" alt="Pixado" /> {item}
-                </span>
-              ))}
-            </div>
-            {button && (
-              <Button
-                onClick={onClick}
-                className="benefits-button"
-                text={data.button}
-              />
-            )}
+    <Row>
+      <Col xs={12} lg={6}>
+        <div className="benefits-col-one">
+          <div className="title-2"> {data.benefitsTitle}</div>
+          <div className="benefits-list">
+            {data.benefits.map((item, index) => (
+              <span key={index} className="title-4">
+                <img src="/icons/blue-tick.png" alt="Pixado" /> {item}
+              </span>
+            ))}
           </div>
-        </Col>
-        <Col xs={12} lg={6}>
-          <img className="benefits-img" src={data.benefitsImg} alt="Pixado" />
-        </Col>
-      </Row>
-    </div>
+          {button && (
+            <Button
+              onClick={onClick}
+              className="benefits-button"
+              text={data.button}
+            />
+          )}
+        </div>
+      </Col>
+      <Col xs={12} lg={6}>
+        <img className="benefits-img" src={data.benefitsImg} alt="Pixado" />
+      </Col>
+    </Row>
   );
 };
 export default Benefits;

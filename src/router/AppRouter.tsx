@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "@/pages/Home";
 import Contact from "@/pages/Contact";
 import Portfoliu from "@/pages/Portfoliu";
-import Services from "@/pages/Services";
 import Header from "@/components/common/header/Header";
 import Footer from "@/components/common/footer/Footer";
 import WebDesign from "@/pages/WebDesign";
@@ -17,16 +16,17 @@ import OnlineMarketing from "@/pages/online-marketing/OnlineMarketing";
 import SocialSetup from "@/pages/online-marketing/SocialSetup";
 import Seo from "@/pages/online-marketing/Seo";
 import Smm from "@/pages/online-marketing/Smm";
+import Spacing from "@/components/common/Spacing";
 
 const AppRouter = () => {
   return (
     <Router>
       <Header />
+      <Spacing size={5} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfoliu" element={<Portfoliu />} />
-        <Route path="/servicii" element={<Services />} />
         <Route path="/portfoliu/:id" element={<Project />} />
         <Route path="/servicii/web-design" element={<WebDesign />} />
 

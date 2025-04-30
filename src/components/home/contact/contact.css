@@ -1,7 +1,3 @@
-.contact {
-  margin-bottom: 10rem;
-}
-
 .who::before {
   content: "•";
   color: white;
