@@ -1,0 +1,46 @@
+{
+  "title": "ONLINE MARKETING",
+  "text": "SERVICII SOCIAL MEDIA MARKETING (SMM)",
+  "description": "Social Media Marketing (SMM) este mai mult decât simple postări. Este despre a construi relații autentice cu audiența ta, a crea conținut memorabil și a amplifica vizibilitatea brandului tău prin strategii bine gândite și conținut vizual de impact.",
+  "benefitsTitleTwo": "Ce include serviciul nostru de Google and Social Setup?",
+  "benefitsTwo": [
+    {
+      "title": "Claritate și profesionalism",
+      "text": "O identitate bine construită transmite încredere și profesionalism din primul moment."
+    },
+    {
+      "title": "Coerență vizuală în comunicare",
+      "text": "De la postări social media la website, toate materialele tale vorbesc aceeași limbă vizuală."
+    },
+    {
+      "title": "Recunoaștere și memorabilitate",
+      "text": "Un sistem vizual bine gândit ajută publicul să-ți recunoască brandul oriunde îl întâlnește."
+    },
+    {
+      "title": "Ușurință în aplicare",
+      "text": "Identitatea ta vine la pachet cu un ghid de utilizare care ajută echipa ta sau colaboratorii să aplice corect și consecvent brandingul."
+    },
+    {
+      "title": "Claritate și profesionalism",
+      "text": "O identitate bine construită transmite încredere și profesionalism din primul moment."
+    }
+  ],
+  "smmServices": [
+    {
+      "img": "",
+      "title": "Reclame Video pentru Social Media",
+      "text": "Cream reclame dinamice, emoționale sau persuasive – în funcție de obiectivul tău: awareness, conversii, lansare de produs sau campanie sezonieră.",
+      "button": "Află mai multe informații",
+      "tag": "nume reclame video",
+      "url": "reclame-video"
+    },
+    {
+      "img": "",
+      "title": "Reclame Video pentru Social Media",
+      "text": "Cream reclame dinamice, emoționale sau persuasive – în funcție de obiectivul tău: awareness, conversii, lansare de produs sau campanie sezonieră.",
+      "button": "Află mai multe informații",
+      "tag": "nume reclame video",
+      "url": "vfx"
+    }
+  ]
+}

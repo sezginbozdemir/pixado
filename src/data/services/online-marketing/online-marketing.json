@@ -1,0 +1,24 @@
+{
+  "banner": "/online-marketing/header.png",
+  "title": "Online Marketing",
+  "text": "SERVICII DE ONLINE MARKETING",
+  "description": "În era digitală, simpla prezență online nu mai este suficientă. Pentru a atrage clienți și a genera vânzări, ai nevoie de o strategie de online marketing bine gândită, adaptată specificului brandului tău.  La Pixado, transformăm obiectivele tale în campanii performante, integrate pe cele mai puternice canale digitale.",
+  "subDescription": "Serviciul nostru de online marketing include trei componente esențiale: ",
+  "services": [
+    {
+      "title": "Google & Social Setup",
+      "text": "Configurarea profesională a tuturor conturilor necesare pentru promovarea online. Ne ocupăm de crearea și optimizarea conturilor Google Ads, Google Analytics, Google Tag Manager și Google Business Profile, asigurând astfel o bază tehnică solidă pentru orice campanie viitoare. Pe partea de social media, setăm și optimizăm paginile de Facebook, Instagram, LinkedIn sau TikTok.",
+      "button": "Află mai multe "
+    },
+    {
+      "title": "Optimizare SEO",
+      "text": "Printr-un proces detaliat de analiză tehnică, creare de conținut optimizat și construire de autoritate în online, te ajutăm să crești vizibilitatea organică a website-ului tău în Google. Ne concentrăm pe atragerea traficului relevant, îmbunătățirea pozițiilor în căutări și crearea unei baze solide care aduce rezultate pe termen lung, fără a depinde exclusiv de publicitatea plătită.",
+      "button": "Vezi cum facem Optimizarea SEO"
+    },
+    {
+      "title": "SMM (Social Media Marketing)",
+      "text": "Construim o prezență socială profesionistă și autentică pentru brandul tău, prin crearea de conținut vizual și textual adaptat fiecărei platforme, interacțiune constantă cu comunitatea și implementarea unor strategii de creștere organică. Printr-o comunicare clară, coerentă și creativă, îți consolidăm relația cu publicul și îți creștem notorietatea în mediul social.",
+      "button": "Află mai multe "
+    }
+  ]
+}

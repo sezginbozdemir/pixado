@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
-import priceList from "@/data/services/branding/logo-design/price-list.json";
+import priceList from "@/data/services/branding/price-list.json";
 import infoData from "@/data/services/branding/logo-design/logo-design.json";
 import faq from "@/data/services/branding/logo-design/faq.json";
 import PageMeta from "@/components/common/PageMeta";

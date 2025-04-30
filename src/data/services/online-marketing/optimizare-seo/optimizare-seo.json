@@ -1,0 +1,47 @@
+{
+  "title": "ONLINE MARKETING",
+  "text": "SERVICII OPTIMIZARE SEO",
+  "description": "SEO (Search Engine Optimization) reprezintă procesul prin care website-ul tău este optimizat pentru a apărea mai sus în rezultatele Google și ale altor motoare de căutare. La Pixado, oferim servicii SEO profesionale care ajută afacerile să devină mai vizibile online, să atragă trafic organic relevant și să genereze vânzări fără să depindă exclusiv de publicitatea plătită.",
+  "benefitsTitleTwo": "Ce include serviciul nostru de Google and Social Setup?",
+  "benefitsTwo": [
+    {
+      "title": "Claritate și profesionalism",
+      "text": "O identitate bine construită transmite încredere și profesionalism din primul moment."
+    },
+    {
+      "title": "Coerență vizuală în comunicare",
+      "text": "De la postări social media la website, toate materialele tale vorbesc aceeași limbă vizuală.",
+      "list": [
+        "titluri și meta-descrieri optimizate",
+        "conținut relevant și bine structurat",
+        "optimizarea imaginilor",
+        "optimizarea imaginilor",
+        "optimizarea imaginilor"
+      ]
+    },
+    {
+      "title": "Recunoaștere și memorabilitate",
+      "text": "Un sistem vizual bine gândit ajută publicul să-ți recunoască brandul oriunde îl întâlnește."
+    },
+    {
+      "title": "Ușurință în aplicare",
+      "text": "Identitatea ta vine la pachet cu un ghid de utilizare care ajută echipa ta sau colaboratorii să aplice corect și consecvent brandingul."
+    },
+    {
+      "title": "Claritate și profesionalism",
+      "text": "O identitate bine construită transmite încredere și profesionalism din primul moment."
+    },
+    {
+      "title": "Coerență vizuală în comunicare",
+      "text": "De la postări social media la website, toate materialele tale vorbesc aceeași limbă vizuală."
+    }
+  ],
+  "inclusiveTitle": "Cui se adresează serviciul SEO Pixado?",
+  "inclusives": [
+    "Start-up-uri care vor să își construiască o prezență solidă în Google",
+    "Afaceri locale care vor să atragă clienți din proximitate",
+    "Economisire de timp și bugete",
+    "Companii din orice industrie care doresc să își crească autoritatea în online"
+  ],
+  "button": "Alege pachetul potrivit ție"
+}

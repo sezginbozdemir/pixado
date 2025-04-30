@@ -1,0 +1,80 @@
+.smm-services {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 10rem 0;
+}
+.smm-service {
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+.smm-service-img-wrapper {
+  display: flex;
+  mask-image: url("/online-marketing/smm/smm-mask.png");
+  mask-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1px;
+}
+.mirrored {
+  transform: scaleX(-1);
+}
+
+.smm-service-float-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+.smm-service-order {
+  @media (min-width: 992px) {
+    order: 2;
+  }
+}
+.smm-tag {
+  position: absolute;
+  align-content: end;
+}
+.smm-header {
+  bottom: 0;
+  right: 0;
+}
+.mirrored-header {
+  bottom: 0;
+  left: 0;
+}
+
+.smm-tag::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+.smm-service-img {
+  mask-image: url("/online-marketing/smm/smm-mask.png");
+  mask-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 1;
+}
+
+.smm-service-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  padding: 3rem;
+}
+.smm-button {
+  padding: 0.5rem 1rem;
+}

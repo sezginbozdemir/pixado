@@ -14,7 +14,7 @@
     ]
   },
   {
-    "title": "Reclame Video",
+    "title": "Online Marketing",
     "description": [
       "Primul impact contează – iar noi știm cum să-l transformăm într-o conexiune. Creăm website-uri care nu doar arată bine, ci și funcționează impecabil, oferind utilizatorilor o experiență fluidă și memorabilă.",
       "La intersecția dintre creativitate și funcționalitate, proiectele noastre sunt optimizate pentru toate dispozitivele și construite să atragă atenția.Un site care nu doar arată bine, ci transmite esența brandului tău cu fiecare detaliu."
@@ -24,19 +24,6 @@
       { "label": "Responsive și accesibilitate", "value": 90 },
       { "label": "Viteză și performanță", "value": 75 },
       { "label": "Implementare rapidă și flexibilă", "value": 85 }
-    ]
-  },
-  {
-    "title": "VFX",
-    "description": [
-      "Primul impact contează – iar noi știm cum să-l transformăm într-o conexiune. Creăm website-uri care nu doar arată bine, ci și funcționează impecabil, oferind utilizatorilor o experiență fluidă și memorabilă.",
-      "La intersecția dintre creativitate și funcționalitate, proiectele noastre sunt optimizate pentru toate dispozitivele și construite să atragă atenția.Un site care nu doar arată bine, ci transmite esența brandului tău cu fiecare detaliu."
-    ],
-    "imgUrl": "/service-images/service-image-3.png",
-    "stats": [
-      { "label": "Responsive și accesibilitate", "value": 80 },
-      { "label": "Viteză și performanță", "value": 60 },
-      { "label": "Implementare rapidă și flexibilă", "value": 95 }
     ]
   },
   {

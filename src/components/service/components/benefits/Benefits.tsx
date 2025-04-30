@@ -24,7 +24,7 @@ const Benefits = ({ data, button, onClick }: Props) => {
             <div className="benefits-list">
               {data.benefits.map((item, index) => (
                 <span key={index} className="title-4">
-                  <img src="/blue-tick.png" alt="Pixado" /> {item}
+                  <img src="/icons/blue-tick.png" alt="Pixado" /> {item}
                 </span>
               ))}
             </div>

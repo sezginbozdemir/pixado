@@ -6,13 +6,17 @@ import Services from "@/pages/Services";
 import Header from "@/components/common/header/Header";
 import Footer from "@/components/common/footer/Footer";
 import WebDesign from "@/pages/WebDesign";
-import ReclameVideo from "@/pages/ReclameVideo";
-import VfxVideo from "@/pages/VfxVideo";
+import ReclameVideo from "@/pages/online-marketing/ReclameVideo";
+import VfxVideo from "@/pages/online-marketing/VfxVideo";
 import Project from "@/pages/Project";
 import Branding from "@/pages/branding/Branding";
 import LogoDesign from "@/pages/branding/LogoDesing";
 import VisualIdentity from "@/pages/branding/VisualIdentity";
 import ManualBranding from "@/pages/branding/ManualBranding";
+import OnlineMarketing from "@/pages/online-marketing/OnlineMarketing";
+import SocialSetup from "@/pages/online-marketing/SocialSetup";
+import Seo from "@/pages/online-marketing/Seo";
+import Smm from "@/pages/online-marketing/Smm";
 
 const AppRouter = () => {
   return (
@@ -25,8 +29,6 @@ const AppRouter = () => {
         <Route path="/servicii" element={<Services />} />
         <Route path="/portfoliu/:id" element={<Project />} />
         <Route path="/servicii/web-design" element={<WebDesign />} />
-        <Route path="/servicii/reclame-video" element={<ReclameVideo />} />
-        <Route path="/servicii/vfx" element={<VfxVideo />} />
 
         {/* Branding */}
 
@@ -40,6 +42,31 @@ const AppRouter = () => {
           path="/servicii/branding/manual-branding"
           element={<ManualBranding />}
         />
+        {/* Online Marketing */}
+        <Route
+          path="/servicii/online-marketing"
+          element={<OnlineMarketing />}
+        />
+        <Route
+          path="/servicii/online-marketing/google-social-setup"
+          element={<SocialSetup />}
+        />
+
+        <Route
+          path="/servicii/online-marketing/optimizare-seo"
+          element={<Seo />}
+        />
+
+        <Route
+          path="/servicii/online-marketing/smm-social-media-marketing"
+          element={<Smm />}
+        />
+
+        <Route
+          path="/servicii/online-marketing/reclame-video"
+          element={<ReclameVideo />}
+        />
+        <Route path="/servicii/online-marketing/vfx" element={<VfxVideo />} />
       </Routes>
       <Footer />
     </Router>

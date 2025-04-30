@@ -1,0 +1,76 @@
+.reclame-banner-container {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.reclame-banner-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.5);
+  mask-image: url("/online-marketing/reclame-video/reclame-banner.png");
+  mask-size: 100% 100%;
+  padding: 1px;
+  @media (max-width: 992px) {
+    mask-image: url("/online-marketing/reclame-video/reclame-tablet.png");
+  }
+  @media (max-width: 768px) {
+    mask-image: url("/online-marketing/reclame-video/reclame-mobil.png");
+  }
+}
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: url("/online-marketing/reclame-video/reclame-banner.png");
+  mask-size: 100% 100%;
+  @media (max-width: 992px) {
+    mask-image: url("/online-marketing/reclame-video/reclame-tablet.png");
+  }
+  @media (max-width: 768px) {
+    mask-image: url("/online-marketing/reclame-video/reclame-mobil.png");
+  }
+}
+.float-flex {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  width: 480px;
+  height: 115px;
+  gap: 0;
+  @media (max-width: 1200px) {
+    width: 400px;
+  }
+  @media (max-width: 768px) {
+    bottom: 30px;
+  }
+  @media (max-width: 480px) {
+    width: 340px;
+  }
+}
+.details-flex {
+  display: flex;
+  flex-direction: column;
+  flex: 10;
+  gap: 10px;
+  align-items: start;
+}
+.arrow {
+  width: 100%;
+  height: 40px;
+  z-index: 5;
+  flex: 2;
+}
+.reclame-header::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+.reclame-header {
+  align-content: end;
+}

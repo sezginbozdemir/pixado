@@ -1,18 +1,16 @@
 import { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
-import priceList from "@/data/services/branding/price-list.json";
-import infoData from "@/data/services/branding/manual-branding/manual-branding.json";
-import faq from "@/data/services/branding/manual-branding/faq.json";
+import priceList from "@/data/services/online-marketing/price-list.json";
+import infoData from "@/data/services/online-marketing/social-setup/social-setup.json";
+import faq from "@/data/services/online-marketing/social-setup/faq.json";
 import PageMeta from "@/components/common/PageMeta";
-import PriceList from "@/components/service/components/price-list/PriceList";
-import Faq from "@/components/contact/faq/Faq";
 import Intro from "@/components/service/components/intro/Intro";
+import PriceList from "@/components/service/components/price-list/PriceList";
 import Inclusives from "@/components/service/components/inclusives/Inclusives";
-import Benefits from "@/components/service/components/benefits/Benefits";
 import VisualBenefits from "@/components/service/components/visual-benefits/VisualBenefits";
-import SimpleBanner from "@/components/service/components/simple-banner/SimpleBanner";
+import Faq from "@/components/contact/faq/Faq";
 
-const ManualBranding = () => {
+const SocialSetup = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,13 +24,11 @@ const ManualBranding = () => {
 
   return (
     <>
-      <PageMeta title="Logo Design" description="Logo" />
+      <PageMeta title="Branding" description="Branding" />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} />
+        <Intro data={infoData} branding={true} />
+        <VisualBenefits data={infoData} onClick={scrollToRef} />
         <Inclusives data={infoData} />
-        <SimpleBanner img={infoData.banner} />
-        <VisualBenefits onClick={scrollToRef} data={infoData} />
-        <Benefits data={infoData} />
         <div ref={ref}>
           <PriceList data={priceList} />
         </div>
@@ -42,4 +38,4 @@ const ManualBranding = () => {
   );
 };
 
-export default ManualBranding;
+export default SocialSetup;

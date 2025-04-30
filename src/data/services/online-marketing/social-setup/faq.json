@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Cât durează procesul de dezvoltare a sitului?",
+    "answer": "Depinde de complexitate, dar în general între 2 și 6 săptămâni."
+  },
+  {
+    "question": "Ce tehnologii folosiți pentru dezvoltare?",
+    "answer": "React, Next.js, Node.js, și alte tehnologii moderne."
+  },
+  {
+    "question": "Pot solicita modificări după livrare?",
+    "answer": "Desigur, oferim suport post-lansare pentru ajustări."
+  },
+  {
+    "question": "Site-ul va fi optimizat pentru mobil?",
+    "answer": "Da, toate site-urile noastre sunt responsive."
+  },
+  {
+    "question": "Aveți pachete de mentenanță?",
+    "answer": "Da, oferim mai multe opțiuni de mentenanță lunară."
+  }
+]
