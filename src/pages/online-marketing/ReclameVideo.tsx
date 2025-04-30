@@ -7,7 +7,7 @@ import PriceList from "@/components/service/components/price-list/PriceList";
 import InfoList from "@/components/service/components/info-list/InfoList";
 import data from "@/data/services/online-marketing/reclame-video/about.json";
 import infoList from "@/data/services/online-marketing/reclame-video/info-list.json";
-import priceList from "@/data/services/online-marketing/reclame-video/price-list.json";
+import priceList from "@/data/services/online-marketing/price-list.json";
 import PageMeta from "@/components/common/PageMeta";
 
 const ReclameVideo = () => {

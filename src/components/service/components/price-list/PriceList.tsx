@@ -8,6 +8,7 @@ export interface PriceList {
   text: string;
   price: string;
   links: string[];
+  pack?: boolean;
 }
 interface PriceData {
   header: string;
@@ -26,6 +27,7 @@ const PriceList = ({ data }: Props) => {
         <div className="title-2">{data.header}</div>
       </div>
       <Swiper
+        className="my-swiper"
         modules={[Pagination, FreeMode]}
         pagination={{ clickable: true, type: "bullets" }}
         freeMode={true}
@@ -44,6 +46,7 @@ const PriceList = ({ data }: Props) => {
               text={item.text}
               price={item.price}
               links={item.links}
+              pack={item.pack}
             />
           </SwiperSlide>
         ))}

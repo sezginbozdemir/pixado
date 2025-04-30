@@ -1,7 +1,8 @@
 {
-  "header": "WEB DESIGN",
+  "header": "ONLINE MARKETING",
   "plans": [
     {
+      "pack": true,
       "title": "Site de prezentare",
       "text": "Ideal pentru afaceri mici sau profesioniști care doresc o prezență online simplă, elegantă și eficientă.",
       "price": "€500",

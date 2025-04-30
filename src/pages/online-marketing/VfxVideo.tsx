@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import SimpleBanner from "@/components/service/components/simple-banner/SimpleBanner";
 import VfxText from "@/components/service/online-marketing/vfx-video/vfx-text/VfxText";
-import priceList from "@/data/services/online-marketing/vfx-video/price-list.json";
+import priceList from "@/data/services/online-marketing/price-list.json";
 import infoList from "@/data/services/online-marketing/vfx-video/info-list.json";
 import data from "@/data/services/online-marketing/vfx-video/about.json";
 import PriceList from "@/components/service/components/price-list/PriceList";

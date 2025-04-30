@@ -1,7 +1,24 @@
+.pack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 25px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  background-color: #252623;
+  height: 150px;
+  width: 100%;
+  padding-top: 1rem;
+}
+.pack-wrapper {
+  margin-bottom: -4rem;
+  @media (max-width: 768px) {
+    padding: 0 3rem;
+  }
+}
 .price-card {
   height: 100%;
   width: 100%;
-  background-color: #252623;
   mask-image: url("/service-images/price-card.png");
   mask-size: 100% 100%;
   padding: 2rem;
@@ -10,6 +27,13 @@
   gap: 3rem;
   align-items: center;
 }
+.price-card-pack {
+  background-color: #6368ad;
+}
+.price-card-normal {
+  background-color: #252623;
+}
+
 .price-card-wrapper {
   height: 100%;
   width: 100%;
@@ -20,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .price-card-container {
   height: 580px;
@@ -71,4 +96,17 @@
 }
 .card-text {
   height: 50px;
+}
+.price-card-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.price-card-pixado {
+  opacity: 20%;
 }
