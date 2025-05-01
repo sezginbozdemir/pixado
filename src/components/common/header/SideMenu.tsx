@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Menu } from "./Header";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 const sidebar = {
   open: {
@@ -24,7 +26,7 @@ const sidebar = {
 
 type Props = {
   isOpen: boolean;
-  items: string[];
+  items: Menu[];
   activeMenu: string;
   handleMenuClick: (menu: string) => void;
   onClose: () => void;
@@ -48,6 +50,11 @@ const SideMenu: React.FC<Props> = ({
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+  const [expandedItem, setExpandedItem] = useState<string | null>(null);
+
+  const toggleExpand = (name: string) => {
+    setExpandedItem((prev) => (prev === name ? null : name));
+  };
   return (
     <motion.div
       className="burger-overlay"
@@ -61,12 +68,34 @@ const SideMenu: React.FC<Props> = ({
       {items.map((item, index) => (
         <div
           key={index}
-          onClick={() => handleMenuClick(item)}
-          className={`side-menu-item menu-body-bold ${
-            activeMenu === item ? "active" : ""
+          onClick={() => {
+            if (item.subItems) {
+              toggleExpand(item.name);
+            } else {
+              handleMenuClick(item.name);
+              onClose();
+            }
+          }}
+          className={`side-menu-item ${
+            activeMenu === item.name ? "active" : ""
           }`}
         >
-          {item}
+          <span className="title-4">{item.name}</span>
+
+          {item.subItems && expandedItem === item.name && (
+            <div className="subitems-container">
+              {item.subItems.map((sub, subIndex) => (
+                <Link
+                  key={subIndex}
+                  to={`/${item.name}/${sub.replace(/\s+/g, "-")}`}
+                  className="subitem-link"
+                  onClick={onClose}
+                >
+                  {sub}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </motion.div>
