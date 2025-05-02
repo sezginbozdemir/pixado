@@ -38,6 +38,7 @@ const BannerSection = () => {
 
   return (
     <Container className="banner-container">
+      <img className="line-group-multi" src={lineGroupMulti} />
       <Row className="banner-content">
         <Col xs={12} lg={6} className="banner-services">
           <motion.div
@@ -88,7 +89,6 @@ const BannerSection = () => {
               <div className="projects-text">Proiecte finalizate cu succes</div>
             </motion.div>
           </motion.div>
-          <img className="line-group-multi" src={lineGroupMulti} />
           <img className="line-group-2" src={lineGroup2} />
           <img className="line-group-1" src={lineGroup1} />
         </Col>

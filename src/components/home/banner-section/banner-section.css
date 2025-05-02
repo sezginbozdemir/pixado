@@ -1,5 +1,8 @@
 .banner-container {
   overflow: hidden;
+  height: 90vh;
+  margin-top: 8rem !important;
+  position: relative;
 }
 .banner-content {
   position: relative;
@@ -82,6 +85,9 @@
   bottom: -25%;
   max-width: 10vh;
   position: absolute;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 .banner-motion {
   z-index: 1000;
@@ -94,13 +100,19 @@
   bottom: 40%;
   max-width: 12vh;
   position: absolute;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 
 .line-group-multi {
-  left: -100%;
-  bottom: -25%;
+  left: 0;
+  bottom: 15rem;
   max-width: 32vh;
   position: absolute;
+  @media (max-width: 992px) {
+    display: none;
+  }
 }
 .rotating-label-container {
   position: absolute;

@@ -78,13 +78,13 @@ const ServicesCarousel = () => {
             />
           </Col>
         </Row>
-        <Row className="info-progress-mobil">
+        <div className="info-progress-mobil">
           <ProgressSliderMobile
             data={data}
             currentIndex={currentIndex}
             direction={direction}
           />
-        </Row>
+        </div>
       </div>
     </Container>
   );
