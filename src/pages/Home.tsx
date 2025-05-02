@@ -13,11 +13,11 @@ import PageMeta from "@/components/common/PageMeta";
 import Spacing from "@/components/common/Spacing";
 
 const Home = () => {
+  const projects = data.slice(0, 4);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const projects = data.slice(0, 4);
   return (
     <Col className="home">
       <PageMeta title="Home" description="Home Meta" />

@@ -10,6 +10,9 @@ import ProjectContentTwo from "@/components/project/project-content-two/ProjectC
 import ProjectGallery from "@/components/project/project-gallery/ProjectGallery";
 import SimiliarProjects from "@/components/project/similiar-projects/SimiliarProjects";
 import Spacing from "@/components/common/Spacing";
+import DesktopView from "@/components/project/desktop-view/DesktopView";
+import MobileView from "@/components/project/mobile-view/MobileView";
+import Loading from "@/components/common/Loading";
 
 export interface ProjectData {
   id: number;
@@ -46,6 +49,9 @@ const Project = () => {
   }, [location]);
 
   const { id } = useParams<{ id: string }>();
+  if (!id) {
+    return <Loading />;
+  }
   const project = projects.find((p) => p.id === parseInt(id || "", 10));
 
   if (!project) {
@@ -63,9 +69,13 @@ const Project = () => {
         <Spacing size={6} />
         <ProjectContentOne project={project} />
         <Spacing size={4} />
+        <DesktopView project={project} />
+        <Spacing size={4} />
         <ProjectImages project={project} />
         <Spacing size={3} />
         <ProjectContentTwo project={project} />
+        <Spacing size={3} />
+        <MobileView project={project} />
         <Spacing size={3} />
         <ProjectGallery project={project} />
         <Spacing size={3} />

@@ -9,19 +9,14 @@ import RotatingLabel from "@//components/common/RotatingLabel";
 import "./banner-section.css";
 
 const BannerSection = () => {
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
+  const [hasRendered, setHasRendered] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setIsPageLoaded(true);
-    };
+    const raf = requestAnimationFrame(() => {
+      setHasRendered(true);
+    });
 
-    if (document.readyState === "complete") {
-      setIsPageLoaded(true);
-    } else {
-      window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
-    }
+    return () => cancelAnimationFrame(raf);
   }, []);
   const slideFromLeft = {
     hidden: { x: "-100%" },
@@ -47,7 +42,7 @@ const BannerSection = () => {
         <Col xs={12} lg={6} className="banner-services">
           <motion.div
             initial="hidden"
-            animate={isPageLoaded ? "visible" : "hidden"}
+            animate={hasRendered ? "visible" : "hidden"}
             variants={slideFromLeft}
           >
             <div className="title-1 banner-text">
@@ -67,7 +62,7 @@ const BannerSection = () => {
         <Col xs={12} lg={6} className="banner-image">
           <motion.div
             initial="hidden"
-            animate={isPageLoaded ? "visible" : "hidden"}
+            animate={hasRendered ? "visible" : "hidden"}
             variants={slideFromRight}
             className="banner-motion"
           >
@@ -77,7 +72,7 @@ const BannerSection = () => {
 
             <motion.div
               initial="hidden"
-              animate={isPageLoaded ? "visible" : "hidden"}
+              animate={hasRendered ? "visible" : "hidden"}
               variants={visibleNow}
               className="rotating-label-container"
             >
@@ -85,7 +80,7 @@ const BannerSection = () => {
             </motion.div>
             <motion.div
               initial="hidden"
-              animate={isPageLoaded ? "visible" : "hidden"}
+              animate={hasRendered ? "visible" : "hidden"}
               variants={visibleNow}
               className="projects-count-container"
             >
