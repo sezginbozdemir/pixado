@@ -10,6 +10,7 @@ import placeholder from "@/assets/placeholder.png";
 import data from "@/data/services/web-design/detail-slider.json";
 import { Container } from "react-bootstrap";
 import { useScroll, motion, useTransform } from "framer-motion";
+import { Link } from "react-router-dom";
 const sliderData: SliderItem[] = data;
 
 type SliderItem = {
@@ -91,7 +92,9 @@ const WebSlider = () => {
                     ODATA CE ESTE FINALIZAT PROCESUL DE DEZVOLTARE VA FI LANSAT
                     SI BENEFICIEZI DE TOT SUPORTUL NOSTRU{" "}
                   </div>
-                  <Button className="button-web" text="Contacteaza-ne" />
+                  <Link to={"/contact"}>
+                    <Button className="button-web" text="Contacteaza-ne" />
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

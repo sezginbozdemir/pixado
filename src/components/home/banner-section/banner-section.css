@@ -2,6 +2,13 @@
   overflow: hidden;
   height: 80vh;
   margin-top: 5rem !important;
+  @media (max-width: 992px) {
+    height: 100vh;
+    margin-top: 1rem !important ;
+  }
+  @media (max-width: 768px) {
+    height: 90vh;
+  }
 }
 .banner-content {
   position: relative;
