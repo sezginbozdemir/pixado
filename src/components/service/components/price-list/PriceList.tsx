@@ -38,6 +38,7 @@ const PriceList = ({ data }: Props) => {
         spaceBetween={30}
         slidesPerView={1}
         breakpoints={{
+          480: { slidesPerView: 1.3 },
           768: { slidesPerView: 2 },
           1200: { slidesPerView: 3 },
         }}

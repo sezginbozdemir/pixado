@@ -1,8 +1,7 @@
 .banner-container {
   overflow: hidden;
-  height: 90vh;
-  margin-top: 8rem !important;
-  position: relative;
+  height: 80vh;
+  margin-top: 5rem !important;
 }
 .banner-content {
   position: relative;
@@ -81,9 +80,9 @@
 }
 
 .line-group-1 {
-  right: 30%;
-  bottom: -25%;
-  max-width: 10vh;
+  right: 0;
+  bottom: -5rem;
+  max-width: 10vh !important;
   position: absolute;
   @media (max-width: 992px) {
     display: none;
@@ -107,8 +106,8 @@
 
 .line-group-multi {
   left: 0;
-  bottom: 15rem;
-  max-width: 32vh;
+  bottom: -5rem;
+  max-width: 32vh !important;
   position: absolute;
   @media (max-width: 992px) {
     display: none;

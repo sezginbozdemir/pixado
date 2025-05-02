@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./slider.css";
+import tick from "@/assets/round-tick.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import { FreeMode } from "swiper/modules";
@@ -24,7 +25,7 @@ const WebSlider = () => {
     target: ref,
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 3.5]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const top = useTransform(scrollYProgress, [0, 1], ["-20%", "50%"]);
   return (
     <div ref={ref} className="web-wrapper">
@@ -67,7 +68,10 @@ const WebSlider = () => {
                     <div className="body">{slider.text}</div>
                     <ul className="body">
                       {slider.links.map((link, index) => (
-                        <li key={index}>{link}</li>
+                        <li key={index}>
+                          <img src={tick} alt="pixado" />
+                          {link}
+                        </li>
                       ))}
                     </ul>
                   </div>

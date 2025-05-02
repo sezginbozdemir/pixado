@@ -9,12 +9,18 @@
   margin-top: 1rem !important;
   background-color: rgba(128, 128, 128, 0.5);
   width: 100%;
-  height: 100%;
+  height: 40rem;
   object-fit: cover;
   mask-image: url("/project-images/detail-head.png");
   mask-size: 100% 100%;
   padding: 1px !important;
   overflow: hidden;
+  @media (max-width: 992px) {
+    height: 30rem;
+  }
+  @media (max-width: 768px) {
+    height: 20rem;
+  }
 }
 .tag-col {
   margin-right: 1rem;
@@ -44,6 +50,9 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  @media (max-width: 768px) {
+    top: 0;
+  }
 }
 
 .tag-outer {

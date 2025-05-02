@@ -68,7 +68,7 @@ const Project = () => {
         description={project.metaDescription}
       />
       <Container>
-        <Spacing size={6} />
+        <Spacing size={3} />
         <ProjectHero project={project} />
         <Spacing size={6} />
         <ProjectContentOne project={project} />
