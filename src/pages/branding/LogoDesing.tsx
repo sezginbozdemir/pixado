@@ -29,8 +29,10 @@ const LogoDesign = () => {
       <Intro data={infoData} />
       <Container style={{ height: "100%" }}>
         <LogoDesignIntro data={infoData} />
-        <Inclusives data={infoData} />
-        <Benefits onClick={scrollToRef} button data={infoData} />
+      </Container>
+      <Inclusives data={infoData} />
+      <Benefits onClick={scrollToRef} button data={infoData} />
+      <Container style={{ height: "100%" }}>
         <div ref={ref}>
           <PriceList data={priceList} />
         </div>

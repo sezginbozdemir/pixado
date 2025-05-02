@@ -35,6 +35,7 @@ const Portfoliu = () => {
   return (
     <Col className="portfoliu">
       <PageMeta title="Portfoliu" description="Portfoliu Meta" />
+      <Spacing size={5} />
       <Filters projects={data} setProjects={setProjects} />
       <Spacing size={5} />
       <ProjectsList projects={projects} />

@@ -30,7 +30,9 @@ const VisualIdentity = () => {
       <Container style={{ height: "100%" }}>
         <VisualIdentityCards data={infoData} />
         <VisualBanner data={infoData} />
-        <VisualBenefits onClick={scrollToRef} data={infoData} />
+      </Container>
+      <VisualBenefits onClick={scrollToRef} data={infoData} />
+      <Container style={{ height: "100%" }}>
         <div ref={ref}>
           <PriceList data={priceList} />
         </div>

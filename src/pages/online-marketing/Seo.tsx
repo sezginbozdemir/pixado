@@ -26,9 +26,9 @@ const Seo = () => {
     <>
       <PageMeta title="Branding" description="Branding" />
       <Intro data={infoData} branding={true} />
+      <VisualBenefits num data={infoData} onClick={scrollToRef} />
+      <Inclusives data={infoData} />
       <Container style={{ height: "100%" }}>
-        <VisualBenefits num data={infoData} onClick={scrollToRef} />
-        <Inclusives data={infoData} />
         <div ref={ref}>
           <PriceList data={priceList} />
         </div>

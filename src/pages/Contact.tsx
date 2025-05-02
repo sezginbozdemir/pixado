@@ -22,6 +22,7 @@ const Contact = () => {
   return (
     <Container>
       <PageMeta title="Contact" description="Contact Meta" />
+      <Spacing size={5} />
       <ContactIntro onClick={scrollToForm} />
       <Spacing size={4} />
       <div ref={formRef}>

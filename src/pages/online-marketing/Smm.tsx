@@ -21,8 +21,8 @@ const Smm = () => {
     <>
       <PageMeta title="Branding" description="Branding" />
       <Intro data={infoData} branding={true} />
+      <VisualBenefits num data={infoData} />
       <Container style={{ height: "100%" }}>
-        <VisualBenefits num data={infoData} />
         <SmmServices services={infoData.smmServices} />
         <Spacing size={4} />
         <Socials />

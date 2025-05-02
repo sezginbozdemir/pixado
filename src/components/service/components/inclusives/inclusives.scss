@@ -1,3 +1,17 @@
+.inclusives-container {
+  position: relative;
+  overflow: hidden;
+}
+.inclusives-decor {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
 .inclusives {
   display: flex;
   flex-direction: column;

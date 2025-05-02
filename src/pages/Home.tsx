@@ -21,6 +21,7 @@ const Home = () => {
   return (
     <Col className="home">
       <PageMeta title="Home" description="Home Meta" />
+      <Spacing size={5} />
       <BannerSection />
       <Spacing size={4} />
       <ScrollAnimation />

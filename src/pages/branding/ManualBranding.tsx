@@ -28,11 +28,13 @@ const ManualBranding = () => {
     <>
       <PageMeta title="Logo Design" description="Logo" />
       <Intro data={infoData} />
+      <Inclusives hideDecor={true} data={infoData} />
       <Container style={{ height: "100%" }}>
-        <Inclusives data={infoData} />
         <SimpleBanner img={infoData.banner} />
-        <VisualBenefits onClick={scrollToRef} data={infoData} />
-        <Benefits data={infoData} />
+      </Container>
+      <VisualBenefits onClick={scrollToRef} data={infoData} />
+      <Benefits data={infoData} />
+      <Container style={{ height: "100%" }}>
         <div ref={ref}>
           <PriceList data={priceList} />
         </div>
