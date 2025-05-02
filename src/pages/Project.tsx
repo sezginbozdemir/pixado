@@ -13,6 +13,7 @@ import Spacing from "@/components/common/Spacing";
 import DesktopView from "@/components/project/desktop-view/DesktopView";
 import MobileView from "@/components/project/mobile-view/MobileView";
 import Loading from "@/components/common/Loading";
+import NotFound from "./NotFound";
 
 export interface ProjectData {
   id: number;
@@ -52,10 +53,12 @@ const Project = () => {
   if (!id) {
     return <Loading />;
   }
+  if (!/^\d+$/.test(id)) return <NotFound />;
+
   const project = projects.find((p) => p.id === parseInt(id || "", 10));
 
   if (!project) {
-    return <div className="body">Project not found!</div>;
+    return <NotFound />;
   }
 
   return (

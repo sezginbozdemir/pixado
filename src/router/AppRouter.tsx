@@ -16,6 +16,7 @@ import OnlineMarketing from "@/pages/online-marketing/OnlineMarketing";
 import SocialSetup from "@/pages/online-marketing/SocialSetup";
 import Seo from "@/pages/online-marketing/Seo";
 import Smm from "@/pages/online-marketing/Smm";
+import NotFound from "@/pages/NotFound";
 
 const AppRouter = () => {
   return (
@@ -30,6 +31,7 @@ const AppRouter = () => {
           <Route path="/portfoliu" element={<Portfoliu />} />
           <Route path="/portfoliu/:id" element={<Project />} />
           <Route path="/servicii/web-design" element={<WebDesign />} />
+          <Route path="*" element={<NotFound />} />
 
           {/* Branding */}
 
