@@ -26,12 +26,15 @@ const Branding = () => {
   return (
     <>
       <PageMeta title="Branding" description="Branding" />
+      <Intro data={infoData} branding={true} />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} branding={true} />
         <WebBanner onClick={scrollToRef} img={infoData.banner} />
-        <div ref={ref}>
-          <BrandingServices services={infoData.services} />
-        </div>
+      </Container>
+
+      <div ref={ref}>
+        <BrandingServices services={infoData.services} />
+      </div>
+      <Container style={{ height: "100%" }}>
         <div className="branding-img-wrapper">
           <SimpleBanner img={infoData.img} />
         </div>

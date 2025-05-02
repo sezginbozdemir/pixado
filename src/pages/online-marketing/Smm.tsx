@@ -20,8 +20,8 @@ const Smm = () => {
   return (
     <>
       <PageMeta title="Branding" description="Branding" />
+      <Intro data={infoData} branding={true} />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} branding={true} />
         <VisualBenefits num data={infoData} />
         <SmmServices services={infoData.smmServices} />
         <Spacing size={4} />

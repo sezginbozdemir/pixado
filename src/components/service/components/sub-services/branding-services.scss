@@ -1,5 +1,8 @@
-.branding-flex {
+.sub-container {
   position: relative;
+  overflow: hidden;
+}
+.branding-flex {
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -9,46 +12,58 @@
   }
 }
 .decor-one-sub-services {
+  width: 100px;
   position: absolute;
-  top: 0;
-  left: 0;
+  height: auto;
+  top: 3rem;
+  left: 5%;
 }
 .decor-two-sub-services {
+  width: 550px;
+  height: auto;
   position: absolute;
-  top: 6rem;
-  right: 0;
+  top: 10rem;
+  right: -15rem;
   @media (max-width: 992px) {
     display: none;
   }
 }
 .decor-three-sub-services {
+  width: 300px;
+  height: auto;
   position: absolute;
-  top: 25rem;
+  top: 32rem;
   left: 0;
   @media (max-width: 992px) {
     display: none;
   }
 }
 .decor-four-sub-services {
+  width: 170px;
+  height: auto;
   position: absolute;
-  top: 35rem;
-  right: 0;
+  top: 40rem;
+  right: -3rem;
   @media (max-width: 992px) {
     display: none;
   }
 }
 .decor-five-sub-services {
+  width: 300px;
+  height: auto;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 3rem;
+  right: -5rem;
   @media (max-width: 992px) {
     display: none;
   }
 }
 .decor-six-sub-services {
+  width: 400px;
+  height: auto;
   position: absolute;
-  bottom: 5rem;
-  left: 0;
+  bottom: 14rem;
+  left: -13rem;
   @media (max-width: 992px) {
     display: none;
   }

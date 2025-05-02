@@ -26,8 +26,8 @@ const LogoDesign = () => {
   return (
     <>
       <PageMeta title="Logo Design" description="Logo" />
+      <Intro data={infoData} />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} />
         <LogoDesignIntro data={infoData} />
         <Inclusives data={infoData} />
         <Benefits onClick={scrollToRef} button data={infoData} />

@@ -1,6 +1,10 @@
+.web-intro-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .web-intro-row {
   align-items: start;
-  position: relative;
   @media (max-width: 992px) {
     gap: 1rem;
   }
@@ -8,19 +12,19 @@
 .decor-one-intro {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 160px !important;
-  height: 60px;
+  left: -3rem;
+  width: 100px;
+  height: auto;
   @media (max-width: 992px) {
     display: none;
   }
 }
 .decor-two-intro {
   position: absolute;
-  width: 300px !important;
-  height: 50px;
-  top: -5rem;
-  right: 0;
+  width: 250px;
+  height: auto;
+  top: 2rem;
+  right: -8rem;
   @media (max-width: 992px) {
     display: none;
   }

@@ -25,8 +25,8 @@ const SocialSetup = () => {
   return (
     <>
       <PageMeta title="Branding" description="Branding" />
+      <Intro data={infoData} branding={true} />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} branding={true} />
         <VisualBenefits data={infoData} onClick={scrollToRef} />
         <Inclusives data={infoData} />
         <div ref={ref}>

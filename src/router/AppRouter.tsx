@@ -16,7 +16,6 @@ import OnlineMarketing from "@/pages/online-marketing/OnlineMarketing";
 import SocialSetup from "@/pages/online-marketing/SocialSetup";
 import Seo from "@/pages/online-marketing/Seo";
 import Smm from "@/pages/online-marketing/Smm";
-import Spacing from "@/components/common/Spacing";
 
 const AppRouter = () => {
   return (
@@ -25,7 +24,6 @@ const AppRouter = () => {
         <div className="header-div">
           <Header />
         </div>
-        <Spacing size={5} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />

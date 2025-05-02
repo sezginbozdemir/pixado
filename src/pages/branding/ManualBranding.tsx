@@ -27,8 +27,8 @@ const ManualBranding = () => {
   return (
     <>
       <PageMeta title="Logo Design" description="Logo" />
+      <Intro data={infoData} />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} />
         <Inclusives data={infoData} />
         <SimpleBanner img={infoData.banner} />
         <VisualBenefits onClick={scrollToRef} data={infoData} />

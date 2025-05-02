@@ -27,8 +27,8 @@ const WebDesign = () => {
   return (
     <>
       <PageMeta title="Web Design" description="Web Design" />
+      <Intro data={infoData} />
       <Container style={{ height: "100%" }}>
-        <Intro data={infoData} />
         <WebBanner onClick={scrollToRef} img={infoData.img} />
       </Container>
 
