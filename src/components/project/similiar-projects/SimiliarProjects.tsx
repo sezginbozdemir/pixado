@@ -11,39 +11,44 @@ interface Props {
 }
 
 const SimiliarProjects = ({ projects, project }: Props) => {
+  const filteredProjects = projects.filter(
+    (p) => p.type === project.type && p.id !== project.id
+  );
   return (
     <>
-      <Row className="title-2">Proiecte similare</Row>
-      <Row>
-        <div className="slider-container">
-          <Swiper
-            modules={[Pagination, FreeMode]}
-            pagination={{ clickable: true, type: "bullets" }}
-            slidesPerView={1}
-            breakpoints={{
-              768: { slidesPerView: 2 },
-              1200: { slidesPerView: 2 },
-            }}
-            freeMode={true}
-            grabCursor={true}
-          >
-            {projects
-              .filter((p) => p.type === project.type && p.id !== project.id)
-              .map((filteredProject) => (
-                <SwiperSlide key={filteredProject.id}>
-                  <ProjectCard
-                    id={filteredProject.id}
-                    title={filteredProject.title}
-                    imgUrl={filteredProject.imgUrl}
-                    details={filteredProject.details}
-                    date={filteredProject.date}
-                    tags={filteredProject.tags}
-                  />
-                </SwiperSlide>
-              ))}
-          </Swiper>
-        </div>
-      </Row>
+      {filteredProjects.length > 0 && (
+        <>
+          <Row className="title-2">Proiecte similare</Row>
+          <Row>
+            <div className="slider-container">
+              <Swiper
+                modules={[Pagination, FreeMode]}
+                pagination={{ clickable: true, type: "bullets" }}
+                slidesPerView={1}
+                breakpoints={{
+                  768: { slidesPerView: 2 },
+                  1200: { slidesPerView: 2 },
+                }}
+                freeMode={true}
+                grabCursor={true}
+              >
+                {filteredProjects.map((filteredProject) => (
+                  <SwiperSlide key={filteredProject.id}>
+                    <ProjectCard
+                      id={filteredProject.id}
+                      title={filteredProject.title}
+                      imgUrl={filteredProject.imgUrl}
+                      details={filteredProject.details}
+                      date={filteredProject.date}
+                      tags={filteredProject.tags}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </Row>
+        </>
+      )}
     </>
   );
 };

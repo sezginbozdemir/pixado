@@ -10,8 +10,7 @@ const ProjectContentOne = ({ project }: Props) => {
   return (
     <Row>
       <Col lg={6} className="title-2">
-        Câteva detalii despre <br />
-        proiect , o propozitie
+        Scopul proiectului
       </Col>
       <Col className="body" lg={6}>
         <p>{project.description}</p>

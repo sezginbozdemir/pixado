@@ -4,6 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import ArrowButton from "@/components/common/buttons/ArrowButton";
 import RotatingLabel from "@/components/common/RotatingLabel";
 import { useRef } from "react";
+import Spacing from "@/components/common/Spacing";
 
 interface Props {
   project: Pick<ProjectData, "img3" | "img4" | "banner2" | "banner1">;
@@ -29,6 +30,7 @@ const ProjectGallery = ({ project }: Props) => {
         </div>
         <ArrowButton onClick={scrollToRef} className="green-decor" />
       </div>
+      <Spacing size={3} />
       <div className="banner-gallery-images">
         <div className="detail-rotating-label">
           <RotatingLabel />
@@ -53,14 +55,13 @@ const ProjectGallery = ({ project }: Props) => {
           </Col>
         </Row>
       </div>
-      <Row>
-        <div className="detail-banner-2">
-          <img
-            className="detail-banner-image-2"
-            src={project.banner2 || "/project-images/wallpaper-1.png"}
-          />
-        </div>
-      </Row>
+      <Spacing size={3} />
+      <div className="detail-banner-2">
+        <img
+          className="detail-banner-image-2"
+          src={project.banner2 || "/project-images/wallpaper-1.png"}
+        />
+      </div>
     </>
   );
 };

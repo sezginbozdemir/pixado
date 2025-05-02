@@ -14,6 +14,8 @@ import Spacing from "@/components/common/Spacing";
 export interface ProjectData {
   id: number;
   title: string;
+  desktopImg: string;
+  mobileImg: string;
   imgUrl?: string;
   details: string;
   date: string;
@@ -58,9 +60,9 @@ const Project = () => {
       />
       <Container>
         <ProjectHero project={project} />
-        <Spacing size={3} />
+        <Spacing size={6} />
         <ProjectContentOne project={project} />
-        <Spacing size={3} />
+        <Spacing size={4} />
         <ProjectImages project={project} />
         <Spacing size={3} />
         <ProjectContentTwo project={project} />

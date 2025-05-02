@@ -38,10 +38,12 @@
 
 .floating-title {
   position: absolute;
-  top: 3%;
+  width: max-content !important;
+  top: 1rem;
+  right: 0;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
 }
 
 .tag-outer {
@@ -50,10 +52,24 @@
 }
 .float-text {
   padding: 0 !important;
+  & span {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
 }
 
-.float-row {
-  padding-right: 15% !important;
+.floating-detail {
+  display: flex;
+  gap: 1rem;
+  text-transform: capitalize;
+}
+
+.floating-type::before {
+  content: "•";
+  color: white;
+  margin-right: 12px;
+  font-size: 1rem;
 }
 
 @media (min-width: 1202px) {
@@ -62,10 +78,6 @@
   }
 }
 @media (max-width: 992px) {
-  .float-row {
-    padding-right: 7% !important;
-  }
-
   .detail-back {
     margin-bottom: 1rem;
   }
@@ -77,16 +89,10 @@
 }
 
 @media (max-width: 768px) {
-  .float-row {
-    padding-right: 5% !important;
-  }
   .detail-head-image {
     mask-image: url("/project-images/detail-head-mobil.png");
   }
   .detail-head {
     mask-image: url("/project-images/detail-head-mobil.png");
-  }
-  .floating-title {
-    top: 0;
   }
 }
