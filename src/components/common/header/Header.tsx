@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 import burger from "@/assets/burger.png";
 import Button from "../buttons/Button";
@@ -73,19 +74,28 @@ const Header = () => {
               >
                 <span className="menu-body"> {menu.name}</span>
               </div>
-              {menu.subItems && hoveredMenu === menu.name && (
-                <div className="menu-dropdown">
-                  {menu.subItems.map((sub, idx) => (
-                    <Link
-                      to={`/${menu.name}/${sub.replace(/\s+/g, "-")}`}
-                      key={idx}
-                      className="menu-dropdown-item title-4"
-                    >
-                      {sub}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              <AnimatePresence mode="wait">
+                {menu.subItems && hoveredMenu === menu.name && (
+                  <motion.div
+                    key="dropdown"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    className="menu-dropdown"
+                  >
+                    {menu.subItems.map((sub, idx) => (
+                      <Link
+                        to={`/${menu.name}/${sub.replace(/\s+/g, "-")}`}
+                        key={idx}
+                        className="menu-dropdown-item title-4"
+                      >
+                        {sub}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           ))}
         </div>

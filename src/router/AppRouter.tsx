@@ -21,53 +21,60 @@ import Spacing from "@/components/common/Spacing";
 const AppRouter = () => {
   return (
     <Router>
-      <Header />
-      <Spacing size={5} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfoliu" element={<Portfoliu />} />
-        <Route path="/portfoliu/:id" element={<Project />} />
-        <Route path="/servicii/web-design" element={<WebDesign />} />
+      <div className="app-router">
+        <div className="header-div">
+          <Header />
+        </div>
+        <Spacing size={5} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfoliu" element={<Portfoliu />} />
+          <Route path="/portfoliu/:id" element={<Project />} />
+          <Route path="/servicii/web-design" element={<WebDesign />} />
 
-        {/* Branding */}
+          {/* Branding */}
 
-        <Route path="/servicii/branding" element={<Branding />} />
-        <Route path="/servicii/branding/logo-design" element={<LogoDesign />} />
-        <Route
-          path="/servicii/branding/identitate-vizuala"
-          element={<VisualIdentity />}
-        />
-        <Route
-          path="/servicii/branding/manual-branding"
-          element={<ManualBranding />}
-        />
-        {/* Online Marketing */}
-        <Route
-          path="/servicii/online-marketing"
-          element={<OnlineMarketing />}
-        />
-        <Route
-          path="/servicii/online-marketing/google-social-setup"
-          element={<SocialSetup />}
-        />
+          <Route path="/servicii/branding" element={<Branding />} />
+          <Route
+            path="/servicii/branding/logo-design"
+            element={<LogoDesign />}
+          />
+          <Route
+            path="/servicii/branding/identitate-vizuala"
+            element={<VisualIdentity />}
+          />
+          <Route
+            path="/servicii/branding/manual-branding"
+            element={<ManualBranding />}
+          />
+          {/* Online Marketing */}
+          <Route
+            path="/servicii/online-marketing"
+            element={<OnlineMarketing />}
+          />
+          <Route
+            path="/servicii/online-marketing/google-social-setup"
+            element={<SocialSetup />}
+          />
 
-        <Route
-          path="/servicii/online-marketing/optimizare-seo"
-          element={<Seo />}
-        />
+          <Route
+            path="/servicii/online-marketing/optimizare-seo"
+            element={<Seo />}
+          />
 
-        <Route
-          path="/servicii/online-marketing/smm-social-media-marketing"
-          element={<Smm />}
-        />
+          <Route
+            path="/servicii/online-marketing/smm-social-media-marketing"
+            element={<Smm />}
+          />
 
-        <Route
-          path="/servicii/online-marketing/reclame-video"
-          element={<ReclameVideo />}
-        />
-        <Route path="/servicii/online-marketing/vfx" element={<VfxVideo />} />
-      </Routes>
+          <Route
+            path="/servicii/online-marketing/reclame-video"
+            element={<ReclameVideo />}
+          />
+          <Route path="/servicii/online-marketing/vfx" element={<VfxVideo />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );

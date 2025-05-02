@@ -5,6 +5,7 @@ import ContactForm from "@/components/contact/form/ContactForm";
 import Faq from "@/components/contact/faq/Faq";
 import PageMeta from "@/components/common/PageMeta";
 import data from "@/data/contact/faq.json";
+import Spacing from "@/components/common/Spacing";
 
 const Contact = () => {
   useEffect(() => {
@@ -22,9 +23,12 @@ const Contact = () => {
     <Container>
       <PageMeta title="Contact" description="Contact Meta" />
       <ContactIntro onClick={scrollToForm} />
+      <Spacing size={4} />
       <div ref={formRef}>
         <ContactForm />
       </div>
+      <Spacing size={2} />
+
       <Faq data={data} />
     </Container>
   );

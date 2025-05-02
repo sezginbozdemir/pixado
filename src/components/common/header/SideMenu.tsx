@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Menu } from "./Header";
 import "./header.css";
 import { Link } from "react-router-dom";
@@ -81,21 +81,29 @@ const SideMenu: React.FC<Props> = ({
           }`}
         >
           <span className="title-4">{item.name}</span>
-
-          {item.subItems && expandedItem === item.name && (
-            <div className="subitems-container">
-              {item.subItems.map((sub, subIndex) => (
-                <Link
-                  key={subIndex}
-                  to={`/${item.name}/${sub.replace(/\s+/g, "-")}`}
-                  className="subitem-link"
-                  onClick={onClose}
-                >
-                  {sub}
-                </Link>
-              ))}
-            </div>
-          )}
+          <AnimatePresence mode="wait">
+            {item.subItems && expandedItem === item.name && (
+              <motion.div
+                key="sidebar"
+                initial={{ opacity: 0, height: 0, y: -10 }}
+                animate={{ opacity: 1, height: "auto", y: 0 }}
+                exit={{ opacity: 0, height: 0, y: -10 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="subitems-container"
+              >
+                {item.subItems.map((sub, subIndex) => (
+                  <Link
+                    key={subIndex}
+                    to={`/${item.name}/${sub.replace(/\s+/g, "-")}`}
+                    className="subitem-link"
+                    onClick={onClose}
+                  >
+                    {sub}
+                  </Link>
+                ))}
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       ))}
     </motion.div>

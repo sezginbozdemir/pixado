@@ -31,6 +31,14 @@
   flex-direction: column;
   width: 100%;
 }
+.app-router {
+  position: relative;
+}
+.header-div {
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+}
 
 @media (min-width: 1400px) {
   .container {
