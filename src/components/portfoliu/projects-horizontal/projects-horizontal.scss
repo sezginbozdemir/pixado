@@ -1,0 +1,29 @@
+.horizontal-title {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  margin-bottom: 3rem;
+  @media (max-width: 992px) {
+    justify-content: start;
+  }
+  & span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.horizontal-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  gap: 1rem;
+  @media (max-width: 992px) {
+    padding: 0;
+    margin-top: 1rem;
+  }
+}

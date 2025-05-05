@@ -5,11 +5,13 @@ import { FreeMode, Pagination } from "swiper/modules";
 import Spacing from "@/components/common/Spacing";
 
 export interface PriceList {
+  id?: string;
   title: string;
   text: string;
   price: string;
   links: string[];
   pack?: boolean;
+  button?: string;
 }
 interface PriceData {
   header: string;
@@ -47,11 +49,13 @@ const PriceList = ({ data }: Props) => {
           <SwiperSlide key={index}>
             <PriceCard
               key={index}
+              id={item.id}
               title={item.title}
               text={item.text}
               price={item.price}
               links={item.links}
               pack={item.pack}
+              button={item.button}
             />
           </SwiperSlide>
         ))}

@@ -7,7 +7,8 @@ interface Data {
   benefitsTitleTwo: string;
   benefitsTwo: {
     title: string;
-    text: string;
+    highlighted?: boolean;
+    text?: string;
     list?: string[];
   }[];
   button?: string;
@@ -15,10 +16,10 @@ interface Data {
 interface Props {
   data: Data;
   onClick?: () => void;
-  num?: boolean;
+  icon?: "number" | "bullet";
 }
 
-const VisualBenefits = ({ data, onClick, num }: Props) => {
+const VisualBenefits = ({ data, onClick, icon }: Props) => {
   return (
     <div className="visual-benefits-container">
       <img src={decor} alt="pixado" className="visual-decor" />
@@ -31,10 +32,12 @@ const VisualBenefits = ({ data, onClick, num }: Props) => {
           </Row>
           <Row>
             {data.benefitsTwo.map((benefit, index) => (
-              <Col xs={12} lg={6} className="visual-benefits-col" key={index}>
+              <Col className="visual-benefits-col" xs={12} lg={6} key={index}>
                 <div className="title-4 visual-benefits-title">
-                  {num ? (
+                  {icon === "number" ? (
                     <span>{index + 1}.</span>
+                  ) : icon === "bullet" ? (
+                    <div className="benefits-bullet" />
                   ) : (
                     <img
                       src="/icons/tick.png"
@@ -43,9 +46,15 @@ const VisualBenefits = ({ data, onClick, num }: Props) => {
                       alt="Pixado"
                     />
                   )}
-                  {benefit.title}
+                  <span className={benefit.highlighted ? `green-title` : ""}>
+                    {benefit.title}
+                  </span>
                 </div>
-                <div className="body visual-benefits-text">{benefit.text}</div>
+                {benefit.text && (
+                  <div className="body visual-benefits-text">
+                    {benefit.text}
+                  </div>
+                )}
                 {benefit.list && (
                   <ul className="body">
                     {benefit.list.map((item, index) => (
@@ -56,17 +65,17 @@ const VisualBenefits = ({ data, onClick, num }: Props) => {
               </Col>
             ))}
           </Row>
-          {data.button && (
-            <Row className="title-2">
-              <Col>
+          <Row className="title-2">
+            <Col>
+              {data.button && (
                 <Button
                   className="visual-benefits-button"
                   text={data.button}
                   onClick={onClick}
                 />
-              </Col>
-            </Row>
-          )}
+              )}
+            </Col>
+          </Row>
         </div>
         <Spacing size={3} />
       </Container>

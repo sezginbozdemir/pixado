@@ -1,0 +1,108 @@
+[
+  {
+    "id": "PRO",
+    "title": "Web Design",
+    "text": "WEBSITE DE PREZENTARE PRO",
+    "description": "Website-ul de prezentare PRO este alegerea ideală pentru afacerile care înțeleg cât de importantă este prima impresie.",
+    "textOne": "",
+    "textTwo": "",
+    "benefitsTitleTwo": "Ce include pachetul website de prezentare PRO?",
+    "benefitsTwo": [
+      {
+        "title": "Până la 10 pagini personalizate",
+        "highlighted": true
+      },
+      {
+        "title": "Design 100% custom, creat manual pentru fiecare device"
+      },
+      {
+        "title": "Cookie bar + GDPR compliance basic"
+      },
+      {
+        "title": "SEO on-page complet (optimizare titluri, descrieri, heading-uri, semantică)"
+      },
+      {
+        "title": "Punctaj verde Lighthouse garantat pentru viteză, SEO, accesibilitate și best practices"
+      },
+      {
+        "title": "Optimizare viteza de încărcare (imagini, cod, lazy load)"
+      },
+      {
+        "title": "Formular de contact avansat"
+      },
+      {
+        "title": "Chat integrat (Messenger, WhatsApp sau similar)"
+      },
+      {
+        "title": "Feed social media live (Facebook/Instagram)"
+      }
+    ],
+    "iconsTitle": "De ce să alegi un website PREMIUM de la Pixado?",
+    "icons": [
+      {
+        "icon": "/icons/star.png",
+        "text": "Un site de prezentare nu trebuie să fie doar o carte de vizită online."
+      },
+      {
+        "icon": "/icons/star.png",
+        "text": "La Pixado, construim website-uri care inspiră încredere, diferențiază brandurile și generează rezultate — încă de la primul click."
+      },
+      {
+        "icon": "/icons/star.png",
+        "text": "Trebuie să fie un instrument real de poziționare, vânzare și creștere."
+      }
+    ]
+  },
+  {
+    "id": "PREMIUM",
+    "title": "Web Design",
+    "text": "WEBSITE DE PREZENTARE PRO",
+    "description": "Website-ul de prezentare PRO este alegerea ideală pentru afacerile care înțeleg cât de importantă este prima impresie.",
+    "textOne": "Care au nevoie de funcționalitate avansată, flexibilitate totală și o experiență digitală completă, construită la nivel de aplicație web.",
+    "textTwo": "Dezvoltat 100% custom code, cu backend dedicat și panou de administrare personalizat, fiecare website PREMIUM creat de Pixado este construit pentru a susține businessuri ambițioase care își doresc control deplin și scalabilitate reală.",
+    "benefitsTitleTwo": "Ce include pachetul website de prezentare PRO?",
+    "benefitsTwo": [
+      {
+        "title": "Până la 10 pagini personalizate"
+      },
+      {
+        "title": "Design 100% custom, creat manual pentru fiecare device"
+      },
+      {
+        "title": "Cookie bar + GDPR compliance basic"
+      },
+      {
+        "title": "SEO on-page complet (optimizare titluri, descrieri, heading-uri, semantică)"
+      },
+      {
+        "title": "Punctaj verde Lighthouse garantat pentru viteză, SEO, accesibilitate și best practices"
+      },
+      {
+        "title": "Optimizare viteza de încărcare (imagini, cod, lazy load)"
+      },
+      {
+        "title": "Formular de contact avansat"
+      },
+      {
+        "title": "Chat integrat (Messenger, WhatsApp sau similar)"
+      },
+      {
+        "title": "Feed social media live (Facebook/Instagram)"
+      }
+    ],
+    "iconsTitle": "De ce să alegi un website PREMIUM de la Pixado?",
+    "icons": [
+      {
+        "icon": "/icons/star.png",
+        "text": "Un site de prezentare nu trebuie să fie doar o carte de vizită online."
+      },
+      {
+        "icon": "/icons/purple-arrow.png"
+      },
+      {
+        "icon": "/icons/star.png",
+        "text": "Trebuie să fie un instrument real de poziționare, vânzare și creștere."
+      }
+    ]
+  }
+]

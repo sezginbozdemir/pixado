@@ -12,6 +12,15 @@
   transform: translateX(-50%);
   opacity: 0;
 }
+.work-done-horizontal {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: #081001;
+  display: flex !important;
+  justify-content: end;
+  gap: 0.5rem;
+}
 
 .work-done-options {
   border: 1px solid #081001;
@@ -33,6 +42,9 @@
 .project {
   box-sizing: border-box;
   width: 90% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .project-card {
   overflow: hidden;

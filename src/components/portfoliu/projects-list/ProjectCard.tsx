@@ -27,13 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const [marginStyle, setMarginStyle] = useState<React.CSSProperties>({});
   const location = useLocation();
 
-  const [isPortfolioPath, setIsPortfolioPath] = useState(false);
-
-  useEffect(() => {
-    const matchPortfolioPath = /^\/portfoliu\/\d+$/.test(location.pathname);
-    setIsPortfolioPath(matchPortfolioPath);
-  }, [location.pathname]);
-
+  const isPortfolioPath = location.pathname === "/portfoliu";
   useEffect(() => {
     if (isTabletOrLarger) {
       if (!tags[1]) {
@@ -53,8 +47,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   }, [isTabletOrLarger, tags]);
   return (
     <Container className="project">
-      <Row className={`project-card ${isPortfolioPath ? "full-width" : ""}`}>
-        <Row className="details-regular work-done" style={marginStyle}>
+      <Row className="project-card">
+        <Row
+          className={`details-regular ${
+            isPortfolioPath ? `work-done-horizontal` : `work-done`
+          }`}
+          style={marginStyle}
+        >
           {tags[0] && (
             <Col xs={3} md={2} className="work-done-options">
               {tags[0]}

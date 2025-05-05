@@ -49,8 +49,10 @@ const BannerSection = () => {
             variants={slideFromLeft}
           >
             <div className="title-1 banner-text">
-              SERVICII DE <br />
-              CREARE <br />
+              SERVICII
+              <br />
+              ONLINE
+              <br />
               PREMIUM
             </div>
             <div className="banner-labels">
@@ -88,7 +90,10 @@ const BannerSection = () => {
               className="projects-count-container"
             >
               <div className="menu-body-bold projects-count">50+</div>
-              <div className="projects-text">Proiecte finalizate cu succes</div>
+              <div className="projects-text">
+                Proiecte finalizate cu succes{" "}
+                <span className="alaturi">alaturi de pixado</span>
+              </div>
             </motion.div>
           </motion.div>
           <img className="line-group-2" src={lineGroup2} />

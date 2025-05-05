@@ -17,6 +17,7 @@ import SocialSetup from "@/pages/online-marketing/SocialSetup";
 import Seo from "@/pages/online-marketing/Seo";
 import Smm from "@/pages/online-marketing/Smm";
 import NotFound from "@/pages/NotFound";
+import Plan from "@/pages/Plan";
 
 const AppRouter = () => {
   return (
@@ -30,6 +31,7 @@ const AppRouter = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfoliu" element={<Portfoliu />} />
           <Route path="/portfoliu/:id" element={<Project />} />
+          <Route path="/servicii/web-design/:id" element={<Plan />} />
           <Route path="/servicii/web-design" element={<WebDesign />} />
           <Route path="*" element={<NotFound />} />
 

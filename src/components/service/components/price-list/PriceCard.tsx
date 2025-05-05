@@ -3,8 +3,22 @@ import Button from "@/components/common/buttons/Button";
 import pixado from "@/assets/pixado.png";
 import fire from "@/assets/fire.png";
 import { PriceList } from "./PriceList";
+import { useNavigate } from "react-router-dom";
 
-const PriceCard = ({ title, text, price, links, pack }: PriceList) => {
+const PriceCard = ({
+  id,
+  title,
+  text,
+  price,
+  links,
+  pack,
+  button,
+}: PriceList) => {
+  const navigate = useNavigate();
+  const buttonText = button ? button : "Cumpara";
+  const handleClick = () => {
+    id ? navigate(`/servicii/web-design/${id}`) : navigate("/contact");
+  };
   return (
     <>
       {pack && (
@@ -17,7 +31,11 @@ const PriceCard = ({ title, text, price, links, pack }: PriceList) => {
       )}
 
       <div className="price-card-container">
-        <Button text="Cumpara" className="price-card-button" />
+        <Button
+          onClick={handleClick}
+          text={buttonText}
+          className="price-card-button"
+        />
 
         <div className="price-card-wrapper">
           <img

@@ -91,6 +91,7 @@ const Header = () => {
                         className="menu-dropdown-item title-4"
                       >
                         {sub}
+                        <span>Află mai multe</span>
                       </Link>
                     ))}
                   </motion.div>

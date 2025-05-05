@@ -125,9 +125,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1900;
   top: 3rem;
-  left: -6rem;
+  left: -9rem;
   padding: 1rem 1.5rem;
-  min-width: 300px;
+  min-width: 380px;
   display: flex;
   flex-direction: column;
 }
@@ -150,8 +150,22 @@
   white-space: nowrap;
   text-transform: uppercase;
   font-weight: 400 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &:hover {
-    opacity: 0.7;
+    background-color: #383838;
+    border-radius: 12px;
+  }
+  &:hover span {
+    display: block;
+  }
+  & span {
+    display: none;
+    color: #6bfbce;
+    text-transform: none;
+    font-size: 14px;
+    text-decoration: underline;
   }
 }
 

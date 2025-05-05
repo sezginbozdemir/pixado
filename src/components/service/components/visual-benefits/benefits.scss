@@ -12,6 +12,9 @@
     display: none;
   }
 }
+.green-title {
+  color: #6bfbce !important;
+}
 .visual-benefits {
   display: flex;
   flex-direction: column;
@@ -38,4 +41,10 @@
 .visual-benefits-button {
   width: 300px;
   height: 55px;
+}
+.benefits-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 100%;
 }

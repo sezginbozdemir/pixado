@@ -2,6 +2,7 @@
   "header": "WEB DESIGN",
   "plans": [
     {
+      "pack": true,
       "title": "Site de prezentare",
       "text": "Ideal pentru afaceri mici sau profesioniști care doresc o prezență online simplă, elegantă și eficientă.",
       "price": "€500",
@@ -14,6 +15,7 @@
       ]
     },
     {
+      "id": "PRO",
       "title": "Magazin Online",
       "text": "Perfect pentru afaceri care doresc să vândă produse online cu un sistem de administrare ușor de folosit.",
       "price": "€1200",
@@ -23,9 +25,11 @@
         "Plată online integrată",
         "Design responsive",
         "Suport tehnic 3 luni"
-      ]
+      ],
+      "button": "Detalii"
     },
     {
+      "id": "PREMIUM",
       "title": "Platformă Personalizată",
       "text": "Soluție complet personalizată pentru proiecte unice, scalabile și complexe.",
       "price": "€2500",
@@ -35,7 +39,8 @@
         "Interfață UI/UX avansată",
         "Funcționalități specifice",
         "Mentenață și suport extins"
-      ]
+      ],
+      "button": "Detalii"
     }
   ]
 }

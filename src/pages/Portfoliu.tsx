@@ -6,6 +6,7 @@ import data from "@/data/projects/projects.json";
 import PageMeta from "@/components/common/PageMeta";
 import Spacing from "@/components/common/Spacing";
 import Loading from "@/components/common/Loading";
+import ProjectsHorizontal from "@/components/portfoliu/projects-horizontal/ProjectsHorizontal";
 interface ProjectData {
   id: number;
   title: string;
@@ -38,7 +39,7 @@ const Portfoliu = () => {
       <Spacing size={5} />
       <Filters projects={data} setProjects={setProjects} />
       <Spacing size={5} />
-      <ProjectsList projects={projects} />
+      <ProjectsHorizontal projects={projects} />
     </Col>
   );
 };
