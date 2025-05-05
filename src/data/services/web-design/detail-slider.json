@@ -1,38 +1,15 @@
-[
-  {
-    "header": "STRATEGIE",
-    "text": "Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut.",
-    "links": [
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur"
-    ]
-  },
-  {
-    "header": "STRATEGIE",
-    "text": "Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut.",
-    "links": [
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur"
-    ]
-  },
-  {
-    "header": "STRATEGIE",
-    "text": "Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut.",
-    "links": [
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur"
-    ]
-  },
-  {
-    "header": "STRATEGIE",
-    "text": "Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut.",
-    "links": [
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur",
-      "Lorem ipsum dolor sit amet consectetur"
-    ]
-  }
-]
+{
+  "header": "Web Design",
+  "title": "CE NE DIFERENȚIAZĂ",
+  "text": "Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris graseda ut.",
+  "list": [
+    "Lorem ipsum dolor sit amet consectetur",
+    "Lorem ipsum dolor sit amet consectetur",
+    "Lorem ipsum dolor sit amet consectetur",
+    "Lorem ipsum dolor sit amet consectetur",
+    "Lorem ipsum dolor sit amet consectetur",
+    "Lorem ipsum dolor sit amet consectetur"
+  ],
+  "infoOne": "Nu folosim teme, template-uri sau structuri predefinite. Fiecare linie de cod și fiecare element de design sunt gândite atent pentru a oferi performanță maximă, experiență de utilizare premium și scalabilitate reală.",
+  "infoTwo": "Nu folosim teme, template-uri sau structuri predefinite. Fiecare linie de cod și fiecare element de design sunt gândite atent pentru a oferi performanță maximă, experiență de utilizare premium și scalabilitate reală."
+}

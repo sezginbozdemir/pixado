@@ -9,8 +9,11 @@ import priceList from "@/data/services/web-design/price-list.json";
 import infoList from "@/data/services/web-design/info-list.json";
 import infoData from "@/data/services/web-design/intro.json";
 import faq from "@/data/services/web-design/faq.json";
+import data from "@/data/services/web-design/detail-slider.json";
 import Faq from "@/components/contact/faq/Faq";
 import PageMeta from "@/components/common/PageMeta";
+import WebInfo from "@/components/service/web-design/web-info/WebInfo";
+import Spacing from "@/components/common/Spacing";
 
 const WebDesign = () => {
   useEffect(() => {
@@ -30,10 +33,12 @@ const WebDesign = () => {
       <Intro data={infoData} />
       <Container style={{ height: "100%" }}>
         <WebBanner onClick={scrollToRef} img={infoData.img} />
+        <WebInfo info={data} />
       </Container>
 
+      <Spacing size={4} />
       <div ref={SliderRef}>
-        <WebSlider />
+        <WebSlider info={data} />
       </div>
       <Container style={{ height: "100%" }}>
         <PriceList data={priceList} />
