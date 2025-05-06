@@ -6,22 +6,18 @@ import PageMeta from "@/components/common/PageMeta";
 import Spacing from "@/components/common/Spacing";
 import Loading from "@/components/common/Loading";
 import ProjectsHorizontal from "@/components/portfoliu/projects-horizontal/ProjectsHorizontal";
-interface ProjectData {
-  id: number;
-  title: string;
-  imgUrl?: string;
-  details: string;
-  date: string;
-  tags: string[];
-  type: string;
-}
+import { ProjectData } from "./Project";
+type ProjectPreview = Pick<
+  ProjectData,
+  "id" | "title" | "imgUrl" | "details" | "list" | "date" | "tags" | "type"
+>;
 
 const Portfoliu = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [projects, setProjects] = useState<ProjectData[]>([]);
+  const [projects, setProjects] = useState<ProjectPreview[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {

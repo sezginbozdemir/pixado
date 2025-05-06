@@ -14,6 +14,7 @@ import NotFound from "./NotFound";
 export interface ProjectData {
   id: number;
   title: string;
+  list: string[];
   desktopImg: string;
   mobileImg: string;
   imgUrl?: string;

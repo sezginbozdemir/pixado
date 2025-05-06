@@ -7,19 +7,14 @@ import Button from "@/components/common/buttons/Button";
 import decor1 from "@/assets/line-group-1.png";
 import decor2 from "@/assets/line-group-multi.png";
 import { useNavigate } from "react-router-dom";
-interface ProjectData {
-  id: number;
-  title: string;
-  imgUrl?: string;
-  details: string;
-  date: string;
-  tags: string[];
-  type: string;
-  list: string[];
-}
+import { ProjectData } from "@/pages/Project";
+type ProjectPreview = Pick<
+  ProjectData,
+  "id" | "title" | "imgUrl" | "details" | "list" | "date" | "tags" | "type"
+>;
 
 interface ProjectsListProps {
-  projects: ProjectData[];
+  projects: ProjectPreview[];
 }
 const ProjectsHorizontal: React.FC<ProjectsListProps> = ({ projects }) => {
   const navigate = useNavigate();
@@ -34,7 +29,7 @@ const ProjectsHorizontal: React.FC<ProjectsListProps> = ({ projects }) => {
           </span>
         </div>
         <div className="projects-horizontal">
-          {projects.map((project: ProjectData, index: number) => (
+          {projects.map((project: ProjectPreview, index: number) => (
             <Row style={{ position: "relative" }} key={index}>
               <img
                 src={index % 2 === 0 ? decor1 : decor2}

@@ -1,20 +1,16 @@
 import { useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "./filters.css";
+import { ProjectData } from "@/pages/Project";
 
-interface ProjectData {
-  id: number;
-  title: string;
-  imgUrl?: string;
-  details: string;
-  date: string;
-  tags: string[];
-  type: string;
-}
+type ProjectPreview = Pick<
+  ProjectData,
+  "id" | "title" | "imgUrl" | "details" | "list" | "date" | "tags" | "type"
+>;
 
 interface FiltersProps {
-  projects: ProjectData[];
-  setProjects: React.Dispatch<React.SetStateAction<ProjectData[]>>;
+  projects: ProjectPreview[];
+  setProjects: React.Dispatch<React.SetStateAction<ProjectPreview[]>>;
 }
 
 const Filters: React.FC<FiltersProps> = ({ projects, setProjects }) => {
