@@ -5,13 +5,9 @@ import PageMeta from "@/components/common/PageMeta";
 import { Container } from "react-bootstrap";
 import ProjectHero from "@/components/project/project-hero/ProjectHero";
 import ProjectContentOne from "@/components/project/project-content-one/ProjectContentOne";
-import ProjectImages from "@/components/project/project-images/ProjectImages";
 import ProjectContentTwo from "@/components/project/project-content-two/ProjectContentTwo";
-import ProjectGallery from "@/components/project/project-gallery/ProjectGallery";
 import SimiliarProjects from "@/components/project/similiar-projects/SimiliarProjects";
 import Spacing from "@/components/common/Spacing";
-import DesktopView from "@/components/project/desktop-view/DesktopView";
-import MobileView from "@/components/project/mobile-view/MobileView";
 import Loading from "@/components/common/Loading";
 import NotFound from "./NotFound";
 
@@ -73,15 +69,7 @@ const Project = () => {
         <Spacing size={6} />
         <ProjectContentOne project={project} />
         <Spacing size={4} />
-        <DesktopView project={project} />
-        <Spacing size={4} />
-        <ProjectImages project={project} />
-        <Spacing size={3} />
         <ProjectContentTwo project={project} />
-        <Spacing size={3} />
-        <MobileView project={project} />
-        <Spacing size={3} />
-        <ProjectGallery project={project} />
         <Spacing size={3} />
         <SimiliarProjects project={project} projects={projects} />
       </Container>

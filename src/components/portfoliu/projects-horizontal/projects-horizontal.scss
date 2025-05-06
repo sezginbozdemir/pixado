@@ -1,9 +1,45 @@
+.projects-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.horizontal-decor {
+  width: 100px !important;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+.horizontal-decor-two {
+  width: 300px !important;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: -3rem;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
 .horizontal-title {
   display: flex;
   align-items: center;
   justify-content: end;
   width: 100%;
   margin-bottom: 3rem;
+  position: relative;
+  & img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
   @media (max-width: 992px) {
     justify-content: start;
   }
@@ -14,16 +50,36 @@
   }
 }
 .horizontal-list {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-bottom: 5rem;
   gap: 1rem;
+  & button {
+    width: 350px;
+    height: 50px;
+    margin-top: 1rem;
+  }
+  & li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+  }
   @media (max-width: 992px) {
     padding: 0;
     margin-top: 1rem;
+  }
+}
+.horizontal-list-col {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  @media (max-width: 992px) {
+    justify-content: center;
   }
 }
