@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/icons/star.png",
+    "title": "10+ ani de experiență",
+    "description": "Cu peste 10 ani de experiență în industrie, am transformat idei în proiecte de succes pentru clienți din diverse domenii. Experiența noastră ne permite să livrăm soluții creative, eficiente și adaptate perfect nevoilor tale."
+  },
+  {
+    "icon": "/icons/cert.png",
+    "title": "Design Creativ",
+    "description": "Punem accent pe creativitate și estetică, pentru a crea site-uri care nu doar funcționează bine, dar și arată impecabil. Fiecare proiect este unic și reflectă personalitatea brandului tău."
+  },
+  {
+    "icon": "/icons/handshake.png",
+    "title": "100% Responsive",
+    "description": "Toate site-urile dezvoltate de noi sunt optimizate pentru toate dispozitivele. Ne asigurăm că utilizatorii au o experiență fluidă, indiferent dacă folosesc telefonul, tableta sau desktopul."
+  },
+  {
+    "icon": "/icons/uprise.png",
+    "title": "Suport Tehnic",
+    "description": "Oferim suport tehnic dedicat pentru orice întrebare sau problemă. Suntem alături de tine în fiecare etapă a proiectului, de la idee la lansare și dincolo de aceasta."
+  }
+]

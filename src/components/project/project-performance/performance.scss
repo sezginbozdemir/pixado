@@ -1,0 +1,60 @@
+.project-performance {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.performance-img-wrapper {
+  mask-image: url("/project-images/appointments-mask.png");
+  mask-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image: url("/project-images/appointments-mask.png");
+    mask-size: 100% 100%;
+  }
+}
+.performance-info {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  gap: 5rem;
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 0;
+    order: 2;
+  }
+}
+.performance-img-container {
+  width: 55%;
+  height: 500px;
+  position: relative;
+  @media (max-width: 992px) {
+    width: 100%;
+    order: 1;
+  }
+}
+.performance-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.performance-decor {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  bottom: 5rem;
+  left: -7rem;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

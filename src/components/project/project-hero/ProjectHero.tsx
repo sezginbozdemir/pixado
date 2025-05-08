@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ProjectData } from "@/pages/Project";
 
 interface Props {
-  project: Pick<ProjectData, "tags" | "date" | "title" | "imgUrl" | "type">;
+  project: Pick<ProjectData, "tags" | "date" | "title" | "imgUrl" | "category">;
 }
 
 const ProjectHero = ({ project }: Props) => {
@@ -31,7 +31,7 @@ const ProjectHero = ({ project }: Props) => {
         <div className="floating-title">
           <div className="body floating-detail">
             <span>{project.date}</span>
-            <span className="floating-type">{project.type}</span>
+            <span className="floating-type">{project.category}</span>
           </div>
           <span className="title-2 float-text">
             <span>Proiect:</span>

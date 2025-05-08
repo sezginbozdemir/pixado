@@ -1,0 +1,132 @@
+.project-social {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.social-row-1 {
+  display: flex;
+  gap: 2rem;
+  & h2 {
+    width: 60%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  & p {
+    width: 40%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.social-row-2 {
+  display: flex;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.social-row-3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.social-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  flex: 1;
+  @media (max-width: 992px) {
+    & :nth-child(1) {
+      order: 2;
+    }
+
+    & :nth-child(2) {
+      order: 1;
+    }
+  }
+}
+
+.social-img-wrapper {
+  mask-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    mask-size: 100% 100%;
+  }
+}
+.appointments-mask {
+  mask-image: url("/project-images/appointments-mask.png");
+
+  & img {
+    mask-image: url("/project-images/appointments-mask.png");
+  }
+}
+.sitemap-mask {
+  mask-image: url("/project-images/sitemap-card.png");
+
+  & img {
+    mask-image: url("/project-images/sitemap-card.png");
+  }
+}
+
+.cardOne-info {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 2rem;
+  padding-top: 7rem;
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 0;
+    order: 2;
+  }
+}
+.social-cardOne {
+  width: 50%;
+  height: 100%;
+  @media (max-width: 992px) {
+    width: 100%;
+    order: 1;
+  }
+}
+.social-img-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.social-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.social-decor {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 32rem;
+  left: -10rem;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

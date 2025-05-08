@@ -36,7 +36,7 @@ const Header = () => {
     { name: "home" },
     {
       name: "servicii",
-      subItems: ["branding", "online marketing", "web design"],
+      subItems: ["branding", "online marketing", "web design", "e-commerce"],
     },
     { name: "portfoliu" },
     { name: "contact" },

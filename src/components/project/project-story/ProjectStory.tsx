@@ -3,17 +3,17 @@ import "./content-one.scss";
 import { ProjectData } from "@/pages/Project";
 
 interface Props {
-  project: Pick<ProjectData, "description" | "client" | "duration" | "website">;
+  project: Pick<ProjectData, "story" | "client" | "duration" | "website">;
 }
 
-const ProjectContentOne = ({ project }: Props) => {
+const ProjectStory = ({ project }: Props) => {
   return (
-    <Row>
-      <Col lg={6} className="title-2">
-        Scopul proiectului
-      </Col>
-      <Col className="body" lg={6}>
-        <p>{project.description}</p>
+    <Row className="story-row">
+      <Col
+        style={{ gap: "2rem", display: "flex", flexDirection: "column" }}
+        lg={6}
+      >
+        <span className="title-2">{project.story.title}</span>
         <Row>
           <Col className="description-options">
             <Row>Client</Row>
@@ -29,7 +29,10 @@ const ProjectContentOne = ({ project }: Props) => {
           </Col>
         </Row>
       </Col>
+      <Col className="body" lg={6}>
+        <p className="story-padding"> {project.story.text}</p>
+      </Col>
     </Row>
   );
 };
-export default ProjectContentOne;
+export default ProjectStory;

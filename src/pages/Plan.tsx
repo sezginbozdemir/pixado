@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import data from "@/data/services/web-design/plans.json";
-import priceList from "@/data/services/web-design/price-list.json";
+import priceListWeb from "@/data/services/web-design/price-list.json";
+import priceListCommerce from "@/data/services/e-commerce/price-list.json";
 import { useLocation, useParams } from "react-router-dom";
 import PageMeta from "@/components/common/PageMeta";
 import { Container } from "react-bootstrap";
@@ -51,6 +52,11 @@ const Plan = () => {
     return <NotFound />;
   }
 
+  const priceList = location.pathname.includes("web-design/web-")
+    ? priceListWeb
+    : location.pathname.includes("web-design/commerce-")
+    ? priceListCommerce
+    : priceListWeb;
   return (
     <>
       <PageMeta title="Plans Meta Title" description=" Plans Meta Desc" />

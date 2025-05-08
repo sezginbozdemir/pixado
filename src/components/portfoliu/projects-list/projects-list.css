@@ -20,6 +20,9 @@
   display: flex !important;
   justify-content: end;
   gap: 0.5rem;
+  @media (max-width: 768px) {
+    height: 7%;
+  }
 }
 
 .work-done-options {

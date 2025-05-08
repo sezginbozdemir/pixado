@@ -1,5 +1,5 @@
 {
-  "header": "WEB DESIGN",
+  "header": "E-COMMERCE",
   "plans": [
     {
       "pack": true,
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "id": "web-pro",
+      "id": "commerce-pro",
       "title": "Magazin Online",
       "text": "Perfect pentru afaceri care doresc să vândă produse online cu un sistem de administrare ușor de folosit.",
       "price": "€1200",
@@ -29,7 +29,7 @@
       "button": "Detalii"
     },
     {
-      "id": "web-premium",
+      "id": "commerce-premium",
       "title": "Platformă Personalizată",
       "text": "Soluție complet personalizată pentru proiecte unice, scalabile și complexe.",
       "price": "€2500",

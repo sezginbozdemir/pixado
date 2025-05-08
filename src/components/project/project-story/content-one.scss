@@ -1,0 +1,13 @@
+.description-options {
+  padding: 0 !important;
+}
+.story-padding {
+  @media (min-width: 992px) {
+    padding-left: 3rem;
+  }
+}
+.story-row {
+  @media (max-width: 992px) {
+    gap: 2rem;
+  }
+}
