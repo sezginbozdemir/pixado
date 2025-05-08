@@ -26,3 +26,13 @@
   text-align: center;
   margin-bottom: 3rem;
 }
+.socials-decor {
+  width: 180px;
+  height: auto;
+  position: relative;
+  top: 6rem;
+  left: -5rem;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

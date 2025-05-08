@@ -16,7 +16,10 @@ const ProjectPerformance = ({ project }: Props) => {
         <div className="project-performance">
           <div className="performance-info">
             <div className="title-2">{project.performance.title}</div>
-            <div className="body">{project.performance.text}</div>
+            <div
+              className="body"
+              dangerouslySetInnerHTML={{ __html: project.performance.text }}
+            />
           </div>
           <div className="performance-img-container">
             <div className="contact-head performance-tag title-4">

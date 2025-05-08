@@ -30,7 +30,10 @@ const ProjectStory = ({ project }: Props) => {
         </Row>
       </Col>
       <Col className="body" lg={6}>
-        <p className="story-padding"> {project.story.text}</p>
+        <p
+          className="story-padding"
+          dangerouslySetInnerHTML={{ __html: project.story.text }}
+        />
       </Col>
     </Row>
   );

@@ -16,11 +16,19 @@ const ProjectSocial = ({ project }: Props) => {
         <div className="project-social">
           <div className="social-row-1">
             <h2 className="title-2">{project.social.title}</h2>
-            <p className="body">{project.social.text}</p>
+            <p
+              className="body"
+              dangerouslySetInnerHTML={{ __html: project.social.text }}
+            />
           </div>
           <div className="social-row-2">
             <div className="cardOne-info">
-              <div className="body">{project.social.cardOne.text}</div>
+              <div
+                className="body"
+                dangerouslySetInnerHTML={{
+                  __html: project.social.cardOne.text,
+                }}
+              />
               <NextButton />
             </div>
             <div className="social-cardOne">
@@ -38,7 +46,10 @@ const ProjectSocial = ({ project }: Props) => {
             {[project.social.cardTwo, project.social.cardThree].map(
               (card, index) => (
                 <div className="social-card" key={index}>
-                  <p className="body">{card.text}</p>
+                  <p
+                    className="body"
+                    dangerouslySetInnerHTML={{ __html: card.text }}
+                  />
                   <div className="social-img-container">
                     <div className="contact-head social-tag title-4">
                       {card.tag}

@@ -18,7 +18,10 @@ const ProjectSeo = ({ project }: Props) => {
         <div className="project-seo">
           <div className="seo-row-1">
             <h2 className="title-2">{project.seo.title}</h2>
-            <p className="body">{project.seo.text}</p>
+            <p
+              className="body"
+              dangerouslySetInnerHTML={{ __html: project.seo.text }}
+            />
           </div>
           <div className="seo-row-2">
             <div className="seo-cardOne">
@@ -32,13 +35,19 @@ const ProjectSeo = ({ project }: Props) => {
               </div>
             </div>
             <div className="seo-cardOne-info">
-              <div className="body">{project.seo.cardOne.text}</div>
+              <div
+                className="body"
+                dangerouslySetInnerHTML={{ __html: project.seo.cardOne.text }}
+              />
             </div>
           </div>
           <div className="seo-row-3">
             {[project.seo.cardTwo, project.seo.cardThree].map((card, index) => (
               <div className="seo-card" key={index}>
-                <p className="body">{card.text}</p>
+                <p
+                  className="body"
+                  dangerouslySetInnerHTML={{ __html: card.text }}
+                />
                 <div className="social-img-container">
                   <div className="contact-head social-tag title-4">
                     {card.tag}

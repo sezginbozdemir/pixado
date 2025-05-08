@@ -2,27 +2,30 @@ import "./contact.css";
 import Button from "@/components/common/buttons/Button";
 import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+interface Props {
+  head: string;
+  title: string;
+  text: string;
+}
 
-const Contact = () => {
+const Contact = ({ head, title, text }: Props) => {
   const navigate = useNavigate();
 
   return (
     <Container>
       <Row className="first-container">
         <Col xs={12} lg={6} className="first-col-contact">
-          <div className="body who">Cine suntem noi</div>
-          <div className="title-2 partner">
-            PARTENERUL TĂU ÎN <br /> DEZVOLTARE DIGITALĂ
-          </div>
+          <div className="body who">{head}</div>
+          <div
+            className="title-2 partner"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
         </Col>
         <Col xs={12} lg={5} className="second-col-contact">
-          <div className="contact-text body">
-            Lorem ipsum dolor sit amet consectetur. Vel ut aliquet feugiat
-            consectetur felis nunc nunc amet vitae. Mi sit aliquet mauris
-            graseda ut. Lorem ipsum dolor sit amet consectetur. Vel ut aliquet
-            feugiat consectetur felis nunc nunc amet vitae. Mi sit aliquet
-            mauris graseda ut.
-          </div>
+          <div
+            className="contact-text body"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
           <div className="body links-container">
             <Button
               onClick={() => {

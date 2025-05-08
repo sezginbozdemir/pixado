@@ -24,7 +24,7 @@
     "metaDescription": "Explore the Aurora Vision project, a sleek website redesign tailored for a modern tech startup, focusing on branding and UI/UX excellence.",
     "story": {
       "title": "Povestea Vessa Hospital",
-      "text": "Când Vessa Hospital, unul dintre cele mai ambițioase spitale private din Timișoara, ne-a ales ca partener digital, am știut că acest proiect va deveni o referință în portofoliul Pixado. Provocarea a fost clară: să creăm nu doar un site web, ci o platformă completă, care să reflecte profesionalismul echipei medicale și să ofere pacienților o experiență modernă, intuitivă și eficientă."
+      "text": "Când <strong style=\"color: white\">Vessa Hospital</strong>, unul dintre cele mai ambițioase spitale private din Timișoara, ne-a ales ca partener digital, am știut că acest proiect va deveni o referință în portofoliul Pixado. Provocarea a fost clară: să creăm nu doar un site web, ci o platformă completă, care să reflecte profesionalismul echipei medicale și să ofere pacienților o experiență modernă, intuitivă și eficientă."
     },
     "siteMap": {
       "tag": "Site Map",
@@ -33,7 +33,7 @@
     },
     "technology": {
       "title": "Tehnologia din spatele performanței",
-      "textOne": "Pentru un proiect de asemenea amploare, am ales să construim platforma folosind tehnologii moderne și scalabile.Website-ul este dezvoltat în Next.js și React.js, folosind TypeScript pentru o structură solidă și predictibilă a codului.<br><br>Modulul de backend gestionează datele eficient printr-o bază de date MongoDB, asigurând flexibilitate și viteză ridicată în procesarea informațiilor.",
+      "textOne": "Pentru un proiect de asemenea amploare, am ales să construim platforma folosind tehnologii moderne și scalabile.<br><br>Website-ul este dezvoltat în  <strong style=\"color: white\">Next.js</strong> și  <strong style=\"color: white\">React.js</strong>, folosind  <strong style=\"color: white\">TypeScript</strong> pentru o structură solidă și predictibilă a codului.Modulul de backend gestionează datele eficient printr-o bază de date  <strong style=\"color: white\">MongoDB</strong>, asigurând flexibilitate și viteză ridicată în procesarea informațiilor.",
       "textTwo": "Mai mult, platforma este găzduită pe serverele proprii Pixado, optimizate special pentru viteză, stabilitate și securitate. Această alegere ne permite să controlăm complet resursele tehnice, să reducem semnificativ timpii de încărcare și să oferim utilizatorilor o experiență fluentă, indiferent de dispozitiv.",
       "icons": [
         { "title": "React.js", "icon": "/icons/react.png" },
@@ -57,46 +57,46 @@
     },
     "responsive": {
       "title": "FlexiDesign",
-      "textOne": "Designul vizual a fost tratat cu aceeași atenție la detalii. Am conceput interfața 100% FlexiDesign, adaptată separat pentru mobil, tabletă și desktop, oferind o experiență optimizată, fluidă și naturală pe orice dispozitiv.",
+      "textOne": "Designul vizual a fost tratat cu aceeași atenție la detalii. Am conceput interfața <strong style=\"color: white\">100% FlexiDesign</strong>, adaptată separat pentru mobil, tabletă și desktop, oferind o experiență optimizată, fluidă și naturală pe orice dispozitiv.",
       "textTwo": "Nu am folosit șabloane sau adaptări automate, ci am creat fiecare ecran exact așa cum trebuia să arate: clar, aerisit și orientat spre utilizator.",
       "img": "/projects/vessa/flexi-design.png"
     },
     "performance": {
       "title": "Performanță și SEO",
-      "text": "Am obținut rezultate excelente în toate testele de performanță, ducând întregul site în zona verde pentru toate criteriile Lighthouse, cu un scor de 100/100 la SEO pentru toate cele peste 500 de pagini publicate.",
+      "text": "Am obținut rezultate excelente în toate testele de performanță, ducând întregul site în zona verde pentru toate criteriile Lighthouse, cu un scor de <strong style=\"color: white\">100/100 la SEO</strong> pentru toate cele peste 500 de pagini publicate.",
       "tag": "Scoruri Lighthouse",
       "img": ""
     },
     "social": {
       "title": "Google & Social Setup — Fundamentul tehnic pentru succesul online",
-      "text": "Înainte de a demara orice campanie de promovare, am construit o bază tehnică solidă, prin serviciul nostru propriu de Google & Social Setup.",
+      "text": "Înainte de a demara orice campanie de promovare, am construit o bază tehnică solidă, prin serviciul nostru propriu de <strong style=\"color: white\">Google & Social Setup</strong>.",
       "cardOne": {
         "tag": "Google Business",
-        "text": "Am creat și configurat toate conturile necesare pentru prezența online: Facebook, Instagram, WhatsApp Business, precum și un profil Google Business optimizat la maxim, obținând 100% profil strength.",
+        "text": "Am creat și configurat toate conturile necesare pentru prezența online: <strong style=\"color: white\">Facebook, Instagram, WhatsApp Business</strong>, precum și un profil <strong style=\"color: white\">Google Business</strong> optimizat la maxim, obținând 100% profil strength.",
         "img": ""
       },
       "cardTwo": {
         "tag": "Analytics",
-        "text": "Am implementat Google Search Console (GSC) și Google Analytics 4 (GA4), asigurând monitorizarea completă a performanței website-ului și a campaniilor.",
+        "text": "Am implementat Google Search Console <strong style=\"color: white\">(GSC)</strong> și Google Analytics 4 <strong style=\"color: white\">(GA4)</strong>, asigurând monitorizarea completă a performanței website-ului și a campaniilor.",
         "img": "/projects/vessa/analytics.png"
       },
       "cardThree": {
         "tag": "Google Tag Manager",
-        "text": "Prin Google Tag Manager, am centralizat toate codurile de urmărire, eficientizând încărcarea site-ului și controlul asupra conversiilor.",
+        "text": "Prin <strong style=\"color: white\">Google Tag Manager</strong>, am centralizat toate codurile de urmărire, eficientizând încărcarea site-ului și controlul asupra conversiilor.",
         "img": "/projects/vessa/gtm.png"
       },
       "cardFour": {
         "tag": "Pixeli activi",
-        "text": "Ne-am ocupat și de integrarea codurilor pentru rich results și am activat Consent Mode v2, conform celor mai noi cerințe GDPR.<br><br>Am instalat și configurat toți pixelii necesari pentru campanii eficiente de remarketing și conversie, inclusiv Facebook Pixel, TikTok Pixel, și alte coduri esențiale de tracking. <br><br>În completare, am dezvoltat și coduri proprii de tracking, adaptate nevoilor proiectului Vessa.",
+        "text": "Ne-am ocupat și de integrarea codurilor pentru <strong style=\"color: white\">rich results</strong> și am activat <strong style=\"color: white\">Consent Mode v2</strong>, conform celor mai noi cerințe GDPR.<br><br>Am instalat și configurat toți pixelii necesari pentru campanii eficiente de remarketing și conversie, inclusiv <strong style=\"color: white\">Facebook Pixel, TikTok Pixel</strong>, și alte coduri esențiale de tracking. <br><br>În completare, am dezvoltat și <strong style=\"color: white\">coduri proprii de tracking</strong>, adaptate nevoilor proiectului Vessa.",
         "img": ""
       }
     },
     "seo": {
       "title": "SEO și SMM — Rezultate concrete",
-      "text": "Ulterior, am construit o strategie solidă de SEO și SMM, cu accent pe promovarea progresivă a brandului, a echipei medicale și a principalelor proceduri.",
+      "text": "Ulterior, am construit o strategie solidă de <strong style=\"color: white\">SEO și SMM</strong>, cu accent pe promovarea progresivă a brandului, a echipei medicale și a principalelor proceduri.",
       "cardOne": {
         "tag": "Rezultate",
-        "text": "În doar două luni de la lansare, Vessa Hospital a ajuns în topul rezultatelor Google, ocupând locul 3 pentru căutarea „spital privat Timișoara” și poziții între 1 și 3 pentru principalele căutări pe numele medicilor.",
+        "text": "În doar două luni de la lansare, <strong style=\"color: white\">Vessa Hospital</strong> a ajuns în topul rezultatelor Google, ocupând locul 3 pentru căutarea <strong style=\"color: white\">„spital privat Timișoara”</strong> și poziții între 1 și 3 pentru principalele căutări pe numele medicilor.",
         "img": ""
       },
       "cardTwo": {

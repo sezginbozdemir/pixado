@@ -7,9 +7,10 @@ const ProjectConclusion = () => {
       <div className="conclusion-row-1">
         <h2 className="title-2">Concluzie</h2>
         <p className="body">
-          Prin acest proiect, Pixado a demonstrat că excelența nu este o
-          întâmplare, ci rezultatul unei viziuni clare, al unei execuții
-          impecabile și al unei implicări totale.
+          Prin acest proiect,{" "}
+          <strong style={{ color: "white" }}> Pixado </strong> a demonstrat că
+          excelența nu este o întâmplare, ci rezultatul unei viziuni clare, al
+          unei execuții impecabile și al unei implicări totale.
         </p>
       </div>
       <div className="conclusion-row-2">

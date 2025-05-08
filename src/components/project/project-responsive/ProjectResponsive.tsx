@@ -13,9 +13,15 @@ const ProjectResponsive = ({ project }: Props) => {
       <div className="responsive-row-1">
         <div className="flexi-design">
           <div className="title-2">{project.responsive.title}</div>
-          <p className="body">{project.responsive.textTwo}</p>
+          <p
+            className="body"
+            dangerouslySetInnerHTML={{ __html: project.responsive.textTwo }}
+          />
         </div>
-        <p className="body">{project.responsive.textOne}</p>
+        <p
+          className="body"
+          dangerouslySetInnerHTML={{ __html: project.responsive.textOne }}
+        />
       </div>
       <div className="responsive-row-2">
         <img src={img} />

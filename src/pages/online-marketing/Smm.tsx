@@ -25,7 +25,9 @@ const Smm = () => {
       <Container style={{ height: "100%" }}>
         <SmmServices services={infoData.smmServices} />
         <Spacing size={4} />
-        <Socials />
+      </Container>
+      <Socials />
+      <Container>
         <Spacing size={4} />
         <PriceList data={priceList} />
         <Faq data={faq} />

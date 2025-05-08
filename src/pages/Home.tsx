@@ -5,6 +5,7 @@ import RichText from "@/components/home/rich-text/RichText";
 import ServicesCarousel from "@/components/home/services-carousel/ServicesCarousel";
 import ProjectsList from "@/components/portfoliu/projects-list/ProjectsList";
 import data from "@/data/projects/projects.json";
+import about from "@/data/home/about-us.json";
 import Contact from "@/components/home/contact/Contact";
 import LogoSlide from "@/components/home/logo-slide/LogoSlide";
 import { Col } from "react-bootstrap";
@@ -29,7 +30,7 @@ const Home = () => {
       <Spacing size={8} />
       <ProjectsList projects={projects} />
       <Spacing size={6} />
-      <Contact />
+      <Contact head={about.head} title={about.title} text={about.text} />
       <Spacing size={6} />
       <LogoSlide />
       <Spacing size={6} />

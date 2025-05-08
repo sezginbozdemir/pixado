@@ -6,6 +6,8 @@ import tiktok from "@/assets/tiktok.png";
 import youtube from "@/assets/youtube.png";
 import linkedin from "@/assets/linkedin.png";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import decor from "@/assets/line-group-2.png";
 
 const Socials = () => {
   const socialsGroup = [
@@ -31,31 +33,34 @@ const Socials = () => {
   ];
 
   return (
-    <>
-      <div className="title-2 socials-header">
-        Platformele vizate de serviciul nostru SMM
-      </div>
-      <div className="smm-socials">
-        {socialsGroup.map((item, index) => (
-          <div key={index} className="socials-group">
-            <div className="socials-icons">
-              {item.icons.map((icon, index) => (
-                <Link to={icon.url}>
-                  <img
-                    className="socials-icon"
-                    src={icon.img}
-                    key={index}
-                    width={70}
-                    height={70}
-                  />
-                </Link>
-              ))}
+    <div style={{ position: "relative", overflow: "hidden" }}>
+      <img src={decor} className="socials-decor" />
+      <Container>
+        <div className="title-2 socials-header">
+          Platformele vizate de serviciul nostru SMM
+        </div>
+        <div className="smm-socials">
+          {socialsGroup.map((item, index) => (
+            <div key={index} className="socials-group">
+              <div className="socials-icons">
+                {item.icons.map((icon, index) => (
+                  <Link to={icon.url}>
+                    <img
+                      className="socials-icon"
+                      src={icon.img}
+                      key={index}
+                      width={70}
+                      height={70}
+                    />
+                  </Link>
+                ))}
+              </div>
+              <div className="socials-text body">{item.text}</div>
             </div>
-            <div className="socials-text body">{item.text}</div>
-          </div>
-        ))}
-      </div>
-    </>
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 };
 export default Socials;
